@@ -1,0 +1,103 @@
+$theme-defaults: (
+  /* Colors */
+  'Colors' : (
+    "primary": #073763,
+    "accent": #E4572E,
+
+    // Semantics
+    "success": #9FD356,
+    "danger": #960200,
+    "warning": #EDA921,
+    "info": #0074D9,
+
+    // Gray Scale
+    "white": #ffffff,
+    "silver": #dddddd,
+    "gray": #aaaaaa,
+    "dark": #333333,
+    "black": #111111,
+
+    "light": #ffffff,
+    "green": #228B22),
+
+  // Font Weights
+  'Font weights' :(
+    'weight-thin': 100,
+    'weight-light': 300,
+    'weight-normal': 400,
+    'weight-semibold': 500,
+    'weight-bold': 700,
+    'weight-black': 900
+  ),
+
+);
+
+
+//Font Families
+/* Import */
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+$sans-serif: "Open Sans",Helvetica, Verdana, sans-serif;
+$serif: 'Lora', Georgia, "Times New Roman", serif;
+$mono: "Source Code Pro", Courier, mono;
+
+//Media queries
+// Note: 
+// Max <   Min >
+
+// $device-lg: "only screen and (min-width: 1366px)";
+$device-lg: "only screen and (max-width: 1366px)";
+$device-md-between: "(min-width: 768px) and (max-width: 979px)";
+$device-md: "only screen and (max-width: 1024px)";
+$device-sm: "only screen and (max-width: 800px)";
+$device-xs: "only screen and (max-width: 480px)";
+
+
+$breakpoints: (default:0,
+  xs:400px,
+  sm:576px,
+  md:767px,
+  lg:979px,
+  xl:1200px);
+
+
+.pink {
+  background: pink;
+}
+
+
+@function hexToRGB($hex) {
+  @return red($hex),
+  green($hex),
+  blue($hex);
+}
+
+/* Looping for CSS Custom properties */
+@mixin createCSSThemeProperties($theme-defaults) {
+
+  /* Declares css properties in the root element of html */
+  :root {
+
+    @each $group-name,
+    $group in $theme-defaults {
+
+      /*#{$group-name} */
+      @each $name,
+      $value in $group {
+        --#{$name}: #{$value}
+      }
+
+      @if($group-name=='Colors') {
+
+        /*RGB values for colors */
+        @each $name,
+        $value in $group {
+          --#{$name}-rgb: #{hexToRGB($value)};
+        }
+      }
+
+    }
+  }
+}
+
+@include createCSSThemeProperties($theme-defaults);

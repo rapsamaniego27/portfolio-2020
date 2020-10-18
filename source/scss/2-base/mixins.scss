@@ -1,0 +1,69 @@
+
+/* Adding a background for the buttons */
+@mixin btn-background($background){
+  @extend %btn;
+  background-color:$background;
+  color:#fff;
+  
+  &:hover{
+    background:darken($background, 10%);
+    transition: all 0.3s ease;
+    color:darken(#fff, 1%);
+  }
+  &:active{
+    background:darken($background, 15%);
+    transition: all 0.3s ease;
+    color:darken(#fff, 5%);
+  }
+}
+
+
+//Media query to stack Elements
+//Pass in the Media query here
+@mixin media-stack-elements($media-query){
+  @media #{$media-query}{
+    display: block;
+    width: 100%;
+  }
+}
+
+
+/* Generates Typographic elements and sizes */
+@mixin generateTextElements($text-elements){
+  @each $element, $properties in $text-elements{
+
+  /* The element */
+  #{$element}{
+    
+    font-size:map-get($properties, size);
+    font-weight:map-get($properties, weight);
+
+    /* Checks if it has mobile size property */
+    @if map-has-key($properties, mobile-size){
+      $mobile-size:map-get($properties, mobile-size);
+
+      @media only screen and (max-width:840px){
+        font-size: $mobile-size;
+      }
+    }
+    
+  }
+}
+
+}
+
+/* Mixin to create triangles */
+
+@mixin triangle($size, $side, $left:0, $top:0, $color:#073763){
+  position:relative;
+
+  &::after{
+    content: '';
+    position:absolute;
+    left:$left;
+    top:$top;
+    border:$size solid transparent;
+    border-#{$side}-color: $color;
+  }
+}
+

@@ -1,0 +1,43 @@
+//Default Grid Container
+.grid-container{
+  // max-width:60rem;
+  // width:calc(100% - 10rem);
+  
+  @include media-stack-elements(#{$device-md});
+
+  .grid-content{
+    outline: 1px solid black;
+    background:var(--gray);
+
+    @media #{$device-md}{
+      max-width:100%;
+    }
+  }
+
+  h3{
+    color:var(--primary);
+  }
+
+  
+}
+
+
+//Custom Grid
+.grid__custom{
+
+  .grid__custom__content{
+    outline: 1px solid black;
+    background:var(--gray);
+
+  }
+
+  h3{
+    color:var(--primary);
+  }
+  
+}
+
+.buttons-container{
+  width:100%;
+  text-align: center;
+}

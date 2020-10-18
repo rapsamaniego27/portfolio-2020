@@ -1,0 +1,105 @@
+$columns: 12;
+$grid-breakpoints: (
+  default:0,
+  sm:576px,
+  md:767px,
+  lg:979px,  
+  xl:1200px
+);
+
+
+// =====================================================//
+// Loop for Grid Break points e.g. col-md6
+// With Media Queries
+// =====================================================//
+@each $name, $value in $grid-breakpoints{
+  @if $name != default{
+      //Grid breakpoint
+      @media only screen and (min-width:$value){
+
+        /* Loop for Grid Breakpoint System */
+        @for $i from 1 through $columns{
+  
+          .col-#{$name}#{$i}{
+            flex: 0 0 100% /  $columns * $i;    
+            max-width: (100 / $columns * $i) * 1%;
+            // padding:15px 0;
+
+          }
+        }
+  
+      }
+  } //End of if Statement
+
+}
+
+
+// =====================================================//
+// Loop for Grid Break points having 100% default width
+// Without Media Queries
+// =====================================================//
+
+//Putting 100% width to all column
+$column-list: null;
+
+@each $name, $value in $grid-breakpoints{
+
+  @if $name == default{
+    $name: null;
+  }
+
+  /* Loop for Grid Breakpoint System */
+  @for $i from 1 through $columns{
+    // $column-list: append($column-list, col-#{$name}#{$i});
+    .col-#{$name}#{$i}{
+      @extend %expand-width;
+      
+    }
+  }   
+}
+
+
+ 
+
+
+/* Default Loop for Grid System */
+@for $i from 1 through $columns{
+
+  .col-#{$i}{
+    flex: 0 0 100% /  $columns * $i;    
+    max-width: (100 / $columns * $i) * 1%;
+    width: 100%;
+  }
+}
+
+
+/* Loop for Offsets */
+@for $i from 1 through $columns{
+  .col-offset-#{$i}{
+    margin-left:100% / $columns * $i;
+  }
+}
+
+
+
+
+$gutters: (5, 10, 15, 20);
+
+@mixin createGutters($gutters){
+  @each $gutter in $gutters {
+    .gut-#{$gutter} {
+      margin:0 #{$gutter}px;
+    }
+  }
+}
+
+@include createGutters($gutters);
+
+//Automatic Column
+
+.col-auto {
+  flex: 0 0 auto;
+  width: auto;
+  max-width: 100%;
+}
+

@@ -1,0 +1,12 @@
+@keyframes show-element{
+  0%{opacity:0.9}
+  25%{opacity:0.6}
+  50%{opacity:0.4}
+  67%{opacity:0}
+  75%{opacity:0.5}
+  100%{opacity:1}
+}
+
+.show-element{
+  animation: show-element 2s;
+}

@@ -1,0 +1,23 @@
+//Preloader Element
+//Preloader class to add a preloader after the document has loaded.
+.preloader {
+  align-items: center;
+  background:#F0F0F0;
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  left: 0;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.3s linear;
+  width: 100%;
+  z-index: 9999;
+  opacity:1;
+  transition:opacity 1s linear;
+}
+
+//Loaded state
+.preloader--loaded{
+  opacity: 0;
+  pointer-events: none;
+}

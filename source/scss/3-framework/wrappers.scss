@@ -1,0 +1,84 @@
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+
+/* ===================== */
+/* Container generator */
+/* ===================== */
+// Loop through these classes to have max-width of 1366px
+// And response to 900 px if it's in Laptop Mode
+  $classes: (hero, grid-container, grid__custom);
+
+  @each $class in $classes{
+    .#{$class}{
+      max-width: 1366px;
+      margin-right: auto;
+      margin-left: auto;
+    }
+
+    //Laptop Media Query
+    @media (max-width:1366px){
+      .#{$class}{
+        max-width: 1200px;
+      }
+    }
+
+    @media (max-width: 1280px) {
+      .#{$class} {
+        max-width: 986px;
+      }
+    }
+
+    @media (max-width: 986px) {
+      .#{$class} {
+        max-width: 930px;
+      }
+    }
+
+    @media (max-width: 768px) {
+      .#{$class} {
+        max-width: 720px;
+      }
+    }
+
+    @media (max-width: 576px) {
+      .#{$class} {
+        max-width: 540px;
+      }
+    }
+
+    
+  }
+
+.container__nowrap{
+  display: flex;
+}
+
+.container__flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.row{
+  width:100%;
+}
