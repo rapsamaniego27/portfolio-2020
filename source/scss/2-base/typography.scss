@@ -6,6 +6,10 @@ h1, h2, h3, h4, h5, h6{
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
 }
 
+p{
+   font-family: $alt-serif;
+}
+
 $text-elements: (
   'h1':(
     size:3rem,

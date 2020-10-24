@@ -1,4 +1,4 @@
-@import url(https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap);/*
+@import url(https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap);/*
 Theme Name: My First Woo Commerce Site
 Author: Ralph Samaniego
 */
@@ -11,13 +11,14 @@ Author: Ralph Samaniego
 /* Declares css properties in the root element of html */
 :root {
   /*Colors */
-  --primary: #073763 ;
-  --accent: #E4572E ;
+  --primary: #0164C8 ;
+  --accent: #F7B32B ;
+  --tertiary: #E0607E ;
   --success: #9FD356 ;
   --danger: #960200 ;
-  --warning: #EDA921 ;
+  --warning: #F0A91B ;
   --info: #0074D9 ;
-  --white: #ffffff ;
+  --white: #FBFBFB ;
   --silver: #dddddd ;
   --gray: #aaaaaa ;
   --dark: #333333 ;
@@ -25,13 +26,14 @@ Author: Ralph Samaniego
   --light: #ffffff ;
   --green: #228B22 ;
   /*RGB values for colors */
-  --primary-rgb: 7, 55, 99;
-  --accent-rgb: 228, 87, 46;
+  --primary-rgb: 1, 100, 200;
+  --accent-rgb: 247, 179, 43;
+  --tertiary-rgb: 224, 96, 126;
   --success-rgb: 159, 211, 86;
   --danger-rgb: 150, 2, 0;
-  --warning-rgb: 237, 169, 33;
+  --warning-rgb: 240, 169, 27;
   --info-rgb: 0, 116, 217;
-  --white-rgb: 255, 255, 255;
+  --white-rgb: 251, 251, 251;
   --silver-rgb: 221, 221, 221;
   --gray-rgb: 170, 170, 170;
   --dark-rgb: 51, 51, 51;
@@ -61,7 +63,7 @@ html, body {
   height: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-text-size-adjust: 100%;
-  font-family: "Open Sans", Helvetica, Verdana, sans-serif;
+  font-family: "Ubuntu", Helvetica, Verdana, sans-serif;
 }
 
 article, aside, details, figcaption, figure,
@@ -220,8 +222,12 @@ a {
 /* Mixin to create triangles */
 h1, h2, h3, h4, h5, h6 {
   color: var(--accent);
-  font-family: "Open Sans", Helvetica, Verdana, sans-serif;
+  font-family: "Ubuntu", Helvetica, Verdana, sans-serif;
   text-shadow: 0 2px 0 rgba(0, 0, 0, 0.03);
+}
+
+p {
+  font-family: "Open Sans", Helvetica, Verdana, sans-serif;
 }
 
 /* Loop to generate the Text Elements */
@@ -402,11 +408,15 @@ p {
 /* Generate for color classes */
 /*RGB values for colors */
 .hex-primary {
-  color: #073763 !important;
+  color: #0164C8 !important;
 }
 
 .hex-accent {
-  color: #E4572E !important;
+  color: #F7B32B !important;
+}
+
+.hex-tertiary {
+  color: #E0607E !important;
 }
 
 .hex-success {
@@ -418,7 +428,7 @@ p {
 }
 
 .hex-warning {
-  color: #EDA921 !important;
+  color: #F0A91B !important;
 }
 
 .hex-info {
@@ -426,7 +436,7 @@ p {
 }
 
 .hex-white {
-  color: #ffffff !important;
+  color: #FBFBFB !important;
 }
 
 .hex-silver {
@@ -3735,7 +3745,7 @@ header {
 }
 
 body {
-  background: blue !important;
+  background: var(--white) !important;
 }
 
 footer {
@@ -3795,17 +3805,17 @@ footer {
 }
 
 .btn-warning {
-  background-color: #EDA921;
+  background-color: #F0A91B;
   color: #fff;
 }
 .btn-warning:hover {
-  background: #cb8d10;
+  background: #cb8c0d;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fcfcfc;
 }
 .btn-warning:active {
-  background: #b37c0f;
+  background: #b37b0c;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f2f2f2;

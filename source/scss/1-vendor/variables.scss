@@ -1,17 +1,18 @@
 $theme-defaults: (
   /* Colors */
   'Colors' : (
-    "primary": #073763,
-    "accent": #E4572E,
+    "primary": #0164C8,
+    "accent": #F7B32B,
+    "tertiary": #E0607E,
 
     // Semantics
     "success": #9FD356,
     "danger": #960200,
-    "warning": #EDA921,
+    "warning": #F0A91B,
     "info": #0074D9,
 
     // Gray Scale
-    "white": #ffffff,
+    "white": #FBFBFB,
     "silver": #dddddd,
     "gray": #aaaaaa,
     "dark": #333333,
@@ -35,9 +36,10 @@ $theme-defaults: (
 
 //Font Families
 /* Import */
-@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-$sans-serif: "Open Sans",Helvetica, Verdana, sans-serif;
+$alt-serif: "Open Sans",Helvetica, Verdana, sans-serif;
+$sans-serif: "Ubuntu",Helvetica, Verdana, sans-serif;
 $serif: 'Lora', Georgia, "Times New Roman", serif;
 $mono: "Source Code Pro", Courier, mono;
 

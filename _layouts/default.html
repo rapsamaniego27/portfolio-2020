@@ -1,18 +1,35 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
   <head>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1"> 
+    <meta name="og:title" property="og:title" content="HTML Webpack">
+    <meta name="description"
+      content="This is my own boilerplate in making Front End Projects. I'm currently using Laravel Mix and Webpack.">
+    <meta property="og:image" content="#">
+    <meta property="og:url" content="#">
+    
+    
     <title>{{ page.title }} - {{ site.title }}</title>
+    
+    <!-- Row Styles -->
     <link rel="stylesheet" href="{{site.baseurl}}/dist/style.min.css">
+    <link rel="shortcut icon" href="#">
   </head>
   <body>
     
-    {% include nav.html %}
+  <div id="wrapper">
+    <header>
+      <!-- Header here -->
+    </header>
+    <div id="main">
+      
+    </div>
+    <footer>
+      footer
+    </footer>
+  </div>
 
-    {{ content}}
 
-    {% include footer.html %}
     
     <script src="{{site.baseurl}}/dist/app.js"></script>
   </body>
