@@ -15,3 +15,7 @@
   @include btn-background(color('warning'));
 }
 
+.btn-primary{
+  @include btn-background(color('primary'));
+}
+

@@ -19,10 +19,78 @@
     
   <div id="wrapper">
     <header>
-      <!-- Header here -->
+      <div class="header-logo__section">
+        <a href="#" target="_blank" class="header-logo__link">
+          <h3><span>Ralph</span> <span>Esteva</span></h3>
+        </a>
+      </div>
+      <a href="#" target="_blank" class="menu-bars">
+        <i class="fas fa-bars fa-3x"></i>
+      </a>
     </header>
     <div id="main">
-      
+      <section class="intro">
+        <div class="intro-content col-lg6">
+          <h2 class="head2 hex-primary">I bring life to code</h2>
+          <h4 class="hex-dark">Front End Developer | UI/UX Designer</h4>
+
+          <div class="intro-buttons mt-50">
+            <a href="#" class="btn btn-warning pr-20">See Projects</a>
+            <a href="#" class="btn btn-primary">Download Resume</a>
+          </div>
+        </div>
+
+        <div class="intro-img__section col-lg6">
+          <img src="{{site.baseurl}}/images/ralph.png" class="intro-img__model">
+        </div>
+      </section>
+
+      <section class="summary">
+        <div class="grid-container">
+          <div class="summary-details__section pt-50">
+            <div class="summary-who col-lg6">
+              <div class="summary-who__title">
+                {% include bubble-title.html text='Who am I? '%}
+              </div>
+          
+              <p class="hex-white pt-30 pr-20">
+              Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
+              dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
+              book.
+              <br><br>
+              It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.
+              It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently
+              with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+              </p>
+            </div>
+
+            <div class="summary-what col-lg6">
+              <div class="summary-what__title">
+                {% include bubble-title.html text='What I do? '%}
+              </div>
+            
+              <div class="summary-what__specialties">
+
+                {% include specialty.html level='83' title='Web and Banner Design' %}
+
+                {% include specialty.html level='97' title='Front End and Static Sites' %}
+
+                {% include specialty.html level='78' title='Back End Development' %}
+
+                {% include specialty.html level='90' title='Wordpress' %}
+
+              </div>
+            </div>
+          </div>
+          
+          <div class="sample-projects__section">
+            <div class="sample-projects__title">
+              {% include bubble-title.html text='Sample Projects '%}
+            </div>
+          </div>
+        </div>
+      </section>
+
     </div>
     <footer>
       footer
@@ -32,5 +100,6 @@
 
     
     <script src="{{site.baseurl}}/dist/app.js"></script>
+    <script src="https://kit.fontawesome.com/e33b567028.js" defer></script>
   </body>
 </html>

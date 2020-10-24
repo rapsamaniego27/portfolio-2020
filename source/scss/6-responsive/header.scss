@@ -5,13 +5,22 @@
 
 @media #{$device-md} {
  /* Insert code laptop size here */
-
+  header{
+    width:90vw;
+    margin:0 auto;
+  }
 }
 
 
 @media #{$device-sm} {
  /* Insert code tablet size here */
+  header{
+    padding:1rem 0 0.75rem 0;
+  }
 
+  .fa-bars{
+    font-size:32px !important;
+  }
 }
 
 @media #{$device-xs} {

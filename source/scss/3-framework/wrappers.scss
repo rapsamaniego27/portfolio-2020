@@ -27,7 +27,7 @@
 /* ===================== */
 // Loop through these classes to have max-width of 1366px
 // And response to 900 px if it's in Laptop Mode
-  $classes: (hero, grid-container, grid__custom);
+  $classes: (hero, grid-container, grid__custom, intro);
 
   @each $class in $classes{
     .#{$class}{

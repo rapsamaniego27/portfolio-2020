@@ -1,55 +1,23 @@
 
 
 header{
-  background:var(--light);
-  padding: 1rem 0;
-  box-shadow: 0px 0px 20px rgba(0,0,0,0.25);
+  background:var(--white);
+  padding: 1.5rem 0;
+  display:flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 1366px;
+  margin:0 auto;
 }
 
-.logo{
-  width:150px;
-}
+.header-logo__link{
 
-
-.top-menu{
-  list-style-type:none;
-  margin:0;
-  padding:0;
-  display:none;
-  
-  @media screen and (min-width:992px){
-    display:flex;
+  span:nth-of-type(1){
+    color:var(--primary);
   }
-
-  li{
-    list-style-type:none;
-    a{
-      display:block;
-      padding: 0.25rem 1rem;
-      color: var(--dark);
-      font-size:1rem;
-      font-weight:bold;
-    }
-  }
-
-}
-
-#hero{
-  height:300px;
-  width:100%;
-  background: url('images/hero.jpg') #f0f0f0;
-  background-size: cover;
-
-  h1{
-    color:var(--light);
-  }
-
-  @media screen and (min-width:768px){
-    height:450px;
-  }
-
-  @media screen and (min-width:1200px){
-    height:550px;
+  span:nth-of-type(2){
+    color:var(--accent);
   }
 }
+
 

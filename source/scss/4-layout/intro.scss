@@ -1,0 +1,15 @@
+.intro{
+ display:flex;
+ justify-content:space-between;
+ align-items: center;
+ position:relative;
+
+ .intro-img__section{
+  position:relative;
+  background:url('../images/blob.svg') no-repeat center;
+  display:flex;
+  justify-content:center;
+  align-items: center;
+ }
+
+}
