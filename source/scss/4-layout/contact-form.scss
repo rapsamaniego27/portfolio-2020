@@ -1,0 +1,44 @@
+.contact-form__section{
+ border-radius:1rem;
+}
+
+.contact-form{
+ background: #F1F8FF;
+}
+
+.contact-form__content{
+ background:var(--primary);
+}
+
+.contact-form__wrapper {
+ display:flex;
+}
+
+.contact-form__inner{
+ padding: 40px;
+}
+
+.form-group{
+ label{
+  font-size:25px;
+  color:var(--primary);
+  display:block;
+  font-weight: var(--weight-bold);
+ }
+ input{
+  width:95%;
+  border-radius: 0.35rem;
+  border:1px solid #CCCCCC ;
+  outline:none;
+  background-color:none;
+  padding:5px 10px;
+  height:20px;
+ }
+
+ textarea{
+  width:95%;
+  border-radius: 0.5rem;
+  border-color:#CCCCCC !important;
+  padding:5px 10px;
+ }
+}
