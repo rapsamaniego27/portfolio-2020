@@ -1,0 +1,17 @@
+.avatar-circle{
+  background: var(--accent);
+  width:160px;
+  height:160px;
+  border-radius: 50%;
+  overflow:hidden;
+  position:relative;
+
+  .avatar-img{
+   object-fit: cover;
+   width:95%;
+   height:95%;
+   position:absolute;
+   top:10px;
+   left:0;
+  }
+}

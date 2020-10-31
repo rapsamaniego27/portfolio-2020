@@ -41,7 +41,7 @@
         </div>
 
         <div class="intro-img__section col-lg6">
-          <img src="{{site.baseurl}}/images/ralph.png" class="intro-img__model">
+          <img src="{{site.baseurl}}/images/ralph.png" class="intro-img__model" loading=lazy>
         </div>
       </section>
 
@@ -108,7 +108,7 @@
       <section class="contact-form__section mt-60 mb-60">
         <div class="contact-form__wrapper grid-container">
           <!-- Col 1 -->
-          <div class="contact-form col-lg5">
+          <div class="contact-form col-lg6">
             <form action="" class="contact-form__inner">
               <div class="form-group">
                 <label for="name">Name: </label>
@@ -130,8 +130,23 @@
           </div>
 
           <!-- Col 2 -->
-          <div class="contact-form__content col-lg7">
-            <h2>content to</h2>
+          <div class="contact-form__content col-lg6">
+            <div class="contact-form__heading-container">
+              <h2 class="contact-form__heading hex-white">Here's my contact form,<br>
+                so email me maybe?
+              </h2>
+              <div class="avatar-circle">
+                <img src="../images/ralph-call.png" alt="Ralph Banana" title="Ralph Banana" class="avatar-img" loading=lazy>
+              </div>
+            </div>
+            <div class="contact-form__question-container pt-20">
+              <img src="../images/letter.svg" alt="Contact SVG" title="Contact SVG" class="contact-form__question-svg mr-20 ml-20" loading=lazy>
+              <p class="contact-form__question hex-white pr-20 pl-20">
+                Projects? Questions or just a plain Hello?
+                <br><br>
+                Feel free to send a message.
+              </p>
+            </div>
           </div>
         </div>
       </section>

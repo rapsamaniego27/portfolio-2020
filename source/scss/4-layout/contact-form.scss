@@ -4,10 +4,17 @@
 
 .contact-form{
  background: #F1F8FF;
+ border-top-left-radius: 24px;
+ border-bottom-left-radius: 24px;
+ box-shadow: 0 0 6px #ccc;
 }
 
 .contact-form__content{
  background:var(--primary);
+ padding:40px 30px;
+ border-top-right-radius: 24px;
+ border-bottom-right-radius: 24px;
+ box-shadow: 0 0 6px #ccc;
 }
 
 .contact-form__wrapper {
@@ -41,4 +48,18 @@
   border-color:#CCCCCC !important;
   padding:5px 10px;
  }
+}
+
+.contact-form__heading-container, .contact-form__question-container{
+ display:flex;
+ justify-content:space-around;
+ align-items: center;
+}
+
+.contact-form__question{
+ font-size:1.5rem;
+}
+
+.contact-form__question-svg{
+ width:180px;
 }
