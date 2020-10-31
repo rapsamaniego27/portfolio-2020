@@ -7,18 +7,25 @@
  border-top-left-radius: 24px;
  border-bottom-left-radius: 24px;
  box-shadow: 0 0 6px #ccc;
+ 
 }
 
 .contact-form__content{
  background:var(--primary);
- padding:40px 30px;
+ padding:40px 0;
  border-top-right-radius: 24px;
  border-bottom-right-radius: 24px;
  box-shadow: 0 0 6px #ccc;
+
+ display:flex;
+ justify-content:space-around;
+ align-items: center;
+ flex-direction: column;
 }
 
 .contact-form__wrapper {
  display:flex;
+
 }
 
 .contact-form__inner{
@@ -38,26 +45,33 @@
   border:1px solid #CCCCCC ;
   outline:none;
   background-color:none;
-  padding:5px 10px;
+  padding:7px 10px;
   height:20px;
+  font-size:16px;
+  color:var(--black);
  }
 
  textarea{
   width:95%;
   border-radius: 0.5rem;
-  border-color:#CCCCCC !important;
-  padding:5px 10px;
+  border:1px solid #CCCCCC ;
+  padding:7px 10px;
+  outline:none;
+  background-color:none;
+  font-size:16px;
+  color:var(--black);
  }
 }
 
 .contact-form__heading-container, .contact-form__question-container{
  display:flex;
- justify-content:space-around;
  align-items: center;
+ justify-content: space-between;
+ width:80%;
 }
 
 .contact-form__question{
- font-size:1.5rem;
+ font-size:1.2rem;
 }
 
 .contact-form__question-svg{

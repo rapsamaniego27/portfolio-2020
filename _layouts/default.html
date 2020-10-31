@@ -18,7 +18,7 @@
   <body>
     
   <div id="wrapper">
-    <header>
+    <header class="header">
       <div class="header-logo__section">
         <a href="#" target="_blank" class="header-logo__link">
           <h3><span>Ralph</span> <span>Esteva</span></h3>
@@ -30,7 +30,7 @@
     </header>
     <div id="main">
       <section class="intro">
-        <div class="intro-content col-lg6">
+        <div class="intro-content col-lg6 col-md6 align-content-center pl-lg-30 pr-lg-30 pt-md-40">
           <h2 class="head2 hex-primary">I bring life to code</h2>
           <h4 class="hex-dark">Front End Developer | UI/UX Designer</h4>
 
@@ -40,20 +40,20 @@
           </div>
         </div>
 
-        <div class="intro-img__section col-lg6">
+        <div class="intro-img__section col-lg6 col-md6 align-content-center mt-md-40">
           <img src="{{site.baseurl}}/images/ralph.png" class="intro-img__model" loading=lazy>
         </div>
       </section>
 
-      <section class="summary">
+      <section class="summary pt-60 pb-60 pr-lg-30 pl-lg-30">
         <div class="grid-container">
-          <div class="summary-details__section pt-50">
-            <div class="summary-who col-lg6">
-              <div class="summary-who__title">
+          <div class="summary-details__section">
+            <div class="summary-who col-md6 col-sm12">
+              <div class="summary-who__title pl-lg-30">
                 {% include bubble-title.html text='Who am I? '%}
               </div>
           
-              <p class="hex-white pt-30 pr-20">
+              <p class="hex-white pt-30 pr-30 pr-sm-10 align-content-center ">
               Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard
               dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen
               book.
@@ -64,12 +64,12 @@
               </p>
             </div>
 
-            <div class="summary-what col-lg6">
-              <div class="summary-what__title">
+            <div class="summary-what col-md6 col col-sm12">
+              <div class="summary-what__title pl-lg-30 mt-md-40">
                 {% include bubble-title.html text='What I do? '%}
               </div>
             
-              <div class="summary-what__specialties">
+              <div class="summary-what__specialties pl-20 pr-20 mt-sm-50">
 
                 {% include specialty.html level='83' title='Web and Banner Design' %}
 
@@ -83,8 +83,8 @@
             </div>
           </div>
           
-          <div class="sample-projects__section">
-            <div class="sample-projects__title">
+          <div class="sample-projects__section mt-40">
+            <div class="sample-projects__title pl-lg-30 pt-sm-40">
               {% include bubble-title.html text='Sample Projects '%}
             </div>
 
@@ -105,41 +105,45 @@
 
 
       <!-- Row Contact Form -->
-      <section class="contact-form__section mt-60 mb-60">
-        <div class="contact-form__wrapper grid-container">
-          <!-- Col 1 -->
-          <div class="contact-form col-lg6">
+      <section class="contact-form__section mt-60 mb-60 pr-md-30 pl-md-30">
+        <div class="contact-form__wrapper grid-container ">
+          <!-- Row 1 -->
+          <div class="contact-form col-lg6 col-xs12">
             <form action="" class="contact-form__inner">
               <div class="form-group">
                 <label for="name">Name: </label>
-                <input type="text" id="name" name="name">
+                <input type="text" id="name" name="name" class="mt-10">
               </div>
 
-              <div class="form-group">
+              <div class="form-group mt-20">
                 <label for="email">Email: </label>
-                <input type="text" id="email" name="email">
+                <input type="text" id="email" name="email" class="mt-10">
               </div>
 
-              <div class="form-group">
+              <div class="form-group mt-20">
                 <label for="message">Message: </label>
-                <textarea name="message" id="message" cols="30" rows="10"></textarea>
+                <textarea name="message" id="message" cols="30" rows="10" class="mt-10"></textarea>
               </div>
 
-              <a href="#" target="_blank" class="btn btn-warning">Send Message</a>
+              <a href="#" target="_blank" class="btn btn-warning mt-30">Send Message</a>
             </form>
           </div>
 
-          <!-- Col 2 -->
-          <div class="contact-form__content col-lg6">
+          <!-- Row 2 -->
+          <div class="contact-form__content col-lg6 col-xs12">
             <div class="contact-form__heading-container">
-              <h2 class="contact-form__heading hex-white">Here's my contact form,<br>
-                so email me maybe?
-              </h2>
-              <div class="avatar-circle">
-                <img src="../images/ralph-call.png" alt="Ralph Banana" title="Ralph Banana" class="avatar-img" loading=lazy>
+              <div class="col-md8">
+                <h3 class="contact-form__heading hex-white">Here's my contact form,<br>
+                  so email me maybe?
+                </h3>
               </div>
+             <div class="col-md4 avatar-container">
+                <div class="avatar-circle">
+                  <img src="../images/ralph-call.png" alt="Ralph Banana" title="Ralph Banana" class="avatar-img" loading=lazy>
+                </div>
+             </div>
             </div>
-            <div class="contact-form__question-container pt-20">
+            <div class="contact-form__question-container mt-md-30 mr-30 ml-30">
               <img src="../images/letter.svg" alt="Contact SVG" title="Contact SVG" class="contact-form__question-svg mr-20 ml-20" loading=lazy>
               <p class="contact-form__question hex-white pr-20 pl-20">
                 Projects? Questions or just a plain Hello?
@@ -176,7 +180,7 @@
         <a href="#" target="_blank" class="footer-extras__link hex-white">Site info</a> <span class="footer-extra__seperator pr-10 pl-10">|</span>
         <a href="#" target="_blank" class="footer-extras__link hex-white">Alternate Profile</a>
       </div>
-    </p>
+    </footer>
   </div>
 
 

@@ -1,0 +1,31 @@
+@media #{$device-sm}{
+  .contact-form__wrapper{
+   flex-wrap:wrap;
+   flex-direction: column-reverse;
+ }
+
+ .contact-form{
+   border-top-left-radius: 0;
+   border-bottom-right-radius: 24px;
+ }
+
+ .contact-form__content{
+   border-bottom-right-radius: 0;
+   border-top-left-radius: 24px;
+   padding:40px 0;
+ }
+
+ .contact-form__question-container{
+   padding-left:30px;
+   padding-right:30px;
+ }
+
+ .contact-form__question-svg{
+   width: 120px
+ }
+
+ .contact-form__question{
+   font-size:16px;
+ }
+
+}

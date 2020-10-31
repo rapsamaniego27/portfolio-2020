@@ -4,12 +4,18 @@
  align-items: center;
  position:relative;
 
+
  .intro-img__section{
   position:relative;
-  background:url('../images/blob.svg') no-repeat center;
+  background:url('../images/blob.svg') center / contain no-repeat ;
   display:flex;
   justify-content:center;
   align-items: center;
  }
+ 
 
+}
+
+ .intro-img__model{
+  max-width:397px;
 }

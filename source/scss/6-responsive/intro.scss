@@ -1,0 +1,12 @@
+
+
+@media #{$device-sm}{
+
+ .intro{
+   flex-wrap: wrap;
+ }
+
+ .intro-img__model{
+   max-width:40vw;
+ }
+}
