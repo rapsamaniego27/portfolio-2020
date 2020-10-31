@@ -4342,3 +4342,15 @@ h3 {
     padding: 30px 20px;
   }
 }
+@media only screen and (max-width: 480px) {
+  .contact-form__heading-container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
+
+  .contact-form__heading {
+    margin-top: 20px;
+    font-size: 1.25rem;
+  }
+}

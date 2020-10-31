@@ -32,5 +32,17 @@
  .contact-form__inner{
    padding:30px 20px;
  }
+ 
 
+}
+
+@media #{$device-xs}{
+   .contact-form__heading-container{
+   flex-direction: column-reverse;
+ }
+
+  .contact-form__heading{
+    margin-top:20px;
+    font-size:1.25rem;
+  }
 }
