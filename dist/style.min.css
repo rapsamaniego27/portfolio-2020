@@ -3994,7 +3994,7 @@ footer p {
 
 .sample-projects__title {
   display: block;
-  width: 350px;
+  max-width: 350px;
   margin: 0 auto;
 }
 
@@ -4284,6 +4284,26 @@ h3 {
   .intro-img__model {
     max-width: 40vw;
   }
+
+  .intro-buttons {
+    display: -webkit-box;
+    display: flex;
+    -webkit-box-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+            align-items: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .intro-buttons a {
+    width: 70vw;
+  }
+
+  .intro-position {
+    font-size: 1rem;
+    margin-top: 10px;
+  }
 }
 @media only screen and (max-width: 800px) {
   .contact-form__wrapper {
@@ -4307,6 +4327,7 @@ h3 {
   .contact-form__question-container {
     padding-left: 30px;
     padding-right: 30px;
+    display: none;
   }
 
   .contact-form__question-svg {
@@ -4315,5 +4336,9 @@ h3 {
 
   .contact-form__question {
     font-size: 16px;
+  }
+
+  .contact-form__inner {
+    padding: 30px 20px;
   }
 }

@@ -9,4 +9,20 @@
  .intro-img__model{
    max-width:40vw;
  }
+
+ .intro-buttons{
+   display:flex;
+   justify-content:center;
+   align-items: center;
+   flex-direction: column;
+
+   a{
+     width:70vw;
+   }
+ }
+
+ .intro-position{
+   font-size:1rem;
+   margin-top:10px;
+ }
 }
