@@ -534,6 +534,35 @@ p {
           animation: show-element 2s;
 }
 
+@-webkit-keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+
+@keyframes bounce {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.35);
+            transform: scale(1.35);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @media only screen and (min-width: 576px) {
   /* Loop for Grid Breakpoint System */
   .col-sm1 {
@@ -3751,8 +3780,55 @@ h3 {
 }
 
 footer {
-  background-color: #000;
+  background: var(--primary);
   color: #fff;
+}
+footer p {
+  text-align: center;
+}
+
+.social-media__links {
+  width: 260px;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.social-media__links .social-media {
+  background: var(--accent);
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-block;
+  position: relative;
+  margin: 0 5px;
+}
+.social-media__links .social-media:hover {
+  -webkit-animation: bounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+          animation: bounce 0.4s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+.social-media__links .social-media i {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-size: 1.2rem;
+}
+
+.footer-extras {
+  width: 100%;
+  margin: 0 auto;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
 }
 
 .intro {
