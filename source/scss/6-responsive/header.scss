@@ -5,7 +5,7 @@
 
 @media #{$device-md} {
  /* Insert code laptop size here */
-  header{
+  .header__wrapper{
     width:90vw;
     margin:0 auto;
   }
@@ -15,11 +15,16 @@
 @media #{$device-sm} {
  /* Insert code tablet size here */
   header{
-    padding:1rem 0 0.75rem 0;
+    padding:0;
   }
 
   .fa-bars{
     font-size:32px !important;
+  }
+
+  .header__wrapper{
+    padding-left: 0.35rem;
+    padding-right: 0.35rem;
   }
 }
 

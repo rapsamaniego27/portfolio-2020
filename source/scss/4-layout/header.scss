@@ -2,13 +2,20 @@
 
 header{
   background:var(--white);
-  padding: 1.5rem 0;
+   position:sticky;
+  top:0;
+  z-index:2000;
+  width:100%;
+}
+
+.header__wrapper{
+  padding: 1.5rem;
   display:flex;
   justify-content: space-between;
   align-items: center;
-  width: 1366px;
-  margin:0 auto;
 }
+
+
 
 .header-logo__link{
 

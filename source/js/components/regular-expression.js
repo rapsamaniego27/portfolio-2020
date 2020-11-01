@@ -8,7 +8,7 @@ const str = 'Hello';
 
 //Log Results
 const result = pattern.exec(str);
-console.log(result);
+//console.log(result);
 
 
 /* Function to test if the str passes the pattern. */
@@ -20,4 +20,4 @@ function patternTest(pattern, str){
  }
 }
 
-patternTest(pattern, str);
+//patternTest(pattern, str);

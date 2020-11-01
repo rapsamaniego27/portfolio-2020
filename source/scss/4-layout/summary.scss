@@ -61,18 +61,20 @@
  width:100%;
  height:10px;
  border-radius:10px;
+ overflow:hidden;
 
  .specialty-inner{
   background:var(--accent);
   height:100%;
   border-radius:10px;
+  transform:translateX(-100%);
  }
 }
 
 .sample-projects{
   display:grid;
   gap:1rem;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr) );
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr) );
   align-items:center;
 }
 
@@ -91,6 +93,7 @@
   position:relative;
   z-index: 1;
   overflow:hidden;
+  transform: scale(0);
  
 
   &:hover > .sample-overlay{

@@ -19,14 +19,16 @@
     
   <div id="wrapper">
     <header class="header">
-      <div class="header-logo__section">
-        <a href="#" target="_blank" class="header-logo__link">
-          <h3><span>Ralph</span> <span>Esteva</span></h3>
+      <div class="header__wrapper">
+        <div class="header-logo__section">
+          <a href="#" target="_blank" class="header-logo__link">
+            <h3><span>Ralph</span> <span>Esteva</span></h3>
+          </a>
+        </div>
+        <a href="#" target="_blank" class="menu-bars" id="menuOpen">
+          <i class="fas fa-bars fa-3x"></i>
         </a>
       </div>
-      <a href="#" target="_blank" class="menu-bars">
-        <i class="fas fa-bars fa-3x"></i>
-      </a>
     </header>
     <div id="main">
       <section class="intro">
@@ -40,7 +42,7 @@
           </div>
         </div>
 
-        <div class="intro-img__section col-lg6 col-md6 align-content-center mt-md-40">
+        <div class="intro-img__section col-lg6 col-md6 align-content-center mt-lg-40">
           <img src="{{site.baseurl}}/images/ralph.png" class="intro-img__model" loading=lazy>
         </div>
       </section>
@@ -105,7 +107,7 @@
 
 
       <!-- Row Contact Form -->
-      <section class="contact-form__section mt-60 mb-60 pr-md-20 pl-md-20">
+      <section class="contact-form__section mt-60 mb-60 pr-lg-20 pl-lg-20">
         <div class="contact-form__wrapper grid-container ">
           <!-- Row 1 -->
           <div class="contact-form col-lg6 col-xs12">
@@ -182,9 +184,9 @@
       </div>
     </footer>
     
-      <div class="menu-overlay">
+      <div class="menu-overlay" id="menuOverlay">
         <a href="#" target="_blank" class="menu-close hex-white" id="menuClose"><i class="fa fa-close"></i></a>
-        <ul class="menu-nav">
+        <ul class="menu-nav" id="menuNav">
           <li class="menu-item">
             <a href="#" target="_blank" class="menu-link hex-white head2">Portfolio</a>
           </li>
@@ -201,7 +203,12 @@
       </div>
   </div>
   
-    
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"
+      integrity="sha512-IQLehpLoVS4fNzl7IfH8Iowfm5+RiMGtHykgZJl9AWMgqx0AmJ6cRWcB+GaGVtIsnC4voMfm8f2vwtY+6oPjpQ=="
+      crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"
+      integrity="sha512-wK2NuxEyN/6s53M8G7c6cRUXvkeV8Uh5duYS06pAdLq4ukc72errSIyyGQGYtzWEzvVGzGSWg8l79e0VkTJYPw=="
+      crossorigin="anonymous"></script>
     <script src="{{site.baseurl}}/dist/app.js"></script>
     <script src="https://kit.fontawesome.com/e33b567028.js" defer></script>
   </body>

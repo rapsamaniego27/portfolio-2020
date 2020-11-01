@@ -7,12 +7,15 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  clip-path: circle(0%);
+  overflow:hidden;
+
 
   .menu-close{
-   font-size:72px !important;
+   font-size:60px !important;
    position:absolute;
-   top:20px;
-   right:60px;
+   top:15px;
+   right:30px;
   }
 }
 
@@ -25,6 +28,8 @@
   
  .menu-item{
   position:relative;
+  opacity:0;
+  transform: translateY(-50px);
 
   &::before, 
   &::after{
@@ -58,4 +63,8 @@
   }
 
  }
+}
+
+.menu--hide{
+  overflow:hidden !important;
 }

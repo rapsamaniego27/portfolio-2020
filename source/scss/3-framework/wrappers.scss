@@ -27,7 +27,7 @@
 /* ===================== */
 // Loop through these classes to have max-width of 1366px
 // And response to 900 px if it's in Laptop Mode
-  $classes: (hero, grid-container, grid__custom, intro, header, summary-details__section);
+  $classes: (hero, grid-container, grid__custom, intro, summary-details__section, header__wrapper);
 
   @each $class in $classes{
     .#{$class}{
@@ -37,9 +37,9 @@
     }
 
     //Laptop Media Query
-    @media (max-width:1366px){
+    @media (max-width:1400px){
       .#{$class}{
-        max-width: 1200px;
+        max-width: 1100px;
       }
     }
 
