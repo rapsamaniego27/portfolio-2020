@@ -29,8 +29,8 @@ class Scroll{
     trigger: '.sample-projects__title',
     toggleActions: "restart none none none"
    },
-   duration:0.4,
-   stagger:0.2,
+   duration:0.5,
+   stagger:0.5,
    scale:1,
    ease: "expoScale(0, 1, power2.in)"
   });

@@ -4244,11 +4244,6 @@ h3 {
   width: 180px;
 }
 
-input:focus, textarea:focus, select:focus {
-  outline: 0;
-  box-shadow: 0 0 0 2px transparent, 0 0 0 2px var(--accent);
-}
-
 .btn-success {
   background-color: #9FD356;
   color: #fff;

@@ -78,9 +78,3 @@
  width:180px;
 }
 
-input, textarea, select{
- &:focus{
-     outline: 0;
-     box-shadow: 0 0 0 2px transparent, 0 0 0 2px var(--accent);
-  }
-}
