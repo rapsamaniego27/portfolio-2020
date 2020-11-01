@@ -212,6 +212,19 @@ a {
   outline: 0;
 }
 
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px var(--accent);
+}
+
+::-moz-selection {
+  background: var(--accent);
+}
+
+::selection {
+  background: var(--accent);
+}
+
 /* Gets the color from the theme defaults */
 /* Passes in the color thens searches for the Group name called colors
    then map-get the color
@@ -3972,6 +3985,11 @@ footer p {
           justify-content: center;
   -webkit-box-align: center;
           align-items: center;
+  -webkit-transition: all 0.4s ease-in-out;
+  transition: all 0.4s ease-in-out;
+}
+.footer-extras .footer-extras__link:hover {
+  color: var(--accent) !important;
 }
 
 .intro {
@@ -4226,21 +4244,30 @@ h3 {
   width: 180px;
 }
 
+input:focus, textarea:focus, select:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 2px var(--accent);
+}
+
 .btn-success {
   background-color: #9FD356;
   color: #fff;
 }
 .btn-success:hover {
-  background: #87c333;
+  background: #8dcb36;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fcfcfc;
 }
 .btn-success:active {
-  background: #79af2e;
+  background: #7cb32f;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f2f2f2;
+}
+.btn-success:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 3px #9FD356;
 }
 
 .btn-danger {
@@ -4248,16 +4275,20 @@ h3 {
   color: #fff;
 }
 .btn-danger:hover {
-  background: #630100;
+  background: #6d0100;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fcfcfc;
 }
 .btn-danger:active {
-  background: #4a0100;
+  background: #4f0100;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f2f2f2;
+}
+.btn-danger:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 3px #960200;
 }
 
 .btn-info {
@@ -4265,16 +4296,20 @@ h3 {
   color: #fff;
 }
 .btn-info:hover {
-  background: #0059a6;
+  background: #005eb0;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fcfcfc;
 }
 .btn-info:active {
-  background: #004b8d;
+  background: #004e92;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f2f2f2;
+}
+.btn-info:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 3px #0074D9;
 }
 
 .btn-warning {
@@ -4282,16 +4317,20 @@ h3 {
   color: #fff;
 }
 .btn-warning:hover {
-  background: #cb8c0d;
+  background: #d4920e;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fcfcfc;
 }
 .btn-warning:active {
-  background: #b37b0c;
+  background: #b87e0c;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f2f2f2;
+}
+.btn-warning:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 3px #F0A91B;
 }
 
 .btn-primary {
@@ -4299,16 +4338,20 @@ h3 {
   color: #fff;
 }
 .btn-primary:hover {
-  background: #014b95;
+  background: #01509f;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #fcfcfc;
 }
 .btn-primary:active {
-  background: #013e7c;
+  background: #014081;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
   color: #f2f2f2;
+}
+.btn-primary:focus {
+  outline: 0;
+  box-shadow: 0 0 0 2px transparent, 0 0 0 3px #0164C8;
 }
 
 .avatar-circle {
@@ -4443,6 +4486,7 @@ h3 {
   .contact-form__heading {
     margin-top: 20px;
     font-size: 1.25rem;
+    text-align: center;
   }
 }
 @media only screen and (max-width: 1366px) {

@@ -6,14 +6,19 @@
   color:#fff;
   
   &:hover{
-    background:darken($background, 10%);
+    background:darken($background, 8%);
     transition: all 0.3s ease;
     color:darken(#fff, 1%);
   }
   &:active{
-    background:darken($background, 15%);
+    background:darken($background, 14%);
     transition: all 0.3s ease;
     color:darken(#fff, 5%);
+  }
+
+  &:focus{
+     outline: 0;
+     box-shadow: 0 0 0 2px transparent, 0 0 0 3px $background;
   }
 }
 

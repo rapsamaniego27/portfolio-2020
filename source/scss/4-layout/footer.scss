@@ -45,4 +45,11 @@ footer{
   display:flex;
   justify-content:center;
   align-items: center;
+  transition: all 0.4s ease-in-out;
+
+  .footer-extras__link{
+    &:hover{
+      color:var(--accent) !important;
+    }
+  }
 }
