@@ -24,7 +24,7 @@
  justify-content:space-around;
  align-items: center;
  flex-direction: column;
- height:90vh;
+ height:80vh;
   
  .menu-item{
   position:relative;
@@ -35,7 +35,7 @@
   &::after{
    content:'';
    position:absolute;
-   height:10px;
+   height:8px;
    border-radius:12px;
    width:45%;
    background: var(--primary);
@@ -67,4 +67,8 @@
 
 .menu--hide{
   overflow:hidden !important;
+}
+
+.menu--disable{
+  pointer-events: none;
 }

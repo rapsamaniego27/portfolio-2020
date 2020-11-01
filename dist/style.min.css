@@ -3877,7 +3877,7 @@ header {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
-  height: 90vh;
+  height: 80vh;
 }
 .menu-nav .menu-item {
   position: relative;
@@ -3889,7 +3889,7 @@ header {
 .menu-nav .menu-item::before, .menu-nav .menu-item::after {
   content: "";
   position: absolute;
-  height: 10px;
+  height: 8px;
   border-radius: 12px;
   width: 45%;
   background: var(--primary);
@@ -3917,6 +3917,10 @@ header {
 
 .menu--hide {
   overflow: hidden !important;
+}
+
+.menu--disable {
+  pointer-events: none;
 }
 
 .main-container {

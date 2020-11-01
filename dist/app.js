@@ -78,25 +78,24 @@ class Menuet {
  // Properties
 
  open() {
-  const action = this.isMobile() ? 'touchstart' : 'click';
-
-  this.openTrigger.addEventListener(action, (e) => {
+  this.openTrigger.addEventListener('click', (e) => {
    e.preventDefault();
    
    this.gsapTimeline.play();
    document.querySelector('body').classList.add('menu--hide');
+   this.closeTrigger.classList.remove('menu--disable');
 
   }, false);
  }
 
  close() {
-  const action = this.isMobile() ? 'touchstart' : 'click';
-
-  this.closeTrigger.addEventListener(action, (e) => {
+  this.closeTrigger.addEventListener('click', (e) => {
    e.preventDefault();
 
    this.gsapTimeline.reverse(.5);
    document.querySelector('body').classList.remove('menu--hide');
+   this.closeTrigger.classList.add('menu--disable');
+
   });
  }
 
