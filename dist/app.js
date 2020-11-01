@@ -78,7 +78,9 @@ class Menuet {
  // Properties
 
  open() {
-  this.openTrigger.addEventListener('click', (e) => {
+  const action = this.isMobile() ? 'touchstart' : 'click';
+
+  this.openTrigger.addEventListener(action, (e) => {
    e.preventDefault();
    
    this.gsapTimeline.play();
@@ -88,7 +90,9 @@ class Menuet {
  }
 
  close() {
-  this.closeTrigger.addEventListener('click', (e) => {
+  const action = this.isMobile() ? 'touchstart' : 'click';
+
+  this.closeTrigger.addEventListener(action, (e) => {
    e.preventDefault();
 
    this.gsapTimeline.reverse(.5);
