@@ -1,0 +1,37 @@
+.awards__section{
+ background: var(--accent);
+
+ .bubble{
+  background:var(--primary) !important;
+
+  &::before,
+  &::after{
+   background: var(--primary) !important;
+  }
+ }
+
+ .section-title{
+  max-width:500px !important;
+ }
+}
+
+.award{
+ background:var(--white);
+ width: 614px;
+ height:154px;
+ padding:20px 30px;
+ border-radius: 20px;
+ display:flex;
+ justify-content:space-between;
+ flex-direction: column;
+
+ a{
+  align-self: flex-end;
+ }
+}
+
+.award-container{
+ display:grid;
+ gap:1.5rem 1rem;
+ grid-template-columns: repeat(auto-fit, minmax(600px, 1fr) );
+}

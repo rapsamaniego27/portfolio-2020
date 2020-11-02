@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+
+<head>
+ <meta name="viewport" content="width=device-width, initial-scale=1">
+ <meta name="og:title" property="og:title" content="HTML Webpack">
+ <meta name="description"
+  content="This is my own boilerplate in making Front End Projects. I'm currently using Laravel Mix and Webpack.">
+ <meta property="og:image" content="#">
+ <meta property="og:url" content="#">
+
+
+ <title>{{ page.title }} - {{ site.title }}</title>
+
+ <!-- Row Styles -->
+ <link rel="stylesheet" href="{{site.baseurl}}/dist/style.min.css">
+ <link rel="shortcut icon" href="#">
+</head>
+
+<body>
+
+ <div id="wrapper">
+  <header class="header">
+   <div class="header__wrapper">
+    <div class="header-logo__section">
+     <a href="{{site.baseurl}}/index.html" class="header-logo__link">
+      <h3><span>Ralph</span> <span>Esteva</span></h3>
+     </a>
+    </div>
+    <a href="#" target="_blank" class="menu-bars" id="menuOpen">
+     <i class="fas fa-bars fa-3x"></i>
+    </a>
+   </div>
+  </header>
+
+  <!-- First half of main -->
+  <div id="main">

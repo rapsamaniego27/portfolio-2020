@@ -1,0 +1,25 @@
+.other-tech__section{
+ h2{
+  color:var(--primary) !important;
+ }
+ h4{
+  text-decoration: underline;
+ }
+}
+
+.other-tech__container{
+  max-width:1130px;
+  display:flex;
+  justify-content:space-around;
+  align-items: center;
+  margin:0 auto;
+}
+
+.other-tech__list{
+
+  .other-tech__item{
+  color:var(--dark);
+  padding:10px 0 0 20px;
+  font-size:18px;
+ }
+}
