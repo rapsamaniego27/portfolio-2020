@@ -144,6 +144,9 @@ class Menuet {
  }
 
 }
+function isInPage(node) {
+ return (node === document.body) ? false : document.body.contains(node);
+}
 class Scroll{
  constructor(){
   
@@ -228,11 +231,18 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
 
 
- btnSeeProjects.addEventListener('click', (e)=> {
-   const scroll = new Scroll();
-   e.preventDefault();
-   scroll.smoothScroll(".sample-projects__title", 1000);
- });
+  if (isInPage(btnSeeProjects)){
+
+    btnSeeProjects.addEventListener('click', (e) => {
+      const scroll = new Scroll();
+      e.preventDefault();
+
+      scroll.smoothScroll(".sample-projects__title", 1000);
+     
+    });
+
+  }
+
 
 });
 const navOpen = document.querySelector('#menuOpen');
@@ -274,6 +284,9 @@ function patternTest(pattern, str){
 }
 
 //patternTest(pattern, str);
+function isInPage(node) {
+ return (node === document.body) ? false : document.body.contains(node);
+}
 // require ('bootstrap');
 
 

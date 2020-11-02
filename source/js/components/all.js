@@ -7,10 +7,17 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
 
 
- btnSeeProjects.addEventListener('click', (e)=> {
-   const scroll = new Scroll();
-   e.preventDefault();
-   scroll.smoothScroll(".sample-projects__title", 1000);
- });
+  if (isInPage(btnSeeProjects)){
+
+    btnSeeProjects.addEventListener('click', (e) => {
+      const scroll = new Scroll();
+      e.preventDefault();
+
+      scroll.smoothScroll(".sample-projects__title", 1000);
+     
+    });
+
+  }
+
 
 });
