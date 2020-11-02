@@ -1,0 +1,12 @@
+
+
+@media #{$device-sm}{
+ .award-container{
+  grid-template-columns: 1fr;
+ }
+
+ .award{
+   width:76%;
+  }
+
+}

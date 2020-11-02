@@ -1,0 +1,35 @@
+@media #{$device-sm}{
+ .about-me__container{
+  padding:30px;
+
+  .col-offset-2{
+   margin-left:0;
+  }
+
+
+ }
+
+ .core-technologies__section a {
+    display: block;
+ }
+
+ .core-tech{
+  h5{
+   font-size:1rem;
+  }
+  .stars{
+   font-size:13px;
+  }
+
+ }
+
+ .core{
+  h4{
+   font-size:1rem;
+  }
+
+  .core-icon{
+   font-size:24px;
+  }
+ }
+}

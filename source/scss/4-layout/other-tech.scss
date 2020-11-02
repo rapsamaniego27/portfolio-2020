@@ -8,9 +8,10 @@
 }
 
 .other-tech__container{
-  max-width:1130px;
-  display:flex;
-  justify-content:space-around;
+  max-width:1200px;
+  display:grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items:center;
   align-items: center;
   margin:0 auto;
 }
@@ -22,4 +23,8 @@
   padding:10px 0 0 20px;
   font-size:18px;
  }
+}
+
+.other-tech__category{
+  margin-top:30px;
 }

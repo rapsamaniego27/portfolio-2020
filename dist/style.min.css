@@ -3791,6 +3791,13 @@ footer {
   text-align: center;
 }
 
+.section-title {
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  margin: 0 auto;
+}
+
 header {
   background: var(--white);
   position: -webkit-sticky;
@@ -4267,8 +4274,6 @@ h3 {
 .core-technologies {
   display: -webkit-box;
   display: flex;
-  -webkit-box-align: center;
-          align-items: center;
 }
 
 .core-technologies__section {
@@ -4304,6 +4309,10 @@ h3 {
   margin-top: 20px;
 }
 
+.core-tech__list {
+  padding-left: 20px;
+}
+
 .other-tech__section h2 {
   color: var(--primary) !important;
 }
@@ -4312,10 +4321,10 @@ h3 {
 }
 
 .other-tech__container {
-  max-width: 1130px;
-  display: -webkit-box;
-  display: flex;
-  justify-content: space-around;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  justify-items: center;
   -webkit-box-align: center;
           align-items: center;
   margin: 0 auto;
@@ -4325,6 +4334,10 @@ h3 {
   color: var(--dark);
   padding: 10px 0 0 20px;
   font-size: 18px;
+}
+
+.other-tech__category {
+  margin-top: 30px;
 }
 
 .awards__section {
@@ -4342,7 +4355,7 @@ h3 {
 
 .award {
   background: var(--white);
-  width: 614px;
+  width: 80%;
   height: 154px;
   padding: 20px 30px;
   border-radius: 20px;
@@ -4361,7 +4374,73 @@ h3 {
 .award-container {
   display: grid;
   gap: 1.5rem 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  grid-template-columns: repeat(2, 1fr);
+  justify-items: center;
+}
+
+.work-exp__section {
+  background: var(--primary);
+}
+.work-exp__section h2 {
+  text-align: center;
+}
+
+.works-container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.work-item {
+  position: relative;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  border-left: 4px solid var(--white);
+  padding: 40px 0 40px 60px;
+}
+.work-item::before {
+  content: "";
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--accent);
+  top: -5px;
+  left: -16px;
+  position: absolute;
+  z-index: 1;
+}
+
+.work-date {
+  text-align: center;
+}
+
+.work-img {
+  width: 132px;
+  height: auto;
+}
+
+.work-extras {
+  width: 340px;
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+  align-self: flex-start;
+}
+
+.work-description {
+  width: 85%;
+}
+
+.work-img--mobile,
+.work-date--mobile {
+  display: none;
 }
 
 .btn-success {
@@ -4609,67 +4688,64 @@ h3 {
     height: 200px;
   }
 }
-.work-exp__section {
-  background: var(--primary);
-}
-.work-exp__section h2 {
-  text-align: center;
-}
+@media only screen and (max-width: 800px) {
+  .about-me__container {
+    padding: 30px;
+  }
+  .about-me__container .col-offset-2 {
+    margin-left: 0;
+  }
 
-.section-title {
-  max-width: 400px;
-  margin: 0 auto;
-}
+  .core-technologies__section a {
+    display: block;
+  }
 
-.works-container {
-  max-width: 1000px;
-  margin: 0 auto;
-}
+  .core-tech h5 {
+    font-size: 1rem;
+  }
+  .core-tech .stars {
+    font-size: 13px;
+  }
 
-.work-item {
-  position: relative;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  border-left: 4px solid var(--white);
-  padding: 40px 0 40px 60px;
+  .core h4 {
+    font-size: 1rem;
+  }
+  .core .core-icon {
+    font-size: 24px;
+  }
 }
-.work-item::before {
-  content: "";
-  width: 21px;
-  height: 21px;
-  border-radius: 50%;
-  background: var(--accent);
-  top: -5px;
-  left: -13px;
-  position: absolute;
-  z-index: 1;
+@media only screen and (max-width: 800px) {
+  .other-tech__item {
+    font-size: 16px !important;
+  }
 }
+@media only screen and (max-width: 800px) {
+  .award-container {
+    grid-template-columns: 1fr;
+  }
 
-.work-date {
-  text-align: center;
+  .award {
+    width: 76%;
+  }
 }
+@media only screen and (max-width: 800px) {
+  .work-extras {
+    display: none;
+  }
 
-.work-img {
-  width: 132px;
-  height: auto;
-}
+  .work-img--mobile {
+    width: 130px;
+    display: block;
+    margin-bottom: 20px;
+  }
 
-.work-extras {
-  width: 340px;
-  display: -webkit-box;
-  display: flex;
-  -webkit-box-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-          align-items: center;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-          flex-direction: column;
-  align-self: flex-start;
-}
+  .work-date--mobile {
+    display: inline;
+    padding-top: 10px;
+    font-size: 14px;
+  }
 
-.work-description {
-  width: 85%;
+  .work-description {
+    width: 96%;
+  }
 }

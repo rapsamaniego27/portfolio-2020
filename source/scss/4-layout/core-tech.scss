@@ -1,6 +1,5 @@
 .core-technologies{
  display:flex;
- align-items: center;
 }
 .core-technologies__section{
   display:flex;
@@ -31,4 +30,8 @@
 
 .core-tech:not(:first-child){
   margin-top:20px;
+}
+
+.core-tech__list{
+  padding-left:20px;
 }
