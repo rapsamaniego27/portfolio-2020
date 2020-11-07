@@ -1,4 +1,5 @@
 
+/* Button Regulars  */
 .btn-success{
   @include btn-background(color('success'));
 }
@@ -19,3 +20,32 @@
   @include btn-background(color('primary'));
 }
 
+/* Button Circulary */
+
+.btn-circle-primary{
+  @include btn-circle-background(color('primary'));
+}
+
+
+.btn-circle-accent{
+  @include btn-circle-background(color('accent'));
+}
+
+
+.btn-circle-tertiary{
+  @include btn-circle-background(color('tertiary'));
+}
+
+/* Button Ghosts */
+
+.btn-ghost-primary{
+  @include btn-ghost-background(color('primary'));
+}
+
+.btn-ghost-accent{
+  @include btn-ghost-background(color('accent'));
+}
+
+.btn-ghost-tertiary{
+  @include btn-ghost-background(color('tertiary'));
+}

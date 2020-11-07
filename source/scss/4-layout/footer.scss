@@ -14,29 +14,6 @@ footer{
   display:flex;
   justify-content:space-between;
   align-items: center;
-
-  .social-media{
-  background:var(--accent);
-  color:#fff;
-  width:40px;
-  height:40px;
-  border-radius: 50%;
-  display:inline-block;
-  position:relative;
-  margin:0 5px;
-
-  &:hover{
-    animation: bounce 0.4s cubic-bezier( 0.68, -0.55, 0.265, 1.55 );
-  }
-
-  i{
-    position:absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size:1.2rem;
-  }
-}
 }
 
 .footer-extras{
