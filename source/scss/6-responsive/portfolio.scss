@@ -1,0 +1,18 @@
+@media #{$device-md}{
+ .portfolio-results__inner{
+   grid-template-columns: repeat(2, 1fr);
+  }
+  .portfolio-result{
+   width:100%;
+  }
+
+  .portfolio-result__content{
+   width:100% !important;
+  }
+}
+
+@media #{$device-xs}{
+ .portfolio-result__content{
+  height:140px !important;
+ }
+}

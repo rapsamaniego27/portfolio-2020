@@ -4434,9 +4434,8 @@ h3 {
 
 .portfolio-results__inner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(285px, 1fr));
-  -webkit-box-align: center;
-          align-items: center;
+  grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
+  justify-items: center;
   gap: 1rem;
 }
 
@@ -4451,6 +4450,7 @@ h3 {
 }
 .portfolio-options .portfolio-item {
   display: inline-block;
+  padding: 10px 10px 0 10px;
 }
 .portfolio-options .portfolio-item:not(:last-child) {
   padding-right: 20px;
@@ -4468,6 +4468,7 @@ h3 {
 .portfolio-result {
   display: inline-block;
   width: 285px;
+  max-width: 100%;
 }
 .portfolio-result .portfolio-result__title-wrapper {
   border-top-right-radius: 12px;
@@ -4485,6 +4486,7 @@ h3 {
   width: 286px;
   height: 196px;
   position: relative;
+  max-width: 100%;
 }
 .portfolio-result .portfolio-result__content:hover > .portfolio-results__overlay {
   background: rgba(var(--black-rgb), 0.8);
@@ -5099,5 +5101,23 @@ h3 {
 
   .work-description {
     width: 96%;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .portfolio-results__inner {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .portfolio-result {
+    width: 100%;
+  }
+
+  .portfolio-result__content {
+    width: 100% !important;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .portfolio-result__content {
+    height: 140px !important;
   }
 }
