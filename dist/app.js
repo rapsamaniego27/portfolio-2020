@@ -147,6 +147,16 @@ class Menuet {
 function isInPage(node) {
  return (node === document.body) ? false : document.body.contains(node);
 }
+class Portfolio{
+ constructor(){
+  
+ }
+
+ //Methods
+ openPortfolioModal(){
+  
+ }
+}
 class Scroll{
  constructor(){
   

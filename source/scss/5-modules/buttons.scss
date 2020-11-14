@@ -20,6 +20,10 @@
   @include btn-background(color('primary'));
 }
 
+.btn-tertiary{
+  @include btn-background(color('tertiary'));
+}
+
 /* Button Circulary */
 
 .btn-circle-primary{
