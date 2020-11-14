@@ -2,4 +2,61 @@
 layout: default
 ---
 
-{{ content }}
+<div class="chapter__container">
+ <div class="chapter-heading__container">
+  <h1 class="chapter-heading hex-primary">{{page.title}}</h1>
+  <p class="chapter-meta">Published on {{ page.date | date: "%-d %B %Y" }} <span class="hex-accent"><strong>{{ page.author }}</strong></span> </p>
+  <img src="{{site.baseurl}}/images/{{page.banner}}" alt="{{ page.title }}" title="{{ page.title }}" class="mt-30">
+ </div>
+
+ <div class="chapter-content__container container__flex mt-30 mb-50">
+  <div class="chapter-content col-9">
+   
+   <div class="chapter-content__meta pl-20 pr-20">
+    <h5 class="hex-dark">Category: Programming</h5>
+    <a href="{{site.baseurl}}/e-diary/" class="hex-tertiary mt-20"><strong>Back to E-diary</strong></a>
+   </div>
+
+   <div class="chapter-content__normal">
+    <p>
+     {{ content }}
+    </p>
+   </div>
+
+   <div class="chapter-content__thumbnail">
+    <p>
+     {{ content }}
+    </p>
+   </div>
+
+   <div class="chapter-content__thumbnail-reverse">
+    <p>
+     {{ content }}
+    </p>
+   </div>
+
+    <a href="{{site.baseurl}}/e-diary/" class="hex-tertiary mr-20 ml-20"><strong>Back to E-diary</strong></a>
+  </div>
+  <aside class="chapter-sidebar col-3 pt-20 pb-50">
+   <div class="chapter-categories__container mt-30">
+    <h4 class="sidebar-title">Other Categories:</h4>
+    <ul class="sidebar-categories__list">
+     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Programming</a></li>
+     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Design</a></li>
+     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Travel</a></li>
+    </ul>
+   </div>
+
+   <div class="chapter-recent__container mt-30">
+    <h4 class="sidebar-title">Recent Chapters:</h4>
+    <ul class="sidebar-categories__list">
+     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Programming</a></li>
+     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Design</a></li>
+     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Travel</a></li>
+    </ul>
+   </div>
+  </aside>
+ </div>
+</div>
+
+

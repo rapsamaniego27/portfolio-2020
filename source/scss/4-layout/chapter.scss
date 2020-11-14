@@ -1,0 +1,60 @@
+.chapter__container{
+ width:1130px;
+ max-width:90%;
+ margin:0 auto;
+}
+
+.chapter-heading{
+ text-align: center;
+}
+
+.chapter-meta{
+ text-align: center;
+}
+
+.chapter-sidebar{
+ background: var(--tertiary);
+ height:max-content;
+}
+
+
+.chapter-content__normal,
+.chapter-content__thumbnail,
+.chapter-content__thumbnail-reverse{
+ padding:20px 30px 20px 20px;
+}
+
+.sidebar-title{
+ color:var(--white);
+ padding:10px 20px;
+}
+
+
+.sidebar-categories__list{
+ width:80%;
+ margin:0 auto;
+
+ .sidebar-category__item{
+ position:relative;
+ padding:5px 0 0 24px;
+
+ &::after{
+  content:'';
+  width:12px;
+  height:12px;
+  background:var(--accent);
+  border-radius: 50%;
+  position:absolute;
+  top:6px;
+  left:4px;
+ }
+
+ .sidebar-category__link{
+  color:var(--white);
+
+  &:hover{
+   text-decoration: underline;
+  }
+ }
+}
+}
