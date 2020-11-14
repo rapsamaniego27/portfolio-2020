@@ -4649,6 +4649,10 @@ h3 {
   text-align: center;
 }
 
+.chapter-banner {
+  width: 100%;
+}
+
 .chapter-meta {
   text-align: center;
 }
@@ -4658,12 +4662,13 @@ h3 {
   height: -webkit-max-content;
   height: -moz-max-content;
   height: max-content;
+  border-radius: 16px;
 }
 
 .chapter-content__normal,
 .chapter-content__thumbnail,
 .chapter-content__thumbnail-reverse {
-  padding: 20px 30px 20px 20px;
+  padding: 10px 30px 10px 20px;
 }
 
 .sidebar-title {
@@ -4677,7 +4682,7 @@ h3 {
 }
 .sidebar-categories__list .sidebar-category__item {
   position: relative;
-  padding: 5px 0 0 24px;
+  padding: 12px 0 0 24px;
 }
 .sidebar-categories__list .sidebar-category__item::after {
   content: "";
@@ -4686,7 +4691,7 @@ h3 {
   background: var(--accent);
   border-radius: 50%;
   position: absolute;
-  top: 6px;
+  top: 13px;
   left: 4px;
 }
 .sidebar-categories__list .sidebar-category__item .sidebar-category__link {
@@ -4694,6 +4699,23 @@ h3 {
 }
 .sidebar-categories__list .sidebar-category__item .sidebar-category__link:hover {
   text-decoration: underline;
+}
+
+/* Chapter Content */
+.chapter-content__thumbnail,
+.chapter-content__thumbnail-reverse {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.chapter-content__thumbnail p {
+  padding-left: 26px;
+}
+
+.chapter-content__thumbnail-reverse p {
+  padding-right: 26px;
 }
 
 /* Button Regulars  */
@@ -5340,5 +5362,28 @@ h3 {
   }
   .diary-result__content .diary-result__paragraph {
     margin-top: 12px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .chapter-content__thumbnail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+  }
+  .chapter-content__thumbnail p {
+    padding: 14px 0 14px 0 !important;
+  }
+
+  .chapter-content__thumbnail-reverse {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: reverse;
+            flex-direction: column-reverse;
+  }
+  .chapter-content__thumbnail-reverse p {
+    padding: 14px 0 14px 0 !important;
+  }
+
+  .chapter-sidebar {
+    margin-top: 40px;
   }
 }

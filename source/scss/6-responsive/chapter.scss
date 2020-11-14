@@ -1,0 +1,21 @@
+@media #{$device-md}{
+ .chapter-content__thumbnail{
+   flex-direction: column;
+
+   p{
+    padding:14px 0 14px 0 !important;
+   }
+ }
+
+  .chapter-content__thumbnail-reverse{
+   flex-direction: column-reverse;
+
+   p{
+    padding:14px 0 14px 0 !important;
+   }
+  }
+
+  .chapter-sidebar{
+   margin-top:40px;
+  }
+}

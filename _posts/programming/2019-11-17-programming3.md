@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Programming 3
+title: The Art of Programming
 meta: There are many variations of passages of Lorem Ipsum available,
 category: programming
 image: pie-chart.jpg

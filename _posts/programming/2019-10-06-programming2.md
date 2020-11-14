@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Programming 2
+title: Confessions of a Programming Freak
 meta: It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
 category: programming
 image: pie-chart.jpg

@@ -8,6 +8,10 @@
  text-align: center;
 }
 
+.chapter-banner{
+ width:100%;
+}
+
 .chapter-meta{
  text-align: center;
 }
@@ -15,13 +19,14 @@
 .chapter-sidebar{
  background: var(--tertiary);
  height:max-content;
+ border-radius: 16px;
 }
 
 
 .chapter-content__normal,
 .chapter-content__thumbnail,
 .chapter-content__thumbnail-reverse{
- padding:20px 30px 20px 20px;
+ padding:10px 30px 10px 20px;
 }
 
 .sidebar-title{
@@ -36,7 +41,7 @@
 
  .sidebar-category__item{
  position:relative;
- padding:5px 0 0 24px;
+ padding:12px 0 0 24px;
 
  &::after{
   content:'';
@@ -45,7 +50,7 @@
   background:var(--accent);
   border-radius: 50%;
   position:absolute;
-  top:6px;
+  top:13px;
   left:4px;
  }
 
@@ -57,4 +62,26 @@
   }
  }
 }
+}
+
+
+
+/* Chapter Content */
+
+.chapter-content__thumbnail,
+.chapter-content__thumbnail-reverse{
+ display:flex;
+ align-items: center;
+}
+
+.chapter-content__thumbnail{
+ p{
+  padding-left:26px;
+ }
+}
+
+.chapter-content__thumbnail-reverse{
+ p{
+  padding-right:26px;
+ }
 }

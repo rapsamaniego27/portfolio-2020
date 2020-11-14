@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Programming One
+title: Technology Overload
 meta: Lorem Ipsum is simply dummy text of the printing and typesetting industry.
 category: programming
 image: pie-chart.jpg
