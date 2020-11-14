@@ -1,0 +1,52 @@
+---
+layout: default
+---
+
+<div class="diaries__container">
+  <h2 class="page-title hex-tertiary">E-diary</h2>
+  <p class="hex-dark page-description pt-20 pb-20 ml-xl-20 mr-xl-20">Welcome to my Diary where I talk about anything about
+   life
+   as a
+   Developer or what it is like to be Ralph.</p>
+
+     <!-- Row Diary Categories -->
+     <div class="diary-categories__container">
+      <div class="diary-categories__wrapper">
+       <h5 class="hex-white pt-20 pb-20 ml-xl-20">Categories: </h5>
+       <ul class="diary-categories pb-20">
+        <li class="diary-category__item">
+          <a href="{{site.baseurl}}/e-diary/" class="diary-category__link {% if page.url == '/e-diary/' %} diary-category--active {% endif %} ">All</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="{{site.baseurl}}/e-diary/programming/" class="diary-category__link {% if page.url == '/e-diary/programming/' %} diary-category--active {% endif %}">Programming</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="{{site.baseurl}}/e-diary/design/" class="diary-category__link {% if page.url == '/e-diary/design/' %} diary-category--active {% endif %}">Design</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="{{site.baseurl}}/e-diary/travel/" class="diary-category__link {% if page.url == '/e-diary/travel/' %} diary-category--active {% endif %}">Travel</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="#" class="diary-category__link">Family</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="#" class="diary-category__link">Health & Wellness</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="#" class="diary-category__link">Social</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="#" class="diary-category__link">Personal</a>
+        </li>
+        <li class="diary-category__item">
+         <a href="#" class="diary-category__link">Travel</a>
+        </li>
+       </ul>
+      </div>
+     </div>
+     <!-- End Diary Categories -->
+
+ {{content}}
+</div>
+
+

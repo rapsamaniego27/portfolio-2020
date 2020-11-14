@@ -3,9 +3,9 @@
  
 }
 
-@media #{$device-md}{
+@media #{$device-sm}{
  .diary-result{
-    height:max-content;
+    height:100%;
  }
   .diary-results{
    grid-template-columns: 1fr;
@@ -37,8 +37,5 @@
   margin-top:12px;
  }
 
- .btn{
-  margin-top:24px;
- }
 }
 }

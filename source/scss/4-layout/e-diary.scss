@@ -24,15 +24,18 @@
 
   .diary-category__link{
    color:var(--white);
+  }
+}
 
-   &::after{
+.diary-category--active{
+  &::after{
      content:'';
      width:100%;
      height:3px;
      background: var(--accent);
      display:block;
+     margin-top:4px;
    }
-  }
 }
 
 .diary-categories{
@@ -80,7 +83,12 @@
  width:50%;
  height:100%;
  padding:0 15px;
+ display:flex;
+ flex-direction: column;
 
+ .diary-result__content-wrapper{
+    flex: 1 0 auto;
+ }
  .diary-result__paragraph{
   font-size:14px;
  }
@@ -95,6 +103,8 @@
  }
 
  .btn{
-  margin-top:15px;
- }
+  margin-bottom:15px;
+  display:inline-table;
+  flex-shrink: 0;
+}
 }

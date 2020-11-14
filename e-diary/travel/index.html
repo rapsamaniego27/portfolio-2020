@@ -1,0 +1,17 @@
+---
+layout: diary
+title: "E-Diary | Travel"
+---
+
+
+<div class="diary-results__container">
+ <p class="portfolio-results__label pl-xl-20">5 results found</p>
+
+ <div class="diary-results mt-30 mb-30">
+
+  {% for chapter in site.categories.travel %}
+    {% include diary-card.html %}
+  {% endfor %}
+
+ </div>
+</div>
