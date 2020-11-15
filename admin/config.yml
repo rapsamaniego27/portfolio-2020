@@ -24,10 +24,12 @@ collections:
        - label: "Summary"
          name: "summary"
          width: "text"
+
     - label: "Sample Projects"
       name: "sample-projects"
       create: true
       folder: "_samples"
+      files: "_samples"
       fields:
        - label: "Layout"
          name: "layout"
