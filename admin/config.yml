@@ -42,9 +42,9 @@ collections:
        
 
   - label: "Chapters"
-    name: "chapter"
+    name: "chapters"
     create: true
-    folder: "_posts"
+    folder: "_posts/"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - label: "Layout"
