@@ -13,12 +13,12 @@ p{
 $text-elements: (
   'h1':(
     size:3rem,
-    mobile-size:2rem,
+    mobile-size:1.75rem,
     weight:var(--weight-bold)
   ),
   'h2':(
     size:2.4375rem,
-    mobile-size:1.75rem,
+    mobile-size:1.5rem,
     weight:var(--weight-bold)
   ),
   'h3':(
@@ -28,7 +28,7 @@ $text-elements: (
   ),
   'h4':(
     size:1.5625rem,
-    mobile-size:1.25rem,
+    mobile-size:1.33rem,
     weight:var(--weight-bold)
   ),
   'h5':(
