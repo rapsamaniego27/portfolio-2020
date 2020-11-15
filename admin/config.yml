@@ -1,6 +1,7 @@
 backend:
   name: github
-  repo: portfolio-2020 # Branch to update (optional; defaults to master)
+  repo: rapsamaniego27/portfolio-2020
+  branch: master
 
 media_folder: "images"
 
@@ -12,7 +13,7 @@ collections:
     files:
     - label: "Website settings"
       name: "site"
-      file: "_data/site.yml"
+      file: "_data/main.yml"
       fields:
        - label: "Tagline"
          name: "tagline"
