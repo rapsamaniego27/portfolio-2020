@@ -71,6 +71,6 @@ collections:
         widget: "markdown"
       - label: "Categories"
         name: "categories"
-        widget: "string"
+        widget: "list"
       
 
