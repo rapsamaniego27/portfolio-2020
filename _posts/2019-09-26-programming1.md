@@ -6,7 +6,7 @@ author: Peter Parker
 date: 2020-11-15T13:44:58.783Z
 image: /images/pie-chart.JPG
 banner: banner.jpg
-category:
+categories:
   - Programming
 ---
 
