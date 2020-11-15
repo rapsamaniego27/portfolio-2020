@@ -2,8 +2,8 @@
 layout: chapter
 title: The Art of Programming
 meta: There are many variations of passages of Lorem Ipsum available,
-category: programming
-image: pie-chart.jpg
+categories: Programming
+image: /images/pie-chart.JPG
 banner: banner.jpg
 author: Peter Parker
 ---

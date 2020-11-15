@@ -44,7 +44,7 @@ collections:
   - label: "Chapters"
     name: "chapters"
     create: true
-    folder: "_posts/design"
+    folder: "_posts"
     slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
     fields:
       - label: "Layout"
@@ -66,7 +66,7 @@ collections:
       - label: "Banner"
         name: "banner"
         widget: "image"
-      - label: "Bidy"
+      - label: "Body"
         name: "body"
         widget: "markdown"
       
