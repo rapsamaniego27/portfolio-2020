@@ -3,3 +3,17 @@ backend:
   repo: portfolio-2020 # Branch to update (optional; defaults to master)
 
 media_folder: "images"
+
+# Allows which files or folders Netlify can edit
+
+collections:
+  - name: "website-settings"
+    label: "Website settings"
+    files:
+    - label: "Website settings"
+      name: "site"
+      file: "_data/site.yml"
+      fields:
+       - label: "Tagline"
+         name: "tagline"
+         width: "string"
