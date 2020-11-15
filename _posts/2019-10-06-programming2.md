@@ -5,7 +5,7 @@ meta: It is a long established fact that a reader will be distracted by the read
 image: /images/pie-chart.JPG
 banner: banner.jpg
 author: Peter Parker
-categories: 
+category: 
   - Programming
 ---
 
