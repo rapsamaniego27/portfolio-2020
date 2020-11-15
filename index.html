@@ -39,14 +39,11 @@ title: "Rap is Cool"
 
     <div class="summary-what__specialties pl-20 pr-20 mt-sm-50">
 
-     {% include specialty.html level='83' title='Web and Banner Design' %}
+     <!-- Loop for Specialties -->
 
-     {% include specialty.html level='97' title='Front End and Static Sites' %}
-
-     {% include specialty.html level='78' title='Back End Development' %}
-
-     {% include specialty.html level='90' title='Wordpress' %}
-
+     {% for specialty in site.data.specialties %}
+       {% include specialty.html %}
+     {% endfor %}
       
     </div>
    </div>
@@ -59,13 +56,11 @@ title: "Rap is Cool"
 
    <div class="sample-projects mt-40">
 
-    {% include sample-projects.html title='Note Along' img='project-card1' %}
+    <!-- Loop for Sample Projects -->
+    {% for sample in site.data.sample-projects %}
+     {% include sample-projects.html %}
+    {% endfor %}
 
-    {% include sample-projects.html title='Name That Movie' img='project-card2' %}
-
-    {% include sample-projects.html title='Folk Ridge' img='project-card3' %}
-
-    
 
    </div>
    <div class="container view-more__container">

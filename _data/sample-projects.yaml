@@ -1,0 +1,12 @@
+  #Array of Sample Projects
+  - name: Note Along
+    link: https://note-along.netlify.app/
+    thumbnail: /images/project-card1.jpg
+
+  - name: Name That Movie
+    link: https://name-that-movie.netlify.app/
+    thumbnail: /images/project-card2.jpg
+
+  - name: Folk Ridge
+    link: #
+    thumbnail: /images/project-card3.jpg

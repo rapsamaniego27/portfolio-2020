@@ -8,13 +8,19 @@ media_folder: "images"
 # Allows which files or folders Netlify can edit
 
 collections:
-  - name: "website-settings"
-    label: "Website settings"
+  - name: "home"
+    label: "Home Fields"
     files:
-    - label: "Website settings"
+    - label: "Home Fields"
       name: "site"
       file: "_data/main.yml"
       fields:
        - label: "Tagline"
          name: "tagline"
          width: "string"
+       - label: "Occupation"
+         name: "occupation"
+         width: "string"
+       - label: "Summary"
+         name: "summary"
+         width: "text"
