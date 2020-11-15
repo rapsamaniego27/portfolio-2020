@@ -66,5 +66,8 @@ collections:
       - label: "Banner"
         name: "banner"
         widget: "image"
+      - label: "Bidy"
+        name: "body"
+        widget: "markdown"
       
 
