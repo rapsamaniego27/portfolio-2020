@@ -29,14 +29,13 @@ collections:
       name: "sample-projects"
       create: true
       folder: "_samples"
-      files: "_samples"
       fields:
        - label: "Layout"
          name: "layout"
          width: "hidden"
          default: "sample"
-       - label: "Name"
-         name: "name"
+       - label: "Title"
+         name: "title"
          width: "string"
        - label: "Link"
          name: "link"
