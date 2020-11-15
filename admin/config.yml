@@ -69,6 +69,8 @@ collections:
       - label: "Body"
         name: "body"
         widget: "markdown"
-
+      - label: "Categories"
+        name: "category"
+        widget: "list"
       
 
