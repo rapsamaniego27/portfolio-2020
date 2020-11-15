@@ -72,5 +72,6 @@ collections:
       - label: "Categories"
         name: "categories"
         widget: "list"
+        default: ["news"]
       
 
