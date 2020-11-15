@@ -30,10 +30,6 @@ collections:
     create: true
     folder: "_samples"
     fields:
-      - label: "Layout"
-        name: "layout"
-        width: "hidden"
-        default: "sample"
       - label: "Title"
         name: "title"
         width: "string"
@@ -44,3 +40,31 @@ collections:
         name: "thumbnail"
         width: "image"
        
+
+  - label: "Chapters"
+    name: "chapter"
+    create: true
+    folder: "_samples"
+    slug: '{{year}}-{{month}}-{{day}}-{{slug}}'
+    fields:
+      - label: "Layout"
+        name: "layout"
+        width: "hidden"
+        default: "chapter"
+      - label: "Title"
+        name: "title"
+        width: "string"
+      - label: "Author"
+        name: "author"
+        width: "string"
+      - label: "Publish Date"
+        name: "date"
+        width: "datetime"
+      - label: "Image"
+        name: "image"
+        width: "image"
+      - label: "Banner"
+        name: "banner"
+        width: "image"
+      
+
