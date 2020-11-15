@@ -25,3 +25,22 @@ collections:
          name: "summary"
          width: "text"
 
+  - label: "Sample Projects"
+    name: "sample-projects"
+    create: true
+    folder: "_samples"
+    fields:
+      - label: "Layout"
+        name: "layout"
+        width: "hidden"
+        default: "sample"
+      - label: "Title"
+        name: "title"
+        width: "string"
+      - label: "Link"
+        name: "link"
+        width: "string"
+      - label: "Thumbnail"
+        name: "thumbnail"
+        width: "image"
+       
