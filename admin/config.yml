@@ -24,7 +24,6 @@ collections:
        - label: "Summary"
          name: "summary"
          width: "text"
-
     - label: "Sample Projects"
       name: "sample-projects"
       create: true
