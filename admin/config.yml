@@ -24,12 +24,16 @@ collections:
        - label: "Summary"
          name: "summary"
          width: "text"
-         
+
     - label: "Sample Projects"
       name: "sample-projects"
       create: true
-      folder: "_data/sample-projects.yml"
+      folder: "_samples"
       fields:
+       - label: "Layout"
+         name: "layout"
+         width: "hidden"
+         default: "sample"
        - label: "Name"
          name: "name"
          width: "string"

@@ -34,6 +34,10 @@ exclude: ["source", "node_modules", "mix-manifest.json", "package-lock.json", "p
 plugins:
   - jekyll-feed
 
+# Register the custom folder you made
+collections:
+  - samples
+
 # Exclude from processing.
 # The following items will not be processed, by default.
 # Any item listed under the `exclude:` key here will be automatically added to
