@@ -9,9 +9,9 @@ media_folder: "images"
 
 collections:
   - name: "home"
-    label: "Home Fields"
+    label: "Home Page"
     files:
-    - label: "Home Fields"
+    - label: "Home Content"
       name: "site"
       file: "_data/main.yml"
       fields:
@@ -24,3 +24,17 @@ collections:
        - label: "Summary"
          name: "summary"
          width: "text"
+    - label: "Sample Projects"
+      name: "sample-projects"
+      file: "_data/sample-projects.yml"
+      fields:
+       - label: "Name"
+         name: "name"
+         width: "string"
+       - label: "Link"
+         name: "link"
+         width: "string"
+       - label: "Thumbnail"
+         name: "thumbnail"
+         width: "image"
+       
