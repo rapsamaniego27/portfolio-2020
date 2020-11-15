@@ -72,5 +72,9 @@ collections:
       - label: "Categories"
         name: "category"
         widget: "list"
+      - label: "Meta"
+        name: "meta"
+        widget: "markdown"
+        default: '{{body.excerpt}}'
       
 
