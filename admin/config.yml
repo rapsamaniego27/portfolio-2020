@@ -56,6 +56,7 @@ collections:
         widget: "string"
       - label: "Author"
         name: "author"
+        default: "Rap Esteva"
         widget: "string"
       - label: "Publish Date"
         name: "date"
