@@ -7,7 +7,7 @@ layout: default
  <div class="chapter-heading__container">
   <h1 class="chapter-heading hex-primary">{{page.title}}</h1>
   <p class="chapter-meta">Published on {{ page.date | date: "%-d %B %Y" }} <span class="hex-accent"><strong>{{ page.author }}</strong></span> </p>
-  <img src="{{ site.baseurl }}{{ page.banner }}" alt="{{ page.title }}" title="{{ page.title }}" class="mt-30 chapter-banner">
+  <img src="{{ page.banner }}" alt="{{ page.title }}" title="{{ page.title }}" class="mt-30 chapter-banner">
  </div>
 
  <div class="chapter-content__container container__flex mt-30 mb-50">
