@@ -17,25 +17,24 @@ layout: default
     <a href="{{site.baseurl}}/e-diary/" class="hex-tertiary"><strong><i class="fas fa-arrow-left"></i> Back to E-diary</strong></a>
    </div>
 
-   <div class="chapter-content__normal">
-     {{ content }}
-   </div>
+   <!-- Looping for Content BLocks from CMS -->
+   {% for block in page.blocks %}
 
-   <div class="chapter-content__thumbnail">
-    <img src="{{site.baseurl}}/images/mobile.jpg" alt="Image" title="Image" class="chapter-content__image">
+    <!-- Condition to check which block type is chosen -->
+    <!-- Then display the html layout -->
+      {% if block.alignment == "one column" %}
+        {% include blocks/one-column.html %}
+      {% endif %}
 
-     {{ content }}
-   </div>
+      {% if block.alignment == "two columns" %}
+         {% include blocks/two-columns.html %}
+      {% endif %}
 
-   <div class="chapter-content__thumbnail-reverse">
-     {{ content }}
+      {% if block.alignment == "two columns reverse" %}
+         {% include blocks/two-columns-reverse.html %}
+      {% endif %}
+   {% endfor %}
 
-    <img src="{{site.baseurl}}/images/news.jpg" alt="Image" title="Image" class="chapter-content__image">
-   </div>
-
-    <div class="chapter-content__normal">
-     {{ content }}
-    </div>
 
     <a href="{{site.baseurl}}/e-diary/" class="hex-tertiary mt-20 mr-20 ml-20"><strong><i class="fas fa-arrow-left"></i> Back to E-diary</strong></a>
   </div>
