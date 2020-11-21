@@ -77,7 +77,7 @@ collections:
         widget: "text"
         default: '{{body.excerpt}}'
       - label: "Blocks"
-        name: "block"
+        name: "blocks"
         widget: "list"
         required: false
         fields:
