@@ -7,7 +7,7 @@
    <h5 class="hex-dark diary-result__heading">{{chapter.title}}</h5>
    <p class="diary-result__date hex-dark">{{ chapter.date | date: "%-d %B %Y" }}</p>
    <p class="diary-result__paragraph">
-    {{ chapter.content | strip_html}}
+    {{ chapter.content | strip_html | truncate: 115 }}
    </p>
   </div>
   <a href="{{ chapter.url }}" class="btn btn-tertiary">Read Chapter</a>
