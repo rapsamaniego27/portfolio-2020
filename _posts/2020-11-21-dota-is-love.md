@@ -19,7 +19,7 @@ blocks:
         the season of Roshan! And with him comes an all-new Halloween game mode,
         rewards upon rewards, gobs of candy to steal and a heaping new treasure
         for one and all. Lo, it’s Diretide.*"
-  - alignment: one column
+  - alignment: two columns
     content:
       text: Featuring a new version of the Diretide game mode, collect and steal candy
         from your enemies, while keeping Roshan at bay. The best-of-5 fast-paced
