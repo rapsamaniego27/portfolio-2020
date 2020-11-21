@@ -90,10 +90,6 @@ collections:
           - label: Image
             name: image
             widget: image
-      - label: "Gallery"
-        name: "galleryImages"
-        widget: "list"
-        summary: '{{fields.image}}'
-        field: {label: Image, name: image, widget: image}
+            condition: {type: fieldValue, field: alignment, oneOf: [two columns, two columns reverse]}
               
 

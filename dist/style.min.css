@@ -4714,6 +4714,10 @@ h3 {
   padding-left: 26px;
 }
 
+.chapter-content__thumbnail-reverse {
+  -webkit-box-pack: justify;
+          justify-content: space-between;
+}
 .chapter-content__thumbnail-reverse p {
   padding-right: 26px;
 }
