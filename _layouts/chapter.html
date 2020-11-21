@@ -2,6 +2,7 @@
 layout: default
 ---
 
+
 <div class="chapter__container mt-30">
  <div class="chapter-heading__container">
   <h1 class="chapter-heading hex-primary">{{page.title}}</h1>
@@ -45,25 +46,39 @@ layout: default
   </div>
   <aside class="chapter-sidebar col-lg3 col-md4 col-xs12 pb-50">
    <div class="chapter-categories__container mt-30">
-    <h4 class="sidebar-title">Other Categories:</h4>
+    <h4 class="sidebar-title"> Categories:</h4>
     <ul class="sidebar-categories__list">
-     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Programming</a></li>
-     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Design</a></li>
-     <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">Travel</a></li>
+    
+      {% for category in site.data.categories limit: 4 %}
+        <li class="sidebar-category__item"><a href="{{site.baseurl}}{{category.link}}" class="sidebar-category__link">{{category.name}}</a>
+        </li>
+      {% endfor %}
     </ul>
    </div>
+
+  <div class="chapter-recent__container mt-30">
+    <h4 class="sidebar-title">Other Chapters:</h4>
+    <ul class="sidebar-categories__list">
+      {% include random-posts.html %}
+  
+    </ul>
+  </div>
 
    <div class="chapter-recent__container mt-30">
     <h4 class="sidebar-title">Recent Chapters:</h4>
     <ul class="sidebar-categories__list">
-     {% for chapter in site.posts limit:4 %}
 
-       <li class="sidebar-category__item"><a href="#" class="sidebar-category__link">{{ chapter.title }}</a></li>
+     {% assign sorted = site.posts | sort: 'date' | reverse %} 
+     {% for chapter in sorted limit:5 %}
+
+       <li class="sidebar-category__item"><a href="{{site.baseurl}}{{chapter.url}}" class="sidebar-category__link">{{ chapter.title }}</a></li>
 
      {% endfor %}
      
     </ul>
    </div>
+
+ 
   </aside>
  </div>
 </div>

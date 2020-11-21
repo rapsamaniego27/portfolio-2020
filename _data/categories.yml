@@ -1,0 +1,24 @@
+  #Array of Categories
+  - name: Programming
+    link: /e-diary/programming/
+
+  - name: Design
+    link: /e-diary/design/
+
+  - name: Travel
+    link: /e-diary/travel/
+
+  - name: Family
+    link: /e-diary/family/
+
+  - name: Health
+    link: /e-diary/health/
+
+  - name: Social
+    link: /e-diary/social/
+
+  - name: Personal
+    link: /e-diary/personal/
+
+  - name: Sports
+    link: /e-diary/sports/
