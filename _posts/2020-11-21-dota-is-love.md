@@ -10,12 +10,11 @@ category:
 blocks:
   - alignment: two columns
     content:
-      text: Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy
-        eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam
-        voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
-        clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit
-        amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam
-        nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+      text: "*Slivers of the Mad Moon cast their waning light across the land. A
+        dormant beast stirs in his cave, a powerful hunger overcoming the arcane
+        tendrils that bind him in his hibernation. We once celebrated his taste
+        for sweets and the blood spilled in his honor by both Radiant and Dire.
+        But that was quite long ago. Yet he stirs.*"
       image: /images/cm.jpg
 ---
-dassssssssssssssdassssssssssssssdassssssssssssssdassssssssssssssdassssssssssssssdassssssssssssssdassssssssssssssdasssssssss
+Dota is love.. I started when I was in High school. My first hero was axe.
