@@ -73,7 +73,7 @@ collections:
       - label: "Meta(Body)"
         name: "body"
         widget: "text"
-        default: '{{body.excerpt}}'
+        pattern: ['^.{20,170}$', "Must have at least 20 characters"]
       - label: "Blocks"
         name: "blocks"
         widget: "list"
