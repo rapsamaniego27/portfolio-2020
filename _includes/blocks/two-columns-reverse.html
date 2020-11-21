@@ -1,5 +1,5 @@
 <div class="chapter-content__thumbnail-reverse">
  {{ block.content.text }}
 
- <img src="{{site.baseurl}}/{{block.content.image}}" alt="Image" title="Image" class="chapter-content__image">
+ <img src="{{site.baseurl}}{{block.content.image}}" alt="{{block.content.text}}" title="{{block.content.text.excerpt}}" class="chapter-content__image">
 </div>
