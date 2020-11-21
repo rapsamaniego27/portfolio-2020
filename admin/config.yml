@@ -74,20 +74,19 @@ collections:
         widget: "list"
       - label: "Meta"
         name: "meta"
-        widget: "markdown"
+        widget: "text"
         default: '{{body.excerpt}}'
-      - label: "Testimonials"
-        name: "testimonials"
+      - label: "Blocks"
+        name: "block"
         widget: "list"
-        summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
-          - label: Author
-            name: author
-            widget: object
-            fields:
-              - {label: Name, name: name, widget: string, default: "Emmet"}
-              - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+          - {label: Type, name: type, widget: select, options:["one column", "two columns", "two columns reverse"]}
+          - label: Text
+            name: text
+            widget: markdown
+          - label: Image
+            name: image
+            widget: image
       - label: "Gallery"
         name: "galleryImages"
         widget: "list"
