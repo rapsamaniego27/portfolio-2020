@@ -8,8 +8,7 @@ banner: /images/dota.jpg
 category:
   - Sports
 blocks:
-  - alignment:
-      - one column
+  - alignment: one column
     content:
       text: "*Slivers of the Mad Moon cast their waning light across the land. A
         dormant beast stirs in his cave, a powerful hunger overcoming the arcane
