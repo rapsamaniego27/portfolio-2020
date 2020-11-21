@@ -65,6 +65,7 @@ collections:
         widget: "image"
       - label: "Banner"
         name: "banner"
+        helptext: "Resolution: (1130 x 250)"
         widget: "image"
       - label: "Categories"
         name: "category"
