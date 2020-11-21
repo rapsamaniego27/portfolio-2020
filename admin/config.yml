@@ -89,7 +89,7 @@ collections:
             widget: "object"
             required: false
             fields: 
-              - label: Text
+              - label: Text (300 - 420 for 2 columns)
                 name: text
                 widget: markdown
               - label: Image(280 x 194)
