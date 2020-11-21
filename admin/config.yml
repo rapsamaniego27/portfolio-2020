@@ -73,7 +73,7 @@ collections:
       - label: "Meta(Body)"
         name: "body"
         widget: "text"
-        pattern: ['^.{20,170}$', "Must have at least 20 characters"]
+        pattern: ['.{10, 170}', "Must have at least 10 characters"]
       - label: "Blocks"
         name: "blocks"
         widget: "list"
