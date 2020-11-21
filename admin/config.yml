@@ -67,7 +67,7 @@ collections:
         name: "banner"
         widget: "image"
       - label: "Categories"
-        name: "category"
+        name: "categories"
         widget: "list"
       - label: "Meta (Body)"
         name: "body"
