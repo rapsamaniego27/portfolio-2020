@@ -73,7 +73,7 @@ collections:
       - label: "Meta(Body)"
         name: "body"
         widget: "text"
-        pattern: ['.{10, 170}', "Must have at least 10 characters"]
+        pattern: ['^.{20,170}$', "Must be in between 20 - 170 characters"]
       - label: "Blocks"
         name: "blocks"
         widget: "list"
@@ -92,6 +92,7 @@ collections:
               - label: Text
                 name: text
                 widget: markdown
+                pattern: ['^.{240,420}$', "Must be in between 240 - 420 characters"]
               - label: Image(280 x 194)
                 name: image
                 widget: image
