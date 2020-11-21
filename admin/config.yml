@@ -76,25 +76,22 @@ collections:
         name: "meta"
         widget: "markdown"
         default: '{{body.excerpt}}'
-      - label: "Profile"
-        name: "profile"
-        widget: "object"
-        summary: '{{fields.name}}: {{fields.birthdate}}'
+      - label: "Testimonials"
+        name: "testimonials"
+        widget: "list"
+        summary: '{{fields.quote}} - {{fields.author.name}}'
         fields:
-          - {label: "Public", name: "public", widget: "boolean", default: true}
-          - {label: "Name", name: "name", widget: "string"}
-          - label: "Birthdate"
-            name: "birthdate"
-            widget: "date"
-            default: ""
-            format: "MM/DD/YYYY"
-          - label: "Address"
-            name: "address"
-            widget: "object"
-            collapsed: true
-            fields: 
-              - {label: "Street Address", name: "street", widget: "string"}
-              - {label: "City", name: "city", widget: "string"}
-              - {label: "Postal Code", name: "post-code", widget: "string"}
-      
+          - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
+          - label: Author
+            name: author
+            widget: object
+            fields:
+              - {label: Name, name: name, widget: string, default: "Emmet"}
+              - {label: Avatar, name: avatar, widget: image, default: "/img/emmet.jpg"}
+      - label: "Gallery"
+        name: "galleryImages"
+        widget: "list"
+        summary: '{{fields.image}}'
+        field: {label: Image, name: image, widget: image}
+              
 
