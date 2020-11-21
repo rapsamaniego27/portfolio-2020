@@ -1,0 +1,17 @@
+---
+layout: diary
+title: "E-Diary | Social"
+---
+
+
+<div class="diary-results__container">
+ <p class="portfolio-results__label pl-xl-20">{{ site.categories.Social | size }} results found.</p>
+
+ <div class="diary-results mt-30 mb-30">
+
+  {% for chapter in site.categories.Social %}
+    {% include diary-card.html %}
+  {% endfor %}
+
+ </div>
+</div>

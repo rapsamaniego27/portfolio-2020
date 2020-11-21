@@ -13,7 +13,12 @@ layout: default
   <div class="chapter-content col-lg9 col-md8 col-xs12">
    
    <div class="chapter-content__meta pl-20 pr-20 mb-20">
-    <h5 class="hex-dark mb-10">Categories: Programming</h5>
+    <h5 class="chapter-category-meta hex-dark mb-10">
+      Categories: 
+      {% for category in page.categories %}
+        <span class="chapter-category">{{ category }}</span>
+      {% endfor %}
+    </h5>
     <a href="{{site.baseurl}}/e-diary/" class="hex-tertiary"><strong><i class="fas fa-arrow-left"></i> Back to E-diary</strong></a>
    </div>
 

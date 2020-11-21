@@ -4713,6 +4713,9 @@ h3 {
 .chapter-content__thumbnail p {
   padding-left: 26px;
 }
+.chapter-content__thumbnail img {
+  margin-right: 15px;
+}
 
 .chapter-content__thumbnail-reverse {
   -webkit-box-pack: justify;
@@ -4720,6 +4723,19 @@ h3 {
 }
 .chapter-content__thumbnail-reverse p {
   padding-right: 26px;
+}
+
+.chapter-category-meta {
+  margin-bottom: 20px;
+}
+
+.chapter-category {
+  font-size: 1.125rem;
+  font-weight: var(--weight-normal);
+}
+
+.chapter-category:not(:last-of-type):after {
+  content: ",";
 }
 
 /* Button Regulars  */
