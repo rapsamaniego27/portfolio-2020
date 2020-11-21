@@ -84,12 +84,16 @@ collections:
             name: "alignment"
             widget: "select"
             options: ["one column", "two columns", "two columns reverse"]
-          - label: Text
-            name: text
-            widget: markdown
-          - label: Image
-            name: image
-            widget: image
-            condition: {type: fieldValue, field: alignment, oneOf: [two columns, two columns reverse]}
+          - label: "Content"
+            name: "content"
+            widget: "object"
+            fields: 
+              - label: Text
+                name: text
+                widget: markdown
+              - label: Image
+                name: image
+                widget: image
+                condition: {type: fieldValue, field: alignment, oneOf: [two columns, two columns reverse]}
               
 
