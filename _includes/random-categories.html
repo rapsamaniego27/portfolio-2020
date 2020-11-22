@@ -1,0 +1,56 @@
+<!-- Random posts looping -->
+
+<script type="text/javascript">
+
+ var postsHREF = [{% for category in site.data.categories %}"{{site.baseurl}}{{category.link}}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+ var postsTitle = [{% for category in site.data.categories %}"{{ category.name }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+</script>
+
+<script type="text/javascript">
+
+ var randomIndexUsed = [];
+ var counter = 0;
+ var numberOfCategories = 4;
+
+ while (counter < numberOfCategories) {
+  var randomIndex;
+  var catHREF;
+  var catName;
+
+  randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+  if (randomIndexUsed.indexOf(randomIndex) == "-1") {
+   catHREF = postsHREF[randomIndex];
+   catName = postsTitle[randomIndex];
+
+   if (counter == (numberOfCategories - 1)) {
+    const ui = `
+     <li class="sidebar-category__item">
+       <a href="${catHREF}" class="sidebar-category__link">
+        ${catName}
+       </a>
+     </li>
+    `;
+    document.write(`${ui}`);
+   }
+   else {
+    const ui = `
+     <li class="sidebar-category__item">
+       <a href="${catHREF}" class="sidebar-category__link">
+        ${catName}
+       </a>
+     </li>
+    `;
+
+    document.write(`${ui}`);
+   }
+
+   randomIndexUsed.push(randomIndex);
+
+   counter++;
+  }
+ }
+
+</script>
