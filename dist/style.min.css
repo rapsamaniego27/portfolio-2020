@@ -4738,6 +4738,56 @@ h3 {
   content: ",";
 }
 
+.modal__type-img__container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  height: 100%;
+  flex-wrap: wrap;
+}
+.modal__type-img__container .modal__type-img {
+  max-width: 90%;
+  height: auto;
+  padding: 15px 0;
+}
+
+.modal__secondary {
+  background: var(--white) !important;
+  width: -webkit-fill-available;
+  width: -moz-available;
+  width: fill-available;
+  max-width: 90%;
+  position: fixed;
+  top: 45%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 640px;
+  max-height: 85%;
+  margin: 20px 0;
+  overflow: hidden;
+}
+
+.modal-close__secondary {
+  font-size: clamp(26px, 4vw, 30px);
+  color: var(--white);
+  position: absolute;
+  top: 0;
+  right: 10px;
+  background: var(--tertiary);
+  padding: 10px 10px;
+  border-radius: 8px;
+  z-index: 5001;
+}
+
+@media only screen and (max-width: 800px) {
+  .modal__secondary {
+    width: 90%;
+  }
+}
 /* Button Regulars  */
 .btn-success {
   background-color: #9FD356;
