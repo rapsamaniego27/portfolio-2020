@@ -4756,9 +4756,7 @@ h3 {
 
 .modal__secondary {
   background: var(--white) !important;
-  width: -webkit-fill-available;
-  width: -moz-available;
-  width: fill-available;
+  width: 1000px;
   max-width: 90%;
   position: fixed;
   top: 45%;
@@ -4771,6 +4769,12 @@ h3 {
   overflow: hidden;
 }
 
+@-moz-document url-prefix() {
+  .modal__secondary {
+    width: -moz-available !important;
+    width: stretch !important;
+  }
+}
 .modal-close__secondary {
   font-size: clamp(26px, 4vw, 30px);
   color: var(--white);

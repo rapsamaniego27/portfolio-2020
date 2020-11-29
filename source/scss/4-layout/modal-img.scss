@@ -16,7 +16,7 @@
 
 .modal__secondary{
   background:var(--white) !important;
-  width: fill-available;
+  width: 1000px;
   max-width: 90%;
   position: fixed;
   top: 45%;
@@ -26,6 +26,12 @@
   max-height: 85%;
   margin: 20px 0;
   overflow:hidden;
+}
+
+@-moz-document url-prefix() {
+  .modal__secondary{
+    width:stretch !important;
+  }
 }
 
 
@@ -49,3 +55,5 @@
    }
 
  }
+
+
