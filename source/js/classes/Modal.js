@@ -37,6 +37,7 @@ class Modal{
   this.modalMainImage.src = `${this.api}${project.main_image.url}`;
   this.modalMainImage.title = `Rap Esteva | Projects | ${project.name}`;
   this.modalMainImage.alt = `Rap Esteva | Projects | ${project.name}`;
+  this.modalGallery.innerHTML = gallery;
   this.isGallery(gallery);
 
 
@@ -82,6 +83,7 @@ class Modal{
 
   if(gallery){
    this.galleryContainer.style.display = 'block';
+
   }else{
    this.galleryContainer.style.display = 'none';
   }
