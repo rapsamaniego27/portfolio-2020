@@ -74,6 +74,15 @@ class Portfolio{
      e.preventDefault();
      const portfolioResultsContainer = document.querySelector('#portfolioResultsContainer');
 
+     /* Removes active class to past selected option */
+     const pastSelectedOption = document.querySelector('.portfolio-link--active');
+     if(pastSelectedOption){
+      pastSelectedOption.classList.remove('portfolio-link--active');
+     }
+
+     /* Then adds it to the current selected option */
+     e.target.classList.add('portfolio-link--active');
+
      /* Adds a spinner before displaying actual results */
      portfolioResultsContainer.innerHTML = `<span class="spinner"></span>`;
      const projectType = option.dataset.projectType;

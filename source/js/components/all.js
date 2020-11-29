@@ -1,6 +1,7 @@
 window.addEventListener('DOMContentLoaded', ()=> {
  const scroll = new Scroll();
  const btnSeeProjects = document.querySelector('#btnSeeProjects');
+ const portfolioContainer = document.querySelector('.portfolio-container');
 
  scroll.showSkillLevel();
  scroll.showSamples();
@@ -20,7 +21,9 @@ window.addEventListener('DOMContentLoaded', ()=> {
   }
 
   /* Portfolio */
-  const portfolio = new Portfolio();
+  if(isInPage(portfolioContainer)){
+    const portfolio = new Portfolio();
+  }
 
 
 });
