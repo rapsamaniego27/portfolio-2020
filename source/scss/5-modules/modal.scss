@@ -15,7 +15,7 @@
   top: 45%;
   left: 50%;
   transform: translate(-50%, -50%);
-  height: 640px;
+  height: 610px;
   max-height: 85%;
   border-radius:8px;
   margin: 20px 0;
@@ -149,6 +149,10 @@
   padding: 10px 10px;
   border-radius: 8px;
   z-index: 5001;
+
+  .modalCloseIcon{
+    pointer-events:none;
+  }
 }
 
 @media #{$device-xs}{
@@ -159,4 +163,11 @@
 
 .modal--hide{
   display:none;
+}
+
+
+.btn-open-modal{
+  i{
+    pointer-events: none !important;
+  }
 }

@@ -4793,6 +4793,9 @@ h3 {
   border-radius: 8px;
   z-index: 5001;
 }
+.modal-close__secondary .closeSecondaryIcon {
+  pointer-events: none !important;
+}
 
 /* Button Regulars  */
 .btn-success {
@@ -5083,7 +5086,7 @@ h3 {
   left: 50%;
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
-  height: 640px;
+  height: 610px;
   max-height: 85%;
   border-radius: 8px;
   margin: 20px 0;
@@ -5194,6 +5197,9 @@ h3 {
   border-radius: 8px;
   z-index: 5001;
 }
+.modal-close .modalCloseIcon {
+  pointer-events: none;
+}
 
 @media only screen and (max-width: 480px) {
   .modal__content {
@@ -5202,6 +5208,10 @@ h3 {
 }
 .modal--hide {
   display: none;
+}
+
+.btn-open-modal i {
+  pointer-events: none !important;
 }
 
 .tag {
@@ -5215,6 +5225,40 @@ h3 {
   font-size: 12px;
 }
 
+.spinner {
+  width: 48px;
+  height: 48px;
+  border: 5px solid var(--silver);
+  border-bottom-color: var(--accent);
+  border-radius: 50%;
+  display: inline-block;
+  box-sizing: border-box;
+  -webkit-animation: rotation 1s linear infinite;
+          animation: rotation 1s linear infinite;
+  position: absolute;
+}
+
+@-webkit-keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
+
+@keyframes rotation {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(360deg);
+            transform: rotate(360deg);
+  }
+}
 @media only screen and (max-width: 1366px) {
   /* Insert code Desktop size here */
 }

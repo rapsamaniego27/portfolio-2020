@@ -55,6 +55,10 @@
   padding: 10px 10px;
   border-radius: 8px;
   z-index: 5001;
+
+  .closeSecondaryIcon{
+    pointer-events:none !important;
+  }
  }
 
 

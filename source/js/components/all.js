@@ -19,5 +19,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
   }
 
+  /* Portfolio */
+  const portfolio = new Portfolio();
+
 
 });

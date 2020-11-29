@@ -1,27 +1,36 @@
 class Data{
  constructor(){
-  
+   this.api = 'https://strapi-rap.herokuapp.com/projects';
  }
 
  //Methods
- async fetchSiblings(){
-    let api = '../data/siblings.json';
-    let response = await fetch(api);
+ async fetchProjects(type){
+    this.api = `${this.api}?type=${type}`;
+    let response = await fetch(this.api);
     let data = await response.json();
  
     return data;
   }
+
+ async fetchSingleProject(id){
+   this.singleProjectApi = `${this.api}/${id}`;
+   let response = await fetch(this.singleProjectApi);
+   let data = await response.json();
+
+   return data;
+ }
+
+ async getProjectsCount(){
+   this.countApi = `${this.api}/count`;
+   let response = await fetch(this.countApi);
+   let data = await response.json();
+
+   return data;
+ }
 }
 
-/* Run this for testing API fetching */
 
-/* const data = new Data();
 
-data.fetchSiblings()
-    .then(data => {
-     console.log(data);
-    })
-    .catch(err => console.log(err)); */
 /* Notes:
   <a> should always be the one clickable having a full height and width
 
@@ -144,17 +153,205 @@ class Menuet {
  }
 
 }
+class Modal{
+ constructor(){
+  this.api = 'https://strapi-rap.herokuapp.com';
+
+  /* Primary Modals */
+  this.modalOverlay = document.querySelector('#modalOverlay');
+  this.modalClose = document.querySelector('#modalClose');
+  this.modalTitle = document.querySelector('#modalTitle');
+  this.modalDate = document.querySelector('#modalDate');
+  this.modalDesc = document.querySelector('#modalDesc');
+  this.modalTech = document.querySelector('#modalTech');
+  this.modalGallery = document.querySelector('#modalGallery');
+  this.modalMainImage = document.querySelector('#modalMainImage');
+  this.galleryContainer = document.querySelector('.modal__gallery');
+
+  /* Image Modal */
+  this.modalImgOverlay = document.querySelector('#modalImgOverlay');
+  this.modalCloseSecondary = document.querySelector('#modalCloseSecondary');
+  this.modalTypeImg = document.querySelector('.modal__type-img');
+  this.modalTypeImgContainer = document.querySelector('.modal__type-img__container');
+
+  this.UI = new UI();
+ }
+
+ //Methods
+ openModalInfo(project){
+
+  const createDate = new Date(project.create_date);
+  const technologiesList = this.loopTechnologies(project);
+  const gallery = this.showGalleryImages(project);
+
+
+  this.modalTitle.innerHTML = project.name;
+  this.modalDate.innerHTML = createDate;
+  this.modalDesc.innerHTML = project.description;
+  this.modalTech.innerHTML = technologiesList;
+  this.modalMainImage.src = `${this.api}${project.main_image.url}`;
+  this.modalMainImage.title = `Rap Esteva | Projects | ${project.name}`;
+  this.modalMainImage.alt = `Rap Esteva | Projects | ${project.name}`;
+  this.isGallery(gallery);
+
+
+  this.modalOverlay.classList.remove('modal--hide');
+ }
+
+ //Bind Close modal
+ bindCloseModal(){
+  this.modalOverlay.addEventListener('click', (e)=> {
+   e.preventDefault();
+  
+   /* Close if clicked is an overlay or Close Button */
+   if (e.target == this.modalOverlay || e.target == this.modalClose){
+    this.modalOverlay.classList.add('modal--hide');
+   }
+  });
+ }
+
+
+ /* Loops Through technologies and creating a UI for them */
+ loopTechnologies(project){
+
+  let html = '';
+
+  project.technologies.forEach(technology => {
+    html += this.UI.makeTechBadge(technology);
+  });
+
+  return html;
+ }
+
+ showGalleryImages(project){
+  let html = '';
+
+  project.gallery.forEach(image => {
+   html += this.UI.makeGallery(image.url, project.name);
+  });
+
+  return html;
+ }
+
+ isGallery(gallery){
+
+  if(gallery){
+   this.galleryContainer.style.display = 'block';
+  }else{
+   this.galleryContainer.style.display = 'none';
+  }
+  
+ }
+
+
+
+ openModalImage(project){
+  this.modalTypeImg.src = `${this.api}${project.main_image.url}`;
+  this.modalTypeImg.alt = `Rap Esteva | Projects | ${project.name}`;
+  this.modalTypeImg.title = `Rap Esteva | Projects | ${project.name}`;
+
+  this.modalImgOverlay.classList.remove('modal--hide');
+ }
+
+ //Bind Close modal
+ bindCloseModalImage() {
+  this.modalImgOverlay.addEventListener('click', (e) => {
+   e.preventDefault();
+
+   /* Close if clicked is an overlay or Close Button */
+   if (e.target == this.modalImgOverlay || e.target == this.modalCloseSecondary) {
+    this.modalImgOverlay.classList.add('modal--hide');
+   }
+  });
+ }
+}
 function isInPage(node) {
  return (node === document.body) ? false : document.body.contains(node);
 }
 class Portfolio{
  constructor(){
-  
+  this.options = document.querySelectorAll('.portfolio-option');
+  this.portfolioCount = document.querySelector('#portfolioCount');
+  this.UI = new UI();
+  this.modal = new Modal();
+  this.data = new Data();
+  /* Autoplay */
+  this.bindClick();
+  this.modal.bindCloseModal();
+  this.modal.bindCloseModalImage();
  }
 
  //Methods
- openPortfolioModal(){
-  
+
+ /* Displays the result to the Front End */
+ displayResults(type){
+  const data = new Data();
+  const portfolioResultsContainer = document.querySelector('#portfolioResultsContainer');
+
+  data.fetchProjects(type)
+   .then(data => {
+    let html = ``;
+    
+
+    data.forEach(project => {
+     html += this.UI.makeProjectCards(project);
+    });
+
+    portfolioResultsContainer.innerHTML = html;
+    this.portfolioCount.innerHTML = `${data.length} results found.`;
+
+    /* Bind a click to each info buttons */
+    const infoButtons = document.querySelectorAll('.btn-open-modal');
+
+    /* Loops over info buttons */
+    infoButtons.forEach(button => {
+     button.addEventListener('click', (e)=> {
+       e.preventDefault();
+       const projectId = e.target.id;
+       
+      /* Fetches one project only */
+      this.data.fetchSingleProject(projectId)
+      .then((singleProject) => {
+       
+       /* Checks if Modal type is info */
+       if (singleProject.modal_type == 'info'){
+         this.modal.openModalInfo(singleProject);
+       }
+
+      /* Checks if Modal type is image */
+       if (singleProject.modal_type == 'image') {
+        this.modal.openModalImage(singleProject);
+       }
+       
+      }).catch(err => console.log(err));
+
+      
+     });
+    });
+
+   })
+   .catch(err => console.log(err));
+
+ }
+
+
+
+
+ /* Binds click events to Filter options */
+ bindClick(){
+  this.options.forEach(option => {
+    option.addEventListener('click', (e)=> {
+     e.preventDefault();
+     const portfolioResultsContainer = document.querySelector('#portfolioResultsContainer');
+
+     /* Adds a spinner before displaying actual results */
+     portfolioResultsContainer.innerHTML = `<span class="spinner"></span>`;
+     const projectType = option.dataset.projectType;
+     
+     this.displayResults(projectType); 
+
+    });
+  });
  }
 }
 class Scroll{
@@ -232,6 +429,91 @@ class Scroll{
 
 
 
+class UI{
+ constructor(){
+  this.source = 'https://strapi-rap.herokuapp.com';
+ }
+
+ //Methods
+ makeProjectCards(project){
+   let layout = ``;
+
+   const btnVisit = this.makeBtnVisit(project.url);
+   const btnInfo = this.makeBtnInfo(project);
+
+    layout += `
+     <div class="portfolio-result">
+      <div class="portfolio-result__title-wrapper" data-project-id="${project.id}">
+       <h6>${project.name}</h6>
+      </div>
+
+      <div class="portfolio-result__content">
+       <img src="${this.source}${project.main_image.url}" alt="Rap Esteva | Projects | ${project.name}" title="${project.name}" class="portfolio-result__img" loading="lazy">
+
+       <div class="portfolio-results__overlay">
+        <div class="portfolio-result__options">
+         ${btnVisit}
+         ${btnInfo}
+        </div>
+       </div>
+      </div>
+     </div>
+    `; 
+
+
+
+   return layout;
+ }
+
+ makeTechBadge(technology){
+  let layout = '';
+
+  layout = `
+   <div class="tag" style="background: ${technology.color};">
+        <p>${technology.name}</p>
+       </div>
+  `;
+
+  return layout;
+ }
+
+ makeGallery(imageUrl, name){
+  let layout = '';
+  
+  layout = `
+   <img src="${this.source}${imageUrl}" alt="Rap Esteva | Projects | ${name}" title="Rap Esteva | Projects | ${name}" class="modal__gallery-image">
+  `;
+
+  return layout;
+ }
+
+ makeBtnVisit(url){
+  let layout = '';
+
+  if(url){
+    layout = `<a href="${url}" target="_blank" class="btn btn-circle-primary btn-visit">
+          <i class="fas fa-link"></i>
+         </a>`;
+  }
+
+  return layout;
+ 
+ }
+
+ makeBtnInfo(project){
+  let layout = '';
+
+  if(project.modal_type != 'none'){
+   layout = `
+   <a href="#" target="_blank" class="btn btn-circle-accent btn-open-modal" id="${project.id}">
+           <i class="fas fa-eye"></i>
+         </a>
+  `;
+  }
+
+  return layout;
+ }
+}
 window.addEventListener('DOMContentLoaded', ()=> {
  const scroll = new Scroll();
  const btnSeeProjects = document.querySelector('#btnSeeProjects');
@@ -252,6 +534,9 @@ window.addEventListener('DOMContentLoaded', ()=> {
     });
 
   }
+
+  /* Portfolio */
+  const portfolio = new Portfolio();
 
 
 });
