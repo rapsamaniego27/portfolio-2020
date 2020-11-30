@@ -6,7 +6,7 @@
    class="work-img--mobile">
   <h6 class="work-company hex-accent">{{ job.company }}</h6>
   <h3 class="work-position hex-white">{{ job.position }}</h3>
-  <p class="work-date--mobile hex-white">August 2019 - Present</p>
+  <p class="work-date--mobile hex-white">{{ job.start_date }} - {% if job.end_date == '' %} Present {% else %}  {{job.end_date}} {% endif %}</p>
   <p class="work-description hex-white mt-20">
    {{ job.description }}
   </p>
@@ -14,7 +14,7 @@
 
  <!-- WOrk Col2 -->
  <div class="work-extras">
-  <div class="work-date hex-white">August 2019 - Present</div>
+  <div class="work-date hex-white">{{ job.start_date }} - {% if job.end_date == '' %} Present {% else %} {{ job.end_date }} {% endif %}</div>
   <img src="{{site.baseurl}}{{job.logo}}" alt="{{ job.company }}" title="{{ job.company }}"
    class="work-img mt-20">
  </div>
