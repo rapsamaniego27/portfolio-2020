@@ -1,10 +1,18 @@
 <li class="core-tech">
- <h5 class="hex-dark">HTML</h5>
+ <h5 class="hex-dark">{{ core.title }}</h5>
  <div class="stars">
+
+  <!-- Loops depending on how many stars there are -->
+  {% for star in (1..core.stars) %}
   <i class="fa fa-star hex-accent"></i>
-  <i class="fa fa-star hex-accent"></i>
-  <i class="fa fa-star hex-accent"></i>
-  <i class="fa fa-star hex-accent"></i>
-  <i class="fa fa-star hex-accent"></i>
+  {% endfor %}
+
+  <!-- Checks if stars is lower than 5 than makes calculations to generate gray stars -->
+  {% if core.stars != 5 %}
+    {% assign gray_stars = 5 | minus: core.stars %}
+    {% for gray_star in (1..gray_stars)  %}
+    <i class="fa fa-star"></i>
+    {% endfor %}
+  {% endif %}
  </div>
 </li>

@@ -38,6 +38,7 @@ plugins:
 collections:
   - samples
   - cores
+  - jobs
 
 
 

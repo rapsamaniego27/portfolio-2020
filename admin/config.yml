@@ -56,6 +56,35 @@ collections:
         widget: "select"
         options: ["Design", "Code"]    
 
+  - label: "Work Experience"
+    name: "jobs"
+    create: true
+    folder: "_jobs"
+    fields:
+      - label: "Company"
+        name: "company"
+        widget: "string"
+      - label: "Position"
+        name: "position"
+        widget: "string"
+      - label: "Description"
+        name: "description"
+        widget: "text"
+      - label: "Start date"
+        name: "start_date"
+        widget: 'date'
+        default: ''
+        format: 'MMM YYYY'
+      - label: "End date"
+        name: "end_date"
+        widget: 'date'
+        default: ''
+        format: 'MMM YYYY'
+      - label: Logo (Not more than 300px wide)
+        name: logo
+        widget: image
+        required: false
+
   - label: "Chapters"
     name: "chapters"
     create: true

@@ -22,8 +22,12 @@ title: "Knowing more about Rap"
      <ul class="core-tech__list mt-40">
      
       <!-- Loop Code Tech -->
-      {% for tech in site.cores %}
-        {% include core-tech.html %}
+      {% for core in site.cores %}
+        {% if core.type == 'Code' %}
+          
+          {% include core-tech.html %}
+
+        {% endif%}
       {% endfor %}
       <!-- End Code Tech -->
      </ul>
@@ -35,36 +39,17 @@ title: "Knowing more about Rap"
      <i class="fas fa-palette hex-primary core-icon"></i>
      <h4 class="hex-dark core-title hex-dark">Design</h4>
      <ul class="core-tech__list mt-40">
-      <li class="core-tech">
-       <h5 class="hex-dark">Adobe Photoshop</h5>
-       <div class="stars">
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-       </div>
-      </li>
-      <li class="core-tech">
-       <h5 class="hex-dark">Adobe Illustrator</h5>
-       <div class="stars">
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star"></i>
-       </div>
-      </li>
-      <li class="core-tech">
-       <h5 class="hex-dark">Adobe XD</h5>
-       <div class="stars">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-       </div>
-      </li>
+
+      <!-- Loop Code Tech -->
+      {% for core in site.cores %}
+        {% if core.type == 'Design' %}
+
+          {% include core-tech.html %}
+
+        {% endif%}
+      {% endfor %}
+      <!-- End Code Tech -->
+
      </ul>
     </div>
  
@@ -84,80 +69,10 @@ title: "Knowing more about Rap"
  <div class="works-container container__flex">
 
   <div class="works mt-40 pr-lg-30 pl-lg-30 pb-60">
-   <div class="work-item">
-
-    <!-- Work Col 1 -->
-    <div class="work-content">
-      <img src="../images/madaboutsolutions-logo.png" alt="Mad About Solutions" title="Mad About Solutions" class="work-img--mobile">
-      <h6 class="work-company hex-accent">Mad About Solutions</h6>
-      <h3 class="work-position hex-white">Web Development Associate</h3>
-      <p class="work-date--mobile hex-white">August 2019 - Present</p>
-      <p class="work-description hex-white mt-20">
-       Handled WordPress based websites, managing them through FTP clients. Also developed sites provided by Graphic Designers
-       from a PSD file.
-       <br><br>
-       Responsible also for providing User Manuals for usage of the clients' site.
-      </p>
-    </div>
-
-    <!-- WOrk Col2 -->
-    <div class="work-extras">
-     <div class="work-date hex-white">August 2019 - Present</div>
-     <img src="../images/madaboutsolutions-logo.png" alt="Mad About Solutions" title="Mad About Solutions" class="work-img mt-20">
-    </div>
-   </div>
-
-   <div class="work-item">
    
-    <!-- Work Col 1 -->
-    <div class="work-content">
-     <img src="../images/madaboutsolutions-logo.png" alt="Mad About Solutions" title="Mad About Solutions"
-      class="work-img--mobile">
-     <h6 class="work-company hex-accent">Mad About Solutions</h6>
-     <h3 class="work-position hex-white">Web Development Associate</h3>
-     <p class="work-date--mobile hex-white">August 2019 - Present</p>
-     <p class="work-description hex-white mt-20">
-      Handled WordPress based websites, managing them through FTP clients. Also developed sites provided by Graphic
-      Designers
-      from a PSD file.
-      <br><br>
-      Responsible also for providing User Manuals for usage of the clients' site.
-     </p>
-    </div>
-   
-    <!-- WOrk Col2 -->
-    <div class="work-extras">
-     <div class="work-date hex-white">August 2019 - Present</div>
-     <img src="../images/madaboutsolutions-logo.png" alt="Mad About Solutions" title="Mad About Solutions"
-      class="work-img mt-20">
-    </div>
-   </div>
-
-   <div class="work-item">
-   
-    <!-- Work Col 1 -->
-    <div class="work-content">
-     <img src="../images/madaboutsolutions-logo.png" alt="Mad About Solutions" title="Mad About Solutions"
-      class="work-img--mobile">
-     <h6 class="work-company hex-accent">Mad About Solutions</h6>
-     <h3 class="work-position hex-white">Web Development Associate</h3>
-     <p class="work-date--mobile hex-white">August 2019 - Present</p>
-     <p class="work-description hex-white mt-20">
-      Handled WordPress based websites, managing them through FTP clients. Also developed sites provided by Graphic
-      Designers
-      from a PSD file.
-      <br><br>
-      Responsible also for providing User Manuals for usage of the clients' site.
-     </p>
-    </div>
-   
-    <!-- WOrk Col2 -->
-    <div class="work-extras">
-     <div class="work-date hex-white">August 2019 - Present</div>
-     <img src="../images/madaboutsolutions-logo.png" alt="Mad About Solutions" title="Mad About Solutions"
-      class="work-img mt-20">
-    </div>
-   </div>
+    {% for job in site.jobs %}
+      {% include snippet-job.html %}
+    {% endfor %}
    
   </div>
  </div>
