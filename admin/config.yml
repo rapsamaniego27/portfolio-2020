@@ -70,10 +70,6 @@ collections:
       - label: "Description"
         name: "description"
         widget: "text"
-      - label: "Status"
-        name: "status"
-        widget: "boolean"
-        default: false
       - label: "Start date"
         name: "start_date"
         widget: 'date'
