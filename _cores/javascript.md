@@ -1,5 +1,5 @@
 ---
 title: Javascript
-stars: 5
+stars: 4
 type: Code
 ---
