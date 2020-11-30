@@ -4391,7 +4391,11 @@ h3 {
 }
 
 .work-date {
-  text-align: center;
+  text-align: right;
+  display: block;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
 }
 
 .work-img {
@@ -4400,7 +4404,9 @@ h3 {
 }
 
 .work-extras {
-  width: 340px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   display: -webkit-box;
   display: flex;
   -webkit-box-pack: center;

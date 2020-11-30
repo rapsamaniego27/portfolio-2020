@@ -34,7 +34,9 @@
 
 
 .work-date{
- text-align: center;
+ text-align: right;
+ display: block;
+ width: max-content;
 }
 
 .work-img{
@@ -43,7 +45,7 @@
 }
 
 .work-extras{
- width:340px;
+ width:max-content;
  display:flex;
  justify-content:center;
  align-items: center;

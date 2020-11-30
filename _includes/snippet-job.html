@@ -14,7 +14,7 @@
 
  <!-- WOrk Col2 -->
  <div class="work-extras">
-  <div class="work-date hex-white">{{ job.start_date }} - {% if job.end_date == '' %} Present {% else %} {{ job.end_date }} {% endif %}</div>
+  <p class="work-date hex-white">{{ job.start_date }} - {% if job.end_date == '' %} Present {% else %} {{ job.end_date }} {% endif %}</p>
   <img src="{{site.baseurl}}{{job.logo}}" alt="{{ job.company }}" title="{{ job.company }}"
    class="work-img mt-20">
  </div>
