@@ -49,7 +49,7 @@ collections:
         name: "title"
         widget: "string"
       - label: "Stars"
-        name: "link"
+        name: "stars"
         widget: "number"
       - label: "Type"
         name: "type"
