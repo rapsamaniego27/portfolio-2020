@@ -82,6 +82,7 @@ collections:
         default: ''
         format: 'MMM YYYY'
         time_format: false
+        required: false
       - label: Logo (Not more than 300px wide)
         name: logo
         widget: image
