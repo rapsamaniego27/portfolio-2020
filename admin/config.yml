@@ -39,7 +39,22 @@ collections:
       - label: "Thumbnail"
         name: "thumbnail"
         width: "image"
-       
+
+  - label: "Core Technologies"
+    name: "core-technologies"
+    create: true
+    folder: "_cores"
+    fields:
+      - label: "Title"
+        name: "title"
+        widget: "string"
+      - label: "Stars"
+        name: "link"
+        widget: "number"
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: ["Design", "Code"]    
 
   - label: "Chapters"
     name: "chapters"

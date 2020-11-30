@@ -37,6 +37,7 @@ plugins:
 # Register the custom folder you made
 collections:
   - samples
+  - cores
 
 
 

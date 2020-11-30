@@ -20,36 +20,12 @@ title: "Knowing more about Rap"
      <i class="fas fa-laptop-code hex-primary core-icon"></i>
      <h4 class="hex-dark core-title hex-dark">Code</h4>
      <ul class="core-tech__list mt-40">
-      <li class="core-tech">
-       <h5 class="hex-dark">HTML</h5>
-       <div class="stars">
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-       </div>
-      </li>
-      <li class="core-tech">
-       <h5 class="hex-dark">CSS</h5>
-       <div class="stars">
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star hex-accent"></i>
-        <i class="fa fa-star"></i>
-       </div>
-      </li>
-      <li class="core-tech">
-       <h5 class="hex-dark">Javascript</h5>
-       <div class="stars">
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-        <i class="fa fa-star"></i>
-       </div>
-      </li>
+     
+      <!-- Loop Code Tech -->
+      {% for tech in site.cores %}
+        {% include core-tech.html %}
+      {% endfor %}
+      <!-- End Code Tech -->
      </ul>
     </div>
  
