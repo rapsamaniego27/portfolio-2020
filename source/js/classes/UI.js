@@ -17,7 +17,7 @@ class UI{
       </div>
 
       <div class="portfolio-result__content">
-       <img src="${this.source}${project.main_image.url}" alt="Rap Esteva | Projects | ${project.name}" title="${project.name}" class="portfolio-result__img" loading="lazy">
+       <img src="${project.main_image.url}" alt="Rap Esteva | Projects | ${project.name}" title="${project.name}" class="portfolio-result__img" loading="lazy">
 
        <div class="portfolio-results__overlay">
         <div class="portfolio-result__options">
@@ -50,7 +50,7 @@ class UI{
   let layout = '';
   
   layout = `
-   <img src="${this.source}${imageUrl}" alt="Rap Esteva | Projects | ${name}" title="Rap Esteva | Projects | ${name}" class="modal__gallery-image">
+   <img src="${imageUrl}" alt="Rap Esteva | Projects | ${name}" title="Rap Esteva | Projects | ${name}" class="modal__gallery-image">
   `;
 
   return layout;

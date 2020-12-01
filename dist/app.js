@@ -189,7 +189,7 @@ class Modal{
   this.modalDate.innerHTML = createDate;
   this.modalDesc.innerHTML = project.description;
   this.modalTech.innerHTML = technologiesList;
-  this.modalMainImage.src = `${this.api}${project.main_image.url}`;
+  this.modalMainImage.src = `${project.main_image.url}`;
   this.modalMainImage.title = `Rap Esteva | Projects | ${project.name}`;
   this.modalMainImage.alt = `Rap Esteva | Projects | ${project.name}`;
   this.modalGallery.innerHTML = gallery;
@@ -248,7 +248,7 @@ class Modal{
 
 
  openModalImage(project){
-  this.modalTypeImg.src = `${this.api}${project.main_image.url}`;
+  this.modalTypeImg.src = `${project.main_image.url}`;
   this.modalTypeImg.alt = `Rap Esteva | Projects | ${project.name}`;
   this.modalTypeImg.title = `Rap Esteva | Projects | ${project.name}`;
 
@@ -459,7 +459,7 @@ class UI{
       </div>
 
       <div class="portfolio-result__content">
-       <img src="${this.source}${project.main_image.url}" alt="Rap Esteva | Projects | ${project.name}" title="${project.name}" class="portfolio-result__img" loading="lazy">
+       <img src="${project.main_image.url}" alt="Rap Esteva | Projects | ${project.name}" title="${project.name}" class="portfolio-result__img" loading="lazy">
 
        <div class="portfolio-results__overlay">
         <div class="portfolio-result__options">
@@ -492,7 +492,7 @@ class UI{
   let layout = '';
   
   layout = `
-   <img src="${this.source}${imageUrl}" alt="Rap Esteva | Projects | ${name}" title="Rap Esteva | Projects | ${name}" class="modal__gallery-image">
+   <img src="${imageUrl}" alt="Rap Esteva | Projects | ${name}" title="Rap Esteva | Projects | ${name}" class="modal__gallery-image">
   `;
 
   return layout;
