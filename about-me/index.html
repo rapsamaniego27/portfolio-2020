@@ -8,7 +8,7 @@ title: "Knowing more about Rap"
 <section class="grid-container">
  <div class="about-me__container container__flex mt-40">
   <div class="intro-img__section col-lg5 col-md5 align-content-center col-xs-12">
-   <img src="{{site.baseurl}}/images/rap-about.png" class="intro-img__model" loading=lazy>
+   <img src="{{site.baseurl}}/images/rap-about.png"  alt="Rap Esteva | About Me | {{sample.title}}" title="Rap Esteva | About Me | {{sample.title}}" class="intro-img__model" loading=lazy>
   </div>
  
   <div class="core-technologies__section col-offset-2 col-lg5 col-md5 col-xs-12">
@@ -69,8 +69,9 @@ title: "Knowing more about Rap"
  <div class="works-container container__flex">
 
   <div class="works mt-40 pr-lg-30 pl-lg-30 pb-60">
-   
-    {% for job in site.jobs %}
+    
+    {% assign jobs = site.jobs | sort: 'start_date' %}
+    {% for job in jobs %}
       {% include snippet-job.html %}
     {% endfor %}
    
