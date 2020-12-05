@@ -5,4 +5,24 @@ meta: This is a contact page
 ---
 
 
-<h1>Contact</h1>
+<h2 class="hex-primary page-title">{{ site.data.page-metas.contact_title }}</h2>
+<p class="hex-dark page-description pt-20 ml-xl-20 mr-xl-20">
+ {{ site.data.page-metas.contact_description }}
+</p>
+<section class="grid-container">
+ <div class="contact__container mt-20">
+
+  <div class="contact__item">
+   <i class="fas fa-envelope fa-2x hex-accent"></i>
+   <h5 class="hex-dark">rapsamaniego27@gmail.com</h5>
+  </div>
+
+  <div class="contact__item">
+   <i class="fas fa-phone-alt fa-2x hex-accent"></i>
+   <h5 class="hex-dark">+63-945-317-816</h5>
+  </div>
+
+ </div>
+</section>
+
+{% include contact-form.html %}

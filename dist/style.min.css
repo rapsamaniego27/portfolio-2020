@@ -4805,6 +4805,30 @@ h3 {
   pointer-events: none !important;
 }
 
+.contact__container {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+          flex-direction: column;
+}
+.contact__container .contact__item {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+  margin-top: 10px;
+}
+.contact__container .contact__item i {
+  margin-right: 15px;
+}
+
 /* Button Regulars  */
 .btn-success {
   background-color: #9FD356;
