@@ -659,9 +659,10 @@ window.addEventListener('DOMContentLoaded', ()=> {
  const scroll = new Scroll();
  const btnSeeProjects = document.querySelector('#btnSeeProjects');
  const portfolioContainer = document.querySelector('.portfolio-container');
+ const pageAboutMe = document.querySelector('#pageAboutMe');
+ const pageHome = document.querySelector('#pageHome');
 
- scroll.showSkillLevel();
- scroll.showSamples();
+
 
 
 
@@ -677,16 +678,27 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
   }
 
+  /* Home */
+
+  if(isInPage(pageHome)){
+    scroll.showSkillLevel();
+    scroll.showSamples();
+  }
+
   /* Portfolio */
   if(isInPage(portfolioContainer)){
     const portfolio = new Portfolio();
   }
 
+  if (isInPage(pageAboutMe)) {
+    /* Skills and Certifications*/
 
-  /* Skills */
+    const skills = new Skills();
+    const certification = new Certification();
+  }
 
-  const skills = new Skills();
-  const certification = new Certification();
+
+ 
 
 });
 const navOpen = document.querySelector('#menuOpen');
