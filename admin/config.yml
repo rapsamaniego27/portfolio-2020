@@ -24,6 +24,19 @@ collections:
        - label: "Summary"
          name: "summary"
          width: "text"
+  - name: "pages"
+    label: "Pages"
+    files:
+    - label: "Portfolio"
+      name: "portfolio"
+      file: "portfolio/index.html"
+      fields:
+       - label: "Title"
+         name: "title"
+         width: "string"
+       - label: "Description Meta"
+         name: "meta"
+         width: "string"       
 
   - label: "Sample Projects"
     name: "sample-projects"
