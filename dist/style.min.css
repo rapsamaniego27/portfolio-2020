@@ -4441,6 +4441,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
   justify-items: center;
   gap: 1rem;
+  position: relative;
 }
 
 .portfolio-options {
@@ -5240,6 +5241,10 @@ h3 {
   -webkit-animation: rotation 1s linear infinite;
           animation: rotation 1s linear infinite;
   position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translate(0, -50%);
+          transform: translate(0, -50%);
 }
 
 @-webkit-keyframes rotation {

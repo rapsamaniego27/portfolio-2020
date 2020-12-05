@@ -13,6 +13,7 @@
   grid-template-columns: repeat(auto-fit, minmax(230px, 2fr));
   justify-items:center;
   gap:1rem;
+  position:relative;
 }
 
 .portfolio-options{
