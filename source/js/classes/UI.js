@@ -82,4 +82,36 @@ class UI{
 
   return layout;
  }
+
+ makeSkillsColumn(type, skills){
+   
+  const children = this.makeSkillsList(skills);
+
+  const parent = `
+   <div class="other-tech__category">
+    <h4 class="hex-dark">${type}</h4>
+    <ul class="other-tech__list mt-20">
+      ${children}
+    </ul>
+  </div>`;
+   
+
+  
+   return parent;
+ }
+
+  makeSkillsList(skills) {
+    console.log(skills);
+    let items = '';
+
+    skills.forEach(skill => {
+      items += `
+      <li class="other-tech__item">${skill.technology}</li>
+    `;
+    });
+
+    return items;
+  }
+
 }
+

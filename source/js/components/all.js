@@ -26,4 +26,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
   }
 
 
+  /* Skills */
+
+  const skills = new Skills();
+
 });

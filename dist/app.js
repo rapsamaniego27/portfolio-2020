@@ -1,6 +1,7 @@
 class Data{
  constructor(){
    this.api = 'https://strapi-rap.herokuapp.com/projects';
+   this.skillsApi = 'https://strapi-rap.herokuapp.com/skill-types';
  }
 
  //Methods
@@ -27,6 +28,14 @@ class Data{
 
    return data;
  }
+
+  async getSkills() {
+    this.countApi = `${this.skillsApi}`;
+    let response = await fetch(this.countApi);
+    let data = await response.json();
+
+    return data;
+  }
 }
 
 
@@ -440,6 +449,38 @@ class Scroll{
 
 
 
+class Skills{
+ constructor(){
+  this.techContainer = document.querySelector('#techContainer');
+  this.data = new Data();
+  this.UI = new UI();
+
+  /* Automatic */
+  
+  this.displaySkills();
+ }
+
+ //Methods
+ displaySkills(){
+    
+  this.data.getSkills()
+   .then((result) => {
+    let html = ``;
+
+    result.forEach(skill => {
+      html += this.UI.makeSkillsColumn(skill.type, skill.skills);
+    });
+    
+   this.techContainer.innerHTML = html;
+
+   }).catch((err) => {
+
+     console.log(err);
+     
+   });
+
+ }
+}
 class UI{
  constructor(){
   this.source = 'https://strapi-rap.herokuapp.com';
@@ -524,7 +565,40 @@ class UI{
 
   return layout;
  }
+
+ makeSkillsColumn(type, skills){
+   
+  const children = this.makeSkillsList(skills);
+
+  const parent = `
+   <div class="other-tech__category">
+    <h4 class="hex-dark">${type}</h4>
+    <ul class="other-tech__list mt-20">
+      ${children}
+    </ul>
+  </div>`;
+   
+
+  
+   return parent;
+ }
+
+  makeSkillsList(skills) {
+    console.log(skills);
+    let items = '';
+
+    skills.forEach(skill => {
+      items += `
+      <li class="other-tech__item">${skill.technology}</li>
+    `;
+    });
+
+    return items;
+  }
+
 }
+
+
 window.addEventListener('DOMContentLoaded', ()=> {
  const scroll = new Scroll();
  const btnSeeProjects = document.querySelector('#btnSeeProjects');
@@ -552,6 +626,10 @@ window.addEventListener('DOMContentLoaded', ()=> {
     const portfolio = new Portfolio();
   }
 
+
+  /* Skills */
+
+  const skills = new Skills();
 
 });
 const navOpen = document.querySelector('#menuOpen');

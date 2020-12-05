@@ -1,6 +1,7 @@
 class Data{
  constructor(){
    this.api = 'https://strapi-rap.herokuapp.com/projects';
+   this.skillsApi = 'https://strapi-rap.herokuapp.com/skill-types';
  }
 
  //Methods
@@ -27,6 +28,14 @@ class Data{
 
    return data;
  }
+
+  async getSkills() {
+    this.countApi = `${this.skillsApi}`;
+    let response = await fetch(this.countApi);
+    let data = await response.json();
+
+    return data;
+  }
 }
 
 
