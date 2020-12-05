@@ -101,7 +101,6 @@ class UI{
  }
 
   makeSkillsList(skills) {
-    console.log(skills);
     let items = '';
 
     skills.forEach(skill => {
@@ -111,6 +110,22 @@ class UI{
     });
 
     return items;
+  }
+
+  makeCertCard(cert){
+    let layout = `
+      <div class="award">
+        <div class="award-content">
+          <h4 class="hex-primary award-title">${cert.name}</h4>
+          <h6 class="hex-dark award-organizer mt-10">${cert.organizer}</h6>
+          <h6 class="hex-dark award-date">${cert.date_received}</h6>
+       </div>
+       <a href="${cert.link}" target="_blank" class="btn btn-primary pr-lg20">View Certficate</a>
+      </div>
+
+    `;
+    
+    return layout;
   }
 
 }

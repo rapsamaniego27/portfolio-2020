@@ -29,5 +29,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
   /* Skills */
 
   const skills = new Skills();
+  const certification = new Certification();
 
 });

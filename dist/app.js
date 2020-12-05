@@ -1,7 +1,40 @@
+class Certification {
+ constructor() {
+  this.awardContainer = document.querySelector('#awardContainer');
+  this.data = new Data();
+  this.UI = new UI();
+
+  /* Automatic */
+
+  this.displayCerts();
+ }
+
+ //Methods
+ displayCerts() {
+
+  this.data.getCerts()
+   .then((certs) => {
+    let html = ``;
+
+    certs.forEach(cert => {
+      html += this.UI.makeCertCard(cert);
+    });
+
+    this.awardContainer.innerHTML = html;
+
+   }).catch((err) => {
+
+    console.log(err);
+
+   });
+
+ }
+}
 class Data{
  constructor(){
    this.api = 'https://strapi-rap.herokuapp.com/projects';
    this.skillsApi = 'https://strapi-rap.herokuapp.com/skill-types';
+   this.certsApi = 'https://strapi-rap.herokuapp.com/certifications';
  }
 
  //Methods
@@ -29,8 +62,16 @@ class Data{
    return data;
  }
 
-  async getSkills() {
+ async getSkills() {
     this.countApi = `${this.skillsApi}`;
+    let response = await fetch(this.countApi);
+    let data = await response.json();
+
+    return data;
+  }
+
+  async getCerts() {
+    this.countApi = `${this.certsApi}`;
     let response = await fetch(this.countApi);
     let data = await response.json();
 
@@ -584,7 +625,6 @@ class UI{
  }
 
   makeSkillsList(skills) {
-    console.log(skills);
     let items = '';
 
     skills.forEach(skill => {
@@ -594,6 +634,22 @@ class UI{
     });
 
     return items;
+  }
+
+  makeCertCard(cert){
+    let layout = `
+      <div class="award">
+        <div class="award-content">
+          <h4 class="hex-primary award-title">${cert.name}</h4>
+          <h6 class="hex-dark award-organizer mt-10">${cert.organizer}</h6>
+          <h6 class="hex-dark award-date">${cert.date_received}</h6>
+       </div>
+       <a href="${cert.link}" target="_blank" class="btn btn-primary pr-lg20">View Certficate</a>
+      </div>
+
+    `;
+    
+    return layout;
   }
 
 }
@@ -630,6 +686,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   /* Skills */
 
   const skills = new Skills();
+  const certification = new Certification();
 
 });
 const navOpen = document.querySelector('#menuOpen');
