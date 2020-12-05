@@ -3776,7 +3776,10 @@ p {
   -webkit-box-direction: normal;
           flex-direction: column;
   position: relative;
-  height: 100%;
+  height: -webkit-max-content;
+  height: -moz-max-content;
+  height: max-content;
+  min-height: 100vh;
 }
 
 #main {
