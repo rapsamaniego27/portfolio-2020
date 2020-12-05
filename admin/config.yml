@@ -58,9 +58,9 @@ collections:
         name: "meta"
         width: "string"
     - label: "Contact"
-       name: "contact"
-       file: "contact/index.html"
-       fields:
+      name: "contact"
+      file: "contact/index.html"
+      fields:
       - label: "Title"
         name: "title"
         width: "string"
