@@ -3905,7 +3905,7 @@ header {
 .menu-nav .menu-item::before, .menu-nav .menu-item::after {
   content: "";
   position: absolute;
-  height: 8px;
+  height: 6px;
   border-radius: 12px;
   width: 45%;
   background: var(--primary);
