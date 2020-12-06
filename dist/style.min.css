@@ -577,6 +577,66 @@ p {
             transform: scale(1);
   }
 }
+@-webkit-keyframes catch-attention {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  60% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  70% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  80% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  90% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@keyframes catch-attention {
+  0% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+  50% {
+    -webkit-transform: scale(1.4);
+            transform: scale(1.4);
+  }
+  60% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  70% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  80% {
+    -webkit-transform: rotate(-6deg);
+            transform: rotate(-6deg);
+  }
+  90% {
+    -webkit-transform: rotate(6deg);
+            transform: rotate(6deg);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
 @media only screen and (min-width: 576px) {
   /* Loop for Grid Breakpoint System */
   .col-sm1 {
@@ -5072,6 +5132,17 @@ h3 {
 .btn-ghost-tertiary:focus {
   outline: 0;
   border: 0;
+}
+
+.btn--animate {
+  display: inline-block !important;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+  -webkit-animation: catch-attention 0.5s infinite forwards;
+          animation: catch-attention 0.5s infinite forwards;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
 }
 
 .avatar-circle {

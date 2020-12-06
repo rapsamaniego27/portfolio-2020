@@ -102,6 +102,30 @@ class Data{
 
 
 
+const months = [
+ "January",
+ "February",
+ "March",
+ "April",
+ "May",
+ "June",
+ "July",
+ "August",
+ "September",
+ "October",
+ "November",
+ "December"
+];
+
+const weekdays = [
+ "Sunday",
+ "Monday",
+ "Tuesday",
+ "Wednesday",
+ "Thursday",
+ "Friday",
+ "Saturday"
+];
 /* Notes:
   <a> should always be the one clickable having a full height and width
 
@@ -251,7 +275,14 @@ class Modal{
  //Methods
  openModalInfo(project){
 
-  const createDate = new Date(project.create_date);
+ /* Sets the date format options */
+  const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+ /* Declare the Javascript Date Object */
+  const date = new Date(project.create_date);
+
+ /* And uses the Intl.dateformat to finalize the date format */
+  const createDate = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
   const technologiesList = this.loopTechnologies(project);
   const gallery = this.showGalleryImages(project);
 
@@ -673,12 +704,22 @@ class UI{
   }
 
   makeCertCard(cert){
+
+    /* Sets the date format options */
+    const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+    /* Declare the Javascript Date Object */
+    const date = new Date(cert.date_received);
+
+    /* And uses the Intl.dateformat to finalize the date format */
+    const dateReceived = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
+
     let layout = `
       <div class="award">
         <div class="award-content">
           <h4 class="hex-primary award-title">${cert.name}</h4>
           <h6 class="hex-dark award-organizer mt-10">${cert.organizer}</h6>
-          <h6 class="hex-dark award-date">${cert.date_received}</h6>
+          <h6 class="hex-dark award-date">${dateReceived}</h6>
        </div>
        <a href="${cert.link}" target="_blank" class="btn btn-primary pr-lg20">View Certficate</a>
       </div>

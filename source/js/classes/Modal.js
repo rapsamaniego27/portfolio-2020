@@ -25,7 +25,14 @@ class Modal{
  //Methods
  openModalInfo(project){
 
-  const createDate = new Date(project.create_date);
+ /* Sets the date format options */
+  const dateOptions = { year: 'numeric', month: 'long', day: 'numeric' };
+
+ /* Declare the Javascript Date Object */
+  const date = new Date(project.create_date);
+
+ /* And uses the Intl.dateformat to finalize the date format */
+  const createDate = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
   const technologiesList = this.loopTechnologies(project);
   const gallery = this.showGalleryImages(project);
 

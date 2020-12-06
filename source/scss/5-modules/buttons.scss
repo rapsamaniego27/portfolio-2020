@@ -53,3 +53,10 @@
 .btn-ghost-tertiary{
   @include btn-ghost-background(color('tertiary'));
 }
+
+.btn--animate{
+  display:inline-block !important;
+  width:max-content;
+  animation:catch-attention 0.5s infinite forwards;
+  animation-delay: 3s;
+}
