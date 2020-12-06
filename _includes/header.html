@@ -3,13 +3,11 @@
 
 <head>
   {% capture description %}
-  
     {% if page.meta %}
     {{ page.meta }}
     {% else %}
     {{ page.excerpt | strip_html | truncatewords: 150 }}
     {% endif %}
-  
   {% endcapture %}
  <meta name="viewport" content="width=device-width, initial-scale=1">
  <meta name="og:title" property="og:title" content="{{ site.title }} | {{ page.title }} ">
