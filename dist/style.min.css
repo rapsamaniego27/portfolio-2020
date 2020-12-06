@@ -5395,7 +5395,8 @@ h3 {
     -webkit-box-direction: reverse;
             flex-direction: column-reverse;
   }
-
+}
+@media only screen and (max-width: 1366px) {
   .contact-form__heading {
     margin-top: 20px;
     font-size: 1.25rem;
