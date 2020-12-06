@@ -16,11 +16,32 @@ class Certification {
    .then((certs) => {
     let html = ``;
 
+    this.awardContainer.innerHTML = '<span class="spinner hex-primary mt-30 mb-30"></span>';
+
     certs.forEach(cert => {
       html += this.UI.makeCertCard(cert);
     });
 
-    this.awardContainer.innerHTML = html;
+    setTimeout(() => {
+      this.awardContainer.innerHTML = html;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from('.award', {
+        scrollTrigger: {
+          trigger: '.award',
+          toggleActions: "restart none none none"
+        },
+        y: -100,
+        opacity:0,
+        duration: 0.7,
+        stagger: 0.4
+      });
+
+    }, 1000);
+
+    
+ 
 
    }).catch((err) => {
 
@@ -507,12 +528,27 @@ class Skills{
   this.data.getSkills()
    .then((result) => {
     let html = ``;
+    
+    this.techContainer.innerHTML = '<span class="spinner mt-30 mb-30"></span>';
 
     result.forEach(skill => {
       html += this.UI.makeSkillsColumn(skill.type, skill.skills);
     });
     
-   this.techContainer.innerHTML = html;
+   setTimeout(() => {
+     this.techContainer.innerHTML = html;
+
+     gsap.from('.other-tech__category', {
+       scrollTrigger: {
+         trigger: '.other-tech__category',
+         toggleActions: "restart none none none"
+       },
+       x: -100,
+       opacity: 0,
+       duration: 0.3,
+       stagger: 0.4
+     });
+   }, 1000);
 
    }).catch((err) => {
 

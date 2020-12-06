@@ -16,11 +16,32 @@ class Certification {
    .then((certs) => {
     let html = ``;
 
+    this.awardContainer.innerHTML = '<span class="spinner hex-primary mt-30 mb-30"></span>';
+
     certs.forEach(cert => {
       html += this.UI.makeCertCard(cert);
     });
 
-    this.awardContainer.innerHTML = html;
+    setTimeout(() => {
+      this.awardContainer.innerHTML = html;
+
+      gsap.registerPlugin(ScrollTrigger);
+
+      gsap.from('.award', {
+        scrollTrigger: {
+          trigger: '.award',
+          toggleActions: "restart none none none"
+        },
+        y: -100,
+        opacity:0,
+        duration: 0.7,
+        stagger: 0.4
+      });
+
+    }, 1000);
+
+    
+ 
 
    }).catch((err) => {
 

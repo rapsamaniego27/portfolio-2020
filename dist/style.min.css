@@ -4308,6 +4308,7 @@ h3 {
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   justify-items: center;
   margin: 0 auto;
+  position: relative;
 }
 
 .other-tech__list .other-tech__item {
@@ -4356,6 +4357,7 @@ h3 {
   gap: 1.5rem 1rem;
   grid-template-columns: repeat(2, 1fr);
   justify-items: center;
+  position: relative;
 }
 
 .work-exp__section {
@@ -5270,8 +5272,8 @@ h3 {
   position: absolute;
   top: 0;
   left: 50%;
-  -webkit-transform: translate(0, -50%);
-          transform: translate(0, -50%);
+  -webkit-transform: translate(50%, 0);
+          transform: translate(50%, 0);
 }
 
 @-webkit-keyframes rotation {
