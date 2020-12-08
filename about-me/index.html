@@ -72,7 +72,7 @@ meta: Everything you need to know about Rap Esteva is in this page.
 
   <div class="works mt-40 pr-lg-30 pl-lg-30 pb-60">
     
-    {% assign jobs = site.jobs | sort: 'start_date' %}
+    {% assign jobs = site.jobs | sort: 'end_date'  %}
     {% for job in jobs %}
       {% include snippet-job.html %}
     {% endfor %}
