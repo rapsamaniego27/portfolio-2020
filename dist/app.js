@@ -738,6 +738,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
  const portfolioContainer = document.querySelector('.portfolio-container');
  const pageAboutMe = document.querySelector('#pageAboutMe');
  const pageHome = document.querySelector('#pageHome');
+ const btnDownloadCV = document.querySelector('#btnDownload');
 
 
 
@@ -772,6 +773,12 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
     const skills = new Skills();
     const certification = new Certification();
+  }
+
+  if(isInPage(btnDownloadCV)){
+    setInterval(() => {
+      btnDownloadCV.classList.toggle('btn--animate');
+    }, 2500);
   }
 
 

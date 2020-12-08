@@ -598,13 +598,9 @@ p {
     -webkit-transform: rotate(-6deg);
             transform: rotate(-6deg);
   }
-  90% {
+  100% {
     -webkit-transform: rotate(6deg);
             transform: rotate(6deg);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 @keyframes catch-attention {
@@ -628,13 +624,9 @@ p {
     -webkit-transform: rotate(-6deg);
             transform: rotate(-6deg);
   }
-  90% {
+  100% {
     -webkit-transform: rotate(6deg);
             transform: rotate(6deg);
-  }
-  100% {
-    -webkit-transform: scale(1);
-            transform: scale(1);
   }
 }
 @media only screen and (min-width: 576px) {
@@ -5139,10 +5131,8 @@ h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-animation: catch-attention 0.5s infinite forwards;
-          animation: catch-attention 0.5s infinite forwards;
-  -webkit-animation-delay: 3s;
-          animation-delay: 3s;
+  -webkit-animation: catch-attention 0.7s ease-in-out;
+          animation: catch-attention 0.7s ease-in-out;
 }
 
 .avatar-circle {
