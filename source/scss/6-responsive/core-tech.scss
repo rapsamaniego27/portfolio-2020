@@ -9,8 +9,14 @@
 
  }
 
- .core-technologies__section a {
-    display: block;
+ .core-technologies__section  {
+    a{
+       display: block !important;
+    }
+    .btn--animate{
+       display:block !important;
+       width:auto !important;
+    }
  }
 
  .core-tech{

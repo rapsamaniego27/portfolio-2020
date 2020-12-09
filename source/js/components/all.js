@@ -41,12 +41,12 @@ window.addEventListener('DOMContentLoaded', ()=> {
     const certification = new Certification();
   }
 
+  /* Makes the Download CV wiggle */
   if(isInPage(btnDownloadCV)){
     setInterval(() => {
       btnDownloadCV.classList.toggle('btn--animate');
-    }, 2500);
+    }, 3000);
   }
-
 
  
 

@@ -583,8 +583,8 @@ p {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   60% {
     -webkit-transform: rotate(-6deg);
@@ -609,8 +609,8 @@ p {
             transform: scale(1);
   }
   50% {
-    -webkit-transform: scale(1.4);
-            transform: scale(1.4);
+    -webkit-transform: scale(1.2);
+            transform: scale(1.2);
   }
   60% {
     -webkit-transform: rotate(-6deg);
@@ -4317,6 +4317,7 @@ h3 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+  /* Button for Download CV */
 }
 .core-technologies__section a {
   display: table;
@@ -5137,8 +5138,8 @@ h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
-  -webkit-animation: catch-attention 0.7s ease-in-out;
-          animation: catch-attention 0.7s ease-in-out;
+  -webkit-animation: catch-attention 0.5s ease-in-out;
+          animation: catch-attention 0.5s ease-in-out;
 }
 
 .avatar-circle {
@@ -5486,7 +5487,11 @@ h3 {
   }
 
   .core-technologies__section a {
-    display: block;
+    display: block !important;
+  }
+  .core-technologies__section .btn--animate {
+    display: block !important;
+    width: auto !important;
   }
 
   .core-tech h5 {
