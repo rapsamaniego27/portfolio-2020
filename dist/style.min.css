@@ -4364,7 +4364,7 @@ h3 {
 .other-tech__container {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   justify-items: center;
   margin: 0 auto;
   position: relative;
@@ -5497,15 +5497,28 @@ h3 {
   .core-tech h5 {
     font-size: 1rem;
   }
-  .core-tech .stars {
-    font-size: 13px;
-  }
 
   .core h4 {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   .core .core-icon {
     font-size: 24px;
+  }
+}
+@media only screen and (max-width: 1024px) {
+  .core-tech .stars {
+    font-size: 13px;
+    width: -webkit-max-content;
+    width: -moz-max-content;
+    width: max-content;
+  }
+
+  .core-tech__list {
+    padding-left: 8px;
+  }
+
+  .about-me__container .col-offset-2 {
+    margin-left: 8%;
   }
 }
 @media only screen and (max-width: 800px) {

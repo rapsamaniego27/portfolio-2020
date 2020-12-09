@@ -23,19 +23,36 @@
   h5{
    font-size:1rem;
   }
-  .stars{
-   font-size:13px;
-  }
 
  }
 
  .core{
   h4{
-   font-size:1rem;
+   font-size:1.1rem;
   }
 
   .core-icon{
    font-size:24px;
   }
+ }
+}
+
+@media #{$device-md}{
+ .core-tech{
+  .stars{
+   font-size:13px;
+   width:max-content;
+  }
+
+ }
+
+ .core-tech__list{
+    padding-left:8px;
+ }
+
+ .about-me__container{
+    .col-offset-2{
+      margin-left:8%;
+    }
  }
 }
