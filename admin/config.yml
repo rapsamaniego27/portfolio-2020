@@ -27,6 +27,7 @@ collections:
        - label: "Note (to be added in Contact Form)"
          name: "note"
          widget: "text"
+         required: false
       
   - label: "Pages"
     name: "pages"
