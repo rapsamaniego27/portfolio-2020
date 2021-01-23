@@ -5,11 +5,12 @@
   <div class="contact-form col-lg6 col-xs12">
   
    <form action="POST" data-netlify="true" class="contact-form__inner">
+     {% if site.data.main.note %}
      <div class="help-warning hex-tertiary mb-20">
        <strong>Note: </strong> 
-       <p>Ralph is currently not entertaining any projects as of the moment.
-       Ralph is currently not entertaining any projects as of the moment.</p>
+       <p>{{ site.data.main.note }}</p>
      </div>
+     {% endif %}
     <div class="form-group">
      <label for="name">Name: </label>
      <input type="text" id="name" name="name" class="mt-10">
