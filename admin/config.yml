@@ -11,7 +11,7 @@ collections:
   - name: "home"
     label: "Defaults"
     files:
-    - label: "Home Content"
+    - label: "Default Content"
       name: "site"
       file: "_data/main.yml"
       fields:
@@ -24,7 +24,7 @@ collections:
        - label: "Summary"
          name: "summary"
          widget: "markdown"
-       - label: "Note"
+       - label: "Note (to be added in Contact Form)"
          name: "note"
          widget: "text"
       
