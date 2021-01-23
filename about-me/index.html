@@ -56,8 +56,14 @@ layout: default
  
    </div>
    <div class="core-technologies__buttons">
-    <a href="/images/laravel-code-bright.pdf" class="btn btn-warning pr-lg20 mt-20 btn--animate btnDownload"  download><i class="fas fa-download"></i> Download CV</a>
-    <a href="#" class="btn btn-primary pr-lg20 mt-20 btnDownload"><i class="fas fa-download" download></i> Download Resume</a>
+    {% if site.data.main.cv %}
+      <a href="{{site.data.main.cv}}" class="btn btn-warning pr-lg20 mt-20 btn--animate btnDownload"  download><i class="fas fa-download"></i> Download CV</a>
+    {% endif %}
+
+    {% if site.data.main.resume %}
+      <a href="{{site.data.main.resume}}" class="btn btn-primary pr-lg20 mt-20 btnDownload"><i class="fas fa-download" download></i> Download Resume</a>
+    {% endif %}
+    
    </div>
   </div>
  

@@ -54,7 +54,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
       btnDownloadCV.classList.toggle('btn--animate');
     }, 3000);
 
-
   }
 
   const data = new Data();
