@@ -45,6 +45,7 @@ collections:
       - label: "Meta Image"
         name: "meta_image"
         widget: "image"
+        required: false
 
   - label: "Sample Projects"
     name: "sample-projects"
