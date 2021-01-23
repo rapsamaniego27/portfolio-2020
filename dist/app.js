@@ -741,9 +741,6 @@ window.addEventListener('DOMContentLoaded', ()=> {
  const btnDownloadCV = document.querySelector('#btnDownload');
 
 
-
-
-
   if (isInPage(btnSeeProjects)){
 
     btnSeeProjects.addEventListener('click', (e) => {
@@ -766,6 +763,9 @@ window.addEventListener('DOMContentLoaded', ()=> {
   /* Portfolio */
   if(isInPage(portfolioContainer)){
     const portfolio = new Portfolio();
+
+    /* Auto display projects */
+    portfolio.displayResults('Javascript');
   }
 
   if (isInPage(pageAboutMe)) {
@@ -782,8 +782,10 @@ window.addEventListener('DOMContentLoaded', ()=> {
     }, 3000);
   }
 
- 
-
+  const data = new Data();
+  data.fetchProjects('Javascript')
+    .then(data => {})
+    .catch(err => console.log(err));
 });
 const navOpen = document.querySelector('#menuOpen');
 const navOverlay = document.querySelector('#menuOverlay');
