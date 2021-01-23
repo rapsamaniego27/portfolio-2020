@@ -9,7 +9,7 @@ media_folder: "images"
 
 collections:
   - name: "home"
-    label: "Home Page"
+    label: "Defaults"
     files:
     - label: "Home Content"
       name: "site"
@@ -24,6 +24,9 @@ collections:
        - label: "Summary"
          name: "summary"
          widget: "markdown"
+       - label: "Note"
+         name: "note"
+         widget: "text"
       
   - label: "Pages"
     name: "pages"

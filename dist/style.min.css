@@ -4890,6 +4890,14 @@ h3 {
   margin-right: 15px;
 }
 
+.help-warning strong {
+  font-size: 18px;
+}
+.help-warning p {
+  display: inline;
+  font-size: 16px;
+}
+
 /* Button Regulars  */
 .btn-success {
   background-color: #9FD356;
