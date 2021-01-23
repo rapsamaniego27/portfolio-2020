@@ -1,7 +1,6 @@
 ---
 meta_title: Contact
-meta_description: Everything you need to know about Rap Esteva, web developer,
-  web designer, blogger
+meta_description: Everything
 slug: contact
 permalink: /contact/
 ---
