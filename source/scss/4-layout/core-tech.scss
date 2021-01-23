@@ -9,6 +9,11 @@
   /* Button for Download CV */
   a{
    display:table;
+   width:max-content;
+
+   @media #{$device-sm}{
+     width:auto;
+   }
   }
 }
 
@@ -39,4 +44,13 @@
 
 .core-tech__title{
   width:max-content;
+}
+
+.core-technologies__buttons{
+  display:flex;
+  align-items: center;
+
+  a:not(:first-of-type){
+    margin-left: 20px;
+  }
 }

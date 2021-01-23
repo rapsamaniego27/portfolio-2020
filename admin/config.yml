@@ -28,6 +28,14 @@ collections:
          name: "note"
          widget: "text"
          required: false
+       - label: "Resume"
+         name: "resume"
+         widget: "file"
+         required: false
+       - label: "CV"
+         name: "cv"
+         widget: "file"
+         required: false  
       
   - label: "Pages"
     name: "pages"

@@ -4321,6 +4321,14 @@ h3 {
 }
 .core-technologies__section a {
   display: table;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
+}
+@media only screen and (max-width: 800px) {
+  .core-technologies__section a {
+    width: auto;
+  }
 }
 
 .core:not(:first-child) {
@@ -4352,6 +4360,16 @@ h3 {
   width: -webkit-max-content;
   width: -moz-max-content;
   width: max-content;
+}
+
+.core-technologies__buttons {
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.core-technologies__buttons a:not(:first-of-type) {
+  margin-left: 20px;
 }
 
 .other-tech__section h2 {
@@ -5142,10 +5160,6 @@ h3 {
 }
 
 .btn--animate {
-  display: inline-block !important;
-  width: -webkit-max-content;
-  width: -moz-max-content;
-  width: max-content;
   -webkit-animation: catch-attention 0.5s ease-in-out;
           animation: catch-attention 0.5s ease-in-out;
 }
@@ -5572,15 +5586,11 @@ h3 {
     padding: 30px;
   }
   .about-me__container .col-offset-2 {
-    margin-left: 0;
+    margin-left: 0 !important;
   }
 
   .core-technologies__section a {
     display: block !important;
-  }
-  .core-technologies__section .btn--animate {
-    display: block !important;
-    width: auto !important;
   }
 
   .core-tech h5 {
@@ -5610,6 +5620,20 @@ h3 {
     margin-left: 8%;
   }
 }
+@media (max-width: 520px) {
+  .core-technologies__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    margin-top: 20px;
+  }
+  .core-technologies__buttons a:not(:first-of-type) {
+    margin-left: 0;
+  }
+  .core-technologies__buttons a {
+    width: 80%;
+  }
+}
 @media only screen and (max-width: 800px) {
   .other-tech__item {
     font-size: 16px !important;
@@ -5622,6 +5646,9 @@ h3 {
 
   .award {
     width: 76%;
+    height: -webkit-max-content;
+    height: -moz-max-content;
+    height: max-content;
   }
 }
 @media only screen and (max-width: 800px) {

@@ -3,7 +3,7 @@
   padding:30px;
 
   .col-offset-2{
-   margin-left:0;
+   margin-left:0 !important;
   }
 
 
@@ -13,10 +13,7 @@
     a{
        display: block !important;
     }
-    .btn--animate{
-       display:block !important;
-       width:auto !important;
-    }
+    
  }
 
  .core-tech{
@@ -55,4 +52,20 @@
       margin-left:8%;
     }
  }
+}
+
+@media (max-width: 520px){
+   .core-technologies__buttons{
+      flex-direction: column;
+      margin-top:20px;
+
+      a:not(:first-of-type){
+         margin-left: 0;
+      }
+
+      a{
+         width:80%;
+      }
+   }
+
 }

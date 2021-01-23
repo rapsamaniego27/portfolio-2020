@@ -821,7 +821,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
  const portfolioContainer = document.querySelector('.portfolio-container');
  const pageAboutMe = document.querySelector('#pageAboutMe');
  const pageHome = document.querySelector('#pageHome');
- const btnDownloadCV = document.querySelector('#btnDownload');
+ const btnDownloadCV = document.querySelector('.btnDownload');
 
 
   if (isInPage(btnSeeProjects)){
@@ -870,6 +870,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
     setInterval(() => {
       btnDownloadCV.classList.toggle('btn--animate');
     }, 3000);
+
+
   }
 
   const data = new Data();
