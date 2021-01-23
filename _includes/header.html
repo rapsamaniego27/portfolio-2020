@@ -2,21 +2,24 @@
 <html lang="{{ site.lang | default: "en-US" }}">
 
 <head>
-  {% capture description %}
-    {% if page.meta %}
-    {{ page.meta }}
-    {% else %}
-    {{ page.excerpt | strip_html | truncatewords: 150 }}
-    {% endif %}
-  {% endcapture %}
+  <!-- Got this loop from the Pages Collection -->
+  {% assign seo = site.pages | where:"permalink", page.url | first %}
+
+  <!-- Make a condition if there is an existing meta image or else use a default one -->
+  {% if seo.meta_image%}
+    {% assign meta_image = site.url | append: seo.meta_image %}
+  {% else %}
+    {% assign meta_image = 'https://github.com/rapsamaniego27/portfolio-2020/blob/master/images/meta-thumbnail-2020.jpg?raw=true' %}
+  {% endif %}
+
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="og:title" property="og:title" content="{{ site.title }} | {{ page.title }} ">
- <meta name="description" content="{{ description }}">
- <meta property="og:image" content="https://github.com/rapsamaniego27/portfolio-2020/blob/master/images/meta-thumbnail-2020.jpg?raw=true">
- <meta property="og:url" content="https://rapesteva.netlify.app/">
+ <meta name="og:title" property="og:title" content="{{ site.title }} | {{ seo.title }} ">
+ <meta name="description" content="{{ seo.meta_description }}">
+ <meta property="og:image" content="{{ meta_image }}">
+ <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
 
- <title>{{ site.title }} | {{ page.title }} | {{ description }}</title>
+ <title>{{ site.title }} - {{ seo.title }} | {{ seo.meta_description }}</title>
 
  <!-- Row Styles -->
  <link rel="stylesheet" href="{{site.baseurl}}/dist/style.min.css">
