@@ -30,8 +30,8 @@ collections:
     create: true
     folder: "_pages"
     fields:
-      - label: "Meta Title"
-        name: "meta_title"
+      - label: "Title"
+        name: "title"
         widget: "string"
       - label: "Meta Description"
         name: "meta_description"
