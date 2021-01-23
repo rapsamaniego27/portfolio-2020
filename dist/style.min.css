@@ -3833,6 +3833,11 @@ p {
   height: max-content;
   min-height: 100vh;
 }
+@media only screen and (max-width: 600px) {
+  #wrapper {
+    min-height: 115vh !important;
+  }
+}
 
 #main {
   -webkit-box-flex: 1;
@@ -3845,6 +3850,12 @@ footer {
 
 .page-title, .page-description {
   text-align: center;
+}
+
+.page-description {
+  width: 680px;
+  max-width: 86%;
+  margin: 0 auto;
 }
 
 .section-title {

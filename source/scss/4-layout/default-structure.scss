@@ -4,6 +4,10 @@
   position:relative;
   height: max-content;
   min-height:100vh;
+
+  @media only screen and (max-width:600px){
+   min-height:115vh !important;
+  }
 }
 
 #main{
@@ -18,6 +22,12 @@ footer{
 
 .page-title, .page-description{
   text-align: center;
+}
+
+.page-description{
+  width:680px;
+  max-width:86%;
+  margin:0 auto;
 }
 
 .section-title{
