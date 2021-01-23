@@ -33,6 +33,7 @@ exclude: ["source", "node_modules", "mix-manifest.json", "package-lock.json", "p
 # Build settings
 plugins:
   - jekyll-feed
+  - jekyll-strapi
 
 # Register the custom folder you made
 collections:
@@ -40,6 +41,15 @@ collections:
   - cores
   - jobs
   - pages
+
+strapi:  
+    # Your API endpoint (optional, default to http://localhost:1337)
+    endpoint: https://strapi-rap.herokuapp.com
+    collections: 
+      certifications:
+        type: certifications
+      skill-types:
+        permalink: /skill-types/
 
 
 

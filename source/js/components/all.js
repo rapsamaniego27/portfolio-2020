@@ -37,8 +37,15 @@ window.addEventListener('DOMContentLoaded', ()=> {
   if (isInPage(pageAboutMe)) {
     /* Skills and Certifications*/
 
-    const skills = new Skills();
-    const certification = new Certification();
+    /* const skills = new Skills(); */
+    const certification = new Certification(); 
+    
+   const animate = new Animate();
+   animate.skills();
+   animate.certs();
+
+   certification.bindOpenModal();
+   certification.bindCloseModal();
   }
 
   /* Makes the Download CV wiggle */

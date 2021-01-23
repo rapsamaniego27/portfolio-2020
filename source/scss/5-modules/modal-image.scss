@@ -1,0 +1,77 @@
+.modal-image{
+  background:var(--white);
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 13001;
+  width:max-content;
+  border-radius: 12px;
+
+  @media #{$device-md}{
+   width:80%;
+  }
+  
+  .modal-close{
+    position:absolute;
+    top:0;
+    right:0;
+    background: var(--danger);
+    color:var(--white);
+    padding:6px;
+
+    i{
+      pointer-events: none;;
+    }
+ }
+
+
+  .modal-guts{
+     /* other stuff we already covered */
+
+    /* cover the modal */
+    top: 0;
+    left: 0;
+    width: 70vw;
+    margin:20px auto;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+
+    @media #{$device-md}{
+     height:max-content;
+     padding:20px 0;
+    }
+
+    img{
+     width:100%;
+     object-fit:cover;
+    }
+   
+  }
+
+  .modal-content{
+    width:70%;
+    margin:0 auto;
+
+    @media #{$device-sm}{
+     width:86%;
+    }
+  }
+  
+}
+
+.modal-overlay{
+  position: fixed;
+  z-index:13000;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:rgba(var(--black-rgb), 0.8);
+}
+
+.modal--hide{
+ display:none;
+ cursor:pointer;
+}

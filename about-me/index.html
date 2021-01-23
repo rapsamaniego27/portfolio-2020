@@ -87,6 +87,9 @@ layout: default
   <div class="other-tech__container pt-30 pb-60" id="techContainer">
     <!-- Insert Skills/Technologies here -->
     
+    {% for tech in strapi.collections.skill-types %}
+      {% include snippets/skill-type.html %}
+    {% endfor %}
    
   </div>
 </section>
@@ -98,8 +101,14 @@ layout: default
   
   <div class="grid-container award-container pt-40" id="awardContainer">
   <!-- Insert Certifications here -->
+  
+  {% for cert in strapi.collections.certifications %}
+   {% include snippets/cert.html %}
+  {% endfor %}
 
 
   </div>
 
 </section>
+
+{% include snippets/modal-image.html %}

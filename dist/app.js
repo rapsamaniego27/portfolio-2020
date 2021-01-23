@@ -1,12 +1,55 @@
+class Animate{
+ constructor(){
+  this.techContainer = document.querySelector('#techContainer');
+  this.awardContainer = document.querySelector('#awardContainer');
+ }
+
+ //Methods
+ skills(){
+  gsap.from('.other-tech__category', {
+   scrollTrigger: {
+    trigger: '.other-tech__category',
+    toggleActions: "restart none none none"
+   },
+   x: -100,
+   opacity: 0,
+   duration: 0.3,
+   stagger: 0.4
+  });
+ }
+
+ certs(){
+  gsap.registerPlugin(ScrollTrigger);
+
+  gsap.from('.award', {
+   scrollTrigger: {
+    trigger: '.award',
+    toggleActions: "restart none none none"
+   },
+   y: -100,
+   opacity: 0,
+   duration: 0.5,
+   stagger: 0.3
+  });
+ }
+}
 class Certification {
  constructor() {
   this.awardContainer = document.querySelector('#awardContainer');
   this.data = new Data();
   this.UI = new UI();
 
+  /* Modal */
+  this.images = document.querySelectorAll('.btnCert');
+  this.modalOverlay = document.querySelector('#modalOverlay');
+  this.modalImg = document.querySelector('#modalImg');
+  this.modalImgSrc = document.querySelector('#modalImgSrc');
+  this.modalClose = document.querySelector('#modalClose');
+
   /* Automatic */
 
-  this.displayCerts();
+  /* Open this just incase */
+  /* this.displayCerts(); */ 
  }
 
  //Methods
@@ -50,6 +93,46 @@ class Certification {
    });
 
  }
+
+  bindOpenModal() {
+    this.images.forEach(image => {
+      image.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const imageSrc = e.target.href;
+
+
+        this.modalImgSrc.src = imageSrc;
+
+        this.modalOverlay.classList.remove('modal--hide');
+        this.modalImg.classList.remove('modal--hide');
+
+      });
+    });
+  }
+
+  bindCloseModal() {
+    this.modalClose.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (e.target.classList.contains('modal-close')) {
+        this.modalImg.classList.add('modal--hide');
+        this.modalOverlay.classList.add('modal--hide');
+      }
+
+
+    });
+
+    this.modalOverlay.addEventListener('click', (e) => {
+
+      if (e.target.classList.contains('modal-overlay')) {
+        this.modalImg.classList.add('modal--hide');
+        this.modalOverlay.classList.add('modal--hide');
+      }
+
+    });
+  }
+
 }
 class Data{
  constructor(){
@@ -771,8 +854,15 @@ window.addEventListener('DOMContentLoaded', ()=> {
   if (isInPage(pageAboutMe)) {
     /* Skills and Certifications*/
 
-    const skills = new Skills();
-    const certification = new Certification();
+    /* const skills = new Skills(); */
+    const certification = new Certification(); 
+    
+   const animate = new Animate();
+   animate.skills();
+   animate.certs();
+
+   certification.bindOpenModal();
+   certification.bindCloseModal();
   }
 
   /* Makes the Download CV wiggle */

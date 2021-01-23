@@ -4,9 +4,17 @@ class Certification {
   this.data = new Data();
   this.UI = new UI();
 
+  /* Modal */
+  this.images = document.querySelectorAll('.btnCert');
+  this.modalOverlay = document.querySelector('#modalOverlay');
+  this.modalImg = document.querySelector('#modalImg');
+  this.modalImgSrc = document.querySelector('#modalImgSrc');
+  this.modalClose = document.querySelector('#modalClose');
+
   /* Automatic */
 
-  this.displayCerts();
+  /* Open this just incase */
+  /* this.displayCerts(); */ 
  }
 
  //Methods
@@ -50,4 +58,44 @@ class Certification {
    });
 
  }
+
+  bindOpenModal() {
+    this.images.forEach(image => {
+      image.addEventListener('click', (e) => {
+        e.preventDefault();
+
+        const imageSrc = e.target.href;
+
+
+        this.modalImgSrc.src = imageSrc;
+
+        this.modalOverlay.classList.remove('modal--hide');
+        this.modalImg.classList.remove('modal--hide');
+
+      });
+    });
+  }
+
+  bindCloseModal() {
+    this.modalClose.addEventListener('click', (e) => {
+      e.preventDefault();
+
+      if (e.target.classList.contains('modal-close')) {
+        this.modalImg.classList.add('modal--hide');
+        this.modalOverlay.classList.add('modal--hide');
+      }
+
+
+    });
+
+    this.modalOverlay.addEventListener('click', (e) => {
+
+      if (e.target.classList.contains('modal-overlay')) {
+        this.modalImg.classList.add('modal--hide');
+        this.modalOverlay.classList.add('modal--hide');
+      }
+
+    });
+  }
+
 }
