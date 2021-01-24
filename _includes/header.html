@@ -13,9 +13,9 @@
   {% endif %}
 
   {% if seo.meta_description %}
-     {% assign meta_description = seo.meta_description %}
-  {% else %}
-     {% assign meta_description = page.description %}
+     {% assign meta_description = seo.meta_description | prepend: " | " %}
+  {% else%}
+     {% assign meta_description = page.description | prepend: " | " %}
   {% endif %}
 
   <!-- Make a condition if there is an existing meta image or else use a default one -->
@@ -32,7 +32,7 @@
  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
 
- <title>{{ site.title }} - {{ meta_title }} | {{ meta_description | strip_html }}</title>
+ <title>{{ site.title }} - {{ meta_title }} {{ meta_description | strip_html }}</title>
 
  <!-- Row Styles -->
  <link rel="stylesheet" href="{{site.baseurl}}/dist/style.min.css">
