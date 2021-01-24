@@ -5,4 +5,5 @@ meta_description: From mundane to significant topics, you are welcome to explore
   personal aspects foretold in this blog page of mine.
 slug: e-diary
 permalink: /e-diary/
+meta_image: /images/rap-esteva-e-diary.jpg
 ---
