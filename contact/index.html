@@ -1,7 +1,8 @@
 ---
 layout: default
 ---
-
+<!-- Got this loop from the Pages Collection -->
+{% assign seo = site.pages | where:"permalink", page.url | first %}
 
 <h1 class="hex-primary page-title">{{ seo.title }}</h1>
 
