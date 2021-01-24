@@ -57,7 +57,7 @@
 
 .diary-result{
  width:100%;
- height:220px;
+ min-height:220px;
  display:flex;
  align-items: center;
  background: #fff;
@@ -67,7 +67,7 @@
 
 .diary-result__img-container{
   width:50%;
-  height:220px;
+  height:100%;
   overflow:hidden;
   border-top-left-radius:12px;
   border-bottom-left-radius:12px;
@@ -91,6 +91,7 @@
  }
  .diary-result__paragraph{
   font-size:14px;
+  padding-bottom:15px;
  }
  .diary-result__date{
   font-size:13px;
@@ -103,8 +104,6 @@
  }
 
  .btn{
-  margin-bottom:15px;
-  display:inline-table;
-  flex-shrink: 0;
-}
+    margin-bottom:15px;
+  }
 }

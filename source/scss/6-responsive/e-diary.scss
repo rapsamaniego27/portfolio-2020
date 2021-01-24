@@ -19,7 +19,10 @@
 
  .diary-result__img-container{
   width:100%;
-  height:100px;
+  height:130px;
+  border-top-right-radius:12px;
+  border-bottom-left-radius:0;
+  border-bottom-right-radius:0;
  }
 
  .diary-result__content{
@@ -35,6 +38,7 @@
  }
  .diary-result__paragraph{
   margin-top:12px;
+  padding-bottom:0;
  }
 
 }
