@@ -4763,6 +4763,16 @@ h3 {
 
 .chapter-banner {
   width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 1130px;
+  max-width: 100%;
+  height: 250px;
+}
+@media only screen and (max-width: 800px) {
+  .chapter-banner {
+    height: 170px;
+  }
 }
 
 .chapter-meta {

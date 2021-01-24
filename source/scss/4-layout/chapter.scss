@@ -10,6 +10,14 @@
 
 .chapter-banner{
  width:100%;
+ object-fit: cover;
+ width: 1130px;
+ max-width: 100%;
+ height: 250px;
+
+ @media #{$device-sm}{
+   height:170px;
+ }
 }
 
 .chapter-meta{
