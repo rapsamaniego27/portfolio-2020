@@ -43,19 +43,20 @@ collections:
          name: "collaborators"
          widget: "list"
          required: false
-         - label: "Content"
-           name: "content"
-           widget: "object"
-           required: false
-           fields: 
-            - label: "Name"
-              name: "name"
-              widget: "string"
-              required: false
-            - label: "Website"
-              name: "website"
-              widget: "string"
-              required: false
+         fields:
+          - label: "Content"
+            name: "content"
+            widget: "object"
+            required: false
+            fields: 
+              - label: "Name"
+                name: "name"
+                widget: "string"
+                required: false
+              - label: "Website"
+                name: "website"
+                widget: "string"
+                required: false
        
       
   - label: "Pages"
