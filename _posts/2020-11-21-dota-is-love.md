@@ -53,4 +53,4 @@ blocks:
 
         Find more details on the [Diretide Website](http://www.dota2.com/diretide)
 ---
-Dota is love..  CM is my favorite.
+Updated Meta Folks so here it goes.
