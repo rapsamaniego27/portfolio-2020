@@ -13,16 +13,16 @@
   {% endif %}
 
   {% if seo.meta_description %}
-     {% assign meta_description = seo.meta_description | prepend: " | " %}
+     {% assign meta_description = seo.meta_description  %}
   {% else%}
-     {% assign meta_description = page.description | prepend: " | " %}
+     {% assign meta_description = page.description  %}
   {% endif %}
 
   <!-- Make a condition if there is an existing meta image or else use a default one -->
   {% if seo.meta_image%}
     {% assign meta_image = site.url | append: seo.meta_image %}
   {% elsif page.banner %}
-    {% assign meta_image = page.banner %}
+    {% assign meta_image = site.url | append: page.banner %}
   {% else %}
     {% assign meta_image = "https://github.com/rapsamaniego27/portfolio-2020/blob/master/images/meta-thumbnail-2020.jpg?raw=true" %}
   {% endif %}
@@ -32,9 +32,10 @@
  <meta name="description" content="{{ meta_description }}">
  <meta property="og:image" content="{{ meta_image }}">
  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+ <meta name="author" content="{{site.title}}">
 
 
- <title>{{ site.title }} - {{ meta_title }} {{ meta_description | strip_html }}</title>
+ <title>{{ site.title }} - {{ meta_title }} | {{ meta_description | strip_html }}</title>
 
  <!-- Row Styles -->
  <link rel="stylesheet" href="{{site.baseurl}}/dist/style.min.css">
