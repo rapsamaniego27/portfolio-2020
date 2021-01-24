@@ -35,7 +35,22 @@ collections:
        - label: "CV"
          name: "cv"
          widget: "file"
-         required: false  
+         required: false 
+       - label: "Technologies Used"
+         name: "technologies"
+         widget: "list"
+       - label: "Collaborators"
+         name: "collaborators"
+         widget: "list"
+         required: false
+         fields: 
+          - label: "Name"
+            name: "name"
+            widget: "string"
+          - label: "Website"
+            name: "website"
+            widget: "string"
+       
       
   - label: "Pages"
     name: "pages"
