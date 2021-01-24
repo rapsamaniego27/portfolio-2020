@@ -53,4 +53,4 @@ blocks:
 
         Find more details on the [Diretide Website](http://www.dota2.com/diretide)
 ---
-Dota is love.. I started when I was in High school. My first hero was axe.
+Dota is love..  CM is my favorite.
