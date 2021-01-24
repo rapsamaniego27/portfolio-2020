@@ -13,27 +13,23 @@ layout: default
 
   <h2 class="credits-title">Technologies used: </h2>
   <ul class="credits-list pt-20">
-   <li class="credits-list-item">Jekyll</li>
    
+   {% for technology in site.data.main.technologies %}
+      <li class="credits-list-item">{{ technology }}</li>
+   {% endfor %}
   </ul>
   
   <h2 class="credits-title">Special thanks to: </h2>
   <ul class="credits-list pt-20">
-   <li class="credits-list-item">
-    <a href="#" target="_blank" class="credits-link hex-dark">
-     Maneng Martinez &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
-    </a>
-   </li>
-   <li class="credits-list-item">
-    <a href="#" target="_blank" class="credits-link hex-dark">
-     Moses Lucas &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
-    </a>
-   </li>
-   <li class="credits-list-item">
-    <a href="#" target="_blank" class="credits-link hex-dark">
-     Gillan Resumadero &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
-    </a>
-   </li>
+
+    {% for collaborator in site.data.main.collaborators %}
+      <li class="credits-list-item">
+        <a href="#" target="_blank" class="credits-link hex-dark">
+          {{ collaborator }} &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
+        </a>
+      </li>
+    {% endfor %}
+   
   </ul>
 
 </div>
