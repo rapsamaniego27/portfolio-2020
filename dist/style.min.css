@@ -419,6 +419,18 @@ p {
   }
 }
 
+/* The element */
+.menu-link {
+  font-size: 3.2rem;
+  font-weight: var(--weight-bold);
+  /* Checks if it has mobile size property */
+}
+@media only screen and (max-width: 840px) {
+  .menu-link {
+    font-size: 6.9vw;
+  }
+}
+
 /* Generate for color classes */
 /*RGB values for colors */
 .hex-primary {
@@ -3999,6 +4011,9 @@ header {
 }
 
 .menu--disable {
+  pointer-events: none;
+}
+.menu--disable .menu-link {
   pointer-events: none;
 }
 

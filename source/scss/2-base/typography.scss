@@ -89,6 +89,11 @@ $text-elements: (
     size:1rem,
     mobile-size:0.875rem,
     weight:var(--weight-normal)
+  ),
+  '.menu-link':(
+    size:3.2rem,
+    mobile-size:6.9vw, 
+    weight:var(--weight-bold)
   )
 
 );

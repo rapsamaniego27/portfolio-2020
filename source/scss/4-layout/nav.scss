@@ -71,4 +71,8 @@
 
 .menu--disable{
   pointer-events: none;
+
+  .menu-link{
+    pointer-events:none;
+  }
 }
