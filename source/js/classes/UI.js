@@ -50,14 +50,30 @@ class UI{
  /* Creates a collaborator markup */
  makeCollaborator(collaborator){
   let layout = '';
+  let infoMarkup = '';
+  
+  /* Checks if collaborator has website */
+  if(collaborator.website){
+    infoMarkup = `
+      <a href="${collaborator.website}" target="_blank" class="modal__collaborator__link">
+        ${collaborator.name}
+        <span class="modal__collaborator__pos">${collaborator.position}</span>
+      </a> 
+    `;
+  }else{
+    infoMarkup = `
+      <span>
+        ${collaborator.name}
+        <span class="modal__collaborator__pos">${collaborator.position}</span>
+      </span>
+    `;
+  }
 
+  /* Finalize layout */
   layout = `
     <li class="modal__collaborator__item">
          <i class="fas fa-user-circle hex-primary"></i>
-         <a href="#" target="_blank" class="modal__collaborator__link">
-           ${collaborator.name}
-           <span class="modal__collaborator__pos">${collaborator.position}</span>
-          </a> 
+         ${infoMarkup}
       </li>
   `;
 
