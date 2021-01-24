@@ -4,7 +4,7 @@ title: Dota is Love
 author: Rap Esteva
 date: 2020-11-21T08:17:24.311Z
 image: /images/dota.jpg
-banner: /images/sample-banner.jpg
+banner: /images/dota.jpg
 category:
   - Sports
 description: Let it let it be speaking words of wisdom.
