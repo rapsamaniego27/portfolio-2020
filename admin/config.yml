@@ -167,7 +167,7 @@ collections:
       - label: "Thumbnail(570 x 440)"
         name: "image"
         widget: "image"
-      - label: "Banner(1130 x 250)"
+      - label: "Banner(1200 x 627)"
         name: "banner"
         widget: "image"
       - label: "Categories"
