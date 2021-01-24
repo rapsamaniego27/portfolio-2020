@@ -5349,6 +5349,50 @@ h3 {
   pointer-events: none !important;
 }
 
+.modal__collaborators__children {
+  margin-top: 6px;
+  display: -webkit-box;
+  display: flex;
+  flex-wrap: wrap;
+}
+@media only screen and (max-width: 480px) {
+  .modal__collaborators__children {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+            flex-direction: column;
+    -webkit-box-pack: start;
+            justify-content: flex-start;
+  }
+}
+.modal__collaborators__children .modal__collaborator__item {
+  color: var(--dark);
+  white-space: nowrap;
+  padding-top: 14px;
+}
+@media only screen and (max-width: 1024px) {
+  .modal__collaborators__children .modal__collaborator__item {
+    padding-top: 20px;
+  }
+}
+.modal__collaborators__children .modal__collaborator__item:not(:last-of-type) {
+  padding-right: 12px;
+}
+.modal__collaborators__children .modal__collaborator__item .modal__collaborator__pos::before {
+  content: "(";
+}
+.modal__collaborators__children .modal__collaborator__item .modal__collaborator__pos::after {
+  content: ")";
+}
+.modal__collaborators__children .modal__collaborator__item .modal__collaborator__link {
+  color: var(--dark);
+  border-bottom: 1px dashed var(--dark);
+  padding-bottom: 2px;
+}
+.modal__collaborators__children .modal__collaborator__item .modal__collaborator__link:hover {
+  color: var(--accent);
+  border-bottom: 1px dashed var(--accent);
+}
+
 .tag {
   padding: 4px 8px;
   border-radius: 8px;

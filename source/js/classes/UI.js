@@ -34,6 +34,7 @@ class UI{
    return layout;
  }
 
+/* Creates a technology badge */
  makeTechBadge(technology){
   let layout = '';
 
@@ -41,6 +42,23 @@ class UI{
    <div class="tag" style="background: ${technology.color};">
         <p>${technology.name}</p>
        </div>
+  `;
+
+  return layout;
+ }
+
+ /* Creates a collaborator markup */
+ makeCollaborator(collaborator){
+  let layout = '';
+
+  layout = `
+    <li class="modal__collaborator__item">
+         <i class="fas fa-user-circle hex-primary"></i>
+         <a href="#" target="_blank" class="modal__collaborator__link">
+           ${collaborator.name}
+           <span class="modal__collaborator__pos">${collaborator.position}</span>
+          </a> 
+      </li>
   `;
 
   return layout;

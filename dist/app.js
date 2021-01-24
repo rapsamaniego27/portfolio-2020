@@ -346,6 +346,10 @@ class Modal{
   this.modalMainImage = document.querySelector('#modalMainImage');
   this.galleryContainer = document.querySelector('.modal__gallery');
 
+  /* Collaborators */
+   this.collaboratorsSection = document.querySelector('.modal__collaborators__section');
+   this.collaborators = document.querySelector('#collaborators');
+
   /* Image Modal */
   this.modalImgOverlay = document.querySelector('#modalImgOverlay');
   this.modalCloseSecondary = document.querySelector('#modalCloseSecondary');
@@ -355,7 +359,7 @@ class Modal{
   this.UI = new UI();
  }
 
- //Methods
+ //Once modal is opened it fetches the information of the project from an API
  openModalInfo(project){
 
  /* Sets the date format options */
@@ -367,17 +371,19 @@ class Modal{
  /* And uses the Intl.dateformat to finalize the date format */
   const createDate = new Intl.DateTimeFormat('en-US', dateOptions).format(date);
   const technologiesList = this.loopTechnologies(project);
+  const collaboratorsList = this.loopCollaborators(project);
   const gallery = this.showGalleryImages(project);
 
 
-  this.modalTitle.innerHTML = project.name;
-  this.modalDate.innerHTML = createDate;
-  this.modalDesc.innerHTML = project.description;
-  this.modalTech.innerHTML = technologiesList;
-  this.modalMainImage.src = `${project.main_image.url}`;
-  this.modalMainImage.title = `Rap Esteva | Projects | ${project.name}`;
-  this.modalMainImage.alt = `Rap Esteva | Projects | ${project.name}`;
-  this.modalGallery.innerHTML = gallery;
+  this.modalTitle.innerHTML = project.name; /* Title */
+  this.modalDate.innerHTML = createDate; /* Date */
+  this.modalDesc.innerHTML = project.description; /* Description */
+  this.modalTech.innerHTML = technologiesList; /* Technologies */
+  this.collaborators.innerHTML = collaboratorsList; /* Collaborators */
+  this.modalMainImage.src = `${project.main_image.url}`; /* Image URL */
+  this.modalMainImage.title = `Rap Esteva - Projects | ${project.name}`; /* Image Title */
+  this.modalMainImage.alt = `Rap Esteva - Projects | ${project.name}`;  /* Image Alt */
+  this.modalGallery.innerHTML = gallery; /* Image Gallery */
   this.isGallery(gallery);
 
 
@@ -402,12 +408,34 @@ class Modal{
 
   let html = '';
 
+  /* Creates a tech badge markup */
   project.technologies.forEach(technology => {
     html += this.UI.makeTechBadge(technology);
   });
 
   return html;
  }
+ 
+
+ /* Loops Through collaborators and creating a UI for them */
+loopCollaborators(project){
+  let html = '';
+
+  if(project.collaborators != 0){
+    this.collaboratorsSection.style.display = 'block';
+
+    /* Creates a collaborator item markup */
+    project.collaborators.forEach(collaborator => {
+      html += this.UI.makeCollaborator(collaborator);
+    });
+  }else{
+    this.collaboratorsSection.style.display = 'none';
+  }
+
+  
+
+  return html;
+}
 
  showGalleryImages(project){
   let html = '';
@@ -708,6 +736,7 @@ class UI{
    return layout;
  }
 
+/* Creates a technology badge */
  makeTechBadge(technology){
   let layout = '';
 
@@ -715,6 +744,23 @@ class UI{
    <div class="tag" style="background: ${technology.color};">
         <p>${technology.name}</p>
        </div>
+  `;
+
+  return layout;
+ }
+
+ /* Creates a collaborator markup */
+ makeCollaborator(collaborator){
+  let layout = '';
+
+  layout = `
+    <li class="modal__collaborator__item">
+         <i class="fas fa-user-circle hex-primary"></i>
+         <a href="#" target="_blank" class="modal__collaborator__link">
+           ${collaborator.name}
+           <span class="modal__collaborator__pos">${collaborator.position}</span>
+          </a> 
+      </li>
   `;
 
   return layout;

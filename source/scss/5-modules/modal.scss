@@ -171,3 +171,52 @@
     pointer-events: none !important;
   }
 }
+
+.modal__collaborators__children{
+    margin-top:6px;
+    display: flex;
+    flex-wrap: wrap;
+
+    @media #{$device-xs}{
+      flex-direction: column;
+      justify-content:flex-start;
+    }
+
+  .modal__collaborator__item{
+    color:var(--dark);
+    white-space: nowrap;
+    padding-top: 14px;
+
+    @media #{$device-md}{
+      padding-top: 20px;
+    }
+    
+    &:not(:last-of-type){
+      padding-right:12px;
+
+    }
+
+    .modal__collaborator__pos{
+      &::before{
+        content:'(';
+      }
+
+      &::after{
+        content:')';
+      }
+    }
+
+    .modal__collaborator__link{
+      color:var(--dark);
+      border-bottom: 1px dashed var(--dark);
+      padding-bottom:2px;
+
+      &:hover{
+        color: var(--accent);
+        border-bottom: 1px dashed var(--accent);
+      }
+    }
+  }
+  
+
+}
