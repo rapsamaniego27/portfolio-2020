@@ -7,4 +7,5 @@ meta_description: Thank you for stopping by my site. I made this so I can
   site possible.
 slug: site-info
 permalink: /site-info/
+meta_image: /images/site-rap.jpg
 ---

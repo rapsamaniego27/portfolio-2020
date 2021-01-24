@@ -5,4 +5,5 @@ meta_description: Everything you need to know about Rap Esteva, web developer,
   a greeting in this contact page.
 slug: contact
 permalink: /contact/
+meta_image: /images/rap-esteva-contact.jpg
 ---
