@@ -26,14 +26,9 @@ technologies:
   - Sass
   - API
 collaborators:
-    content:
-      name: Ralph Martyn Esteva
-    content:
-      name: Soleil Olandez
-      website: Website.com
-    content:
-      name: Mary Ann Mercado
-      website: WEbsiteasdf.com
   - content:
       name: Dummy
       website: Hey
+  - content:
+      name: King Howard
+      website: fdsafsadf

@@ -25,7 +25,10 @@ layout: default
     {% for collaborator in site.data.main.collaborators %}
       <li class="credits-list-item">
         <a href="#" target="_blank" class="credits-link hex-dark">
-          {{ collaborator }} &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
+          {{ collaborator.content.name }} &nbsp; 
+          {% if collaborator.content.website %}
+          <i class="fas fa-external-link-alt hex-accent"></i>
+          {% endif %}
         </a>
       </li>
     {% endfor %}
