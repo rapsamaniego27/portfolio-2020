@@ -1,9 +1,10 @@
 ---
 layout: default
 ---
+<!-- Got this loop from the Pages Collection -->
+{% assign seo = site.pages | where:"permalink", page.url | first %}
 
-
-<h2 class="hex-primary page-title">{{ site.data.page-metas.about_me_title }}</h2>
+<h1 class="hex-primary page-title">{{ seo.title }}</h1>
 
 <section class="grid-container" id="pageAboutMe">
  <div class="about-me__container container__flex mt-40">

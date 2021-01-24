@@ -1,0 +1,47 @@
+---
+layout: default
+---
+<!-- Got this loop from the Pages Collection -->
+{% assign seo = site.pages | where:"permalink", page.url | first %}
+
+<div class="container site-info__container mb-60">
+ <h1 class="page-title hex-primary mt-30">{{ seo.title }}</h1>
+ <p class="hex-dark page-description pt-20">
+  {{seo.meta_description}}
+ </p>
+
+
+  <h2 class="credits-title">Technologies used: </h2>
+  <ul class="credits-list pt-20">
+   <li class="credits-list-item">Jekyll</li>
+   <li class="credits-list-item">Netlify</li>
+   <li class="credits-list-item">Heroku</li>
+   <li class="credits-list-item">Netlify CMS</li>
+   <li class="credits-list-item">Strapi.js</li>
+   <li class="credits-list-item">Github</li>
+   <li class="credits-list-item">Javascript</li>
+   <li class="credits-list-item">Heroku</li>
+   <li class="credits-list-item">Webpack</li>
+   <li class="credits-list-item">Sass</li>
+  </ul>
+  
+  <h2 class="credits-title">Special thanks to: </h2>
+  <ul class="credits-list pt-20">
+   <li class="credits-list-item">
+    <a href="#" target="_blank" class="credits-link hex-dark">
+     Maneng Martinez &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
+    </a>
+   </li>
+   <li class="credits-list-item">
+    <a href="#" target="_blank" class="credits-link hex-dark">
+     Moses Lucas &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
+    </a>
+   </li>
+   <li class="credits-list-item">
+    <a href="#" target="_blank" class="credits-link hex-dark">
+     Gillan Resumadero &nbsp; <i class="fas fa-external-link-alt hex-accent"></i>
+    </a>
+   </li>
+  </ul>
+
+</div>

@@ -3,11 +3,13 @@ layout: default
 title: E-diary Me
 meta: E-diary Description
 ---
+<!-- Got this loop from the Pages Collection -->
+{% assign seo = site.pages | where:"permalink", page.url | first %}
 
 <div class="diaries__container">
-  <h2 class="page-title hex-tertiary">{{ site.data.page-metas.e-diary_title }}</h2>
+  <h1 class="page-title hex-tertiary">{{ seo.title }}</h1>
   <p class="hex-dark page-description pt-20 pb-20">
-  {{ site.data.page-metas.e-diary_description }}
+  {{ seo.meta_description }}
   </p>
 
      <!-- Row Diary Categories -->

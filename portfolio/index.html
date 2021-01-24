@@ -1,11 +1,13 @@
 ---
 layout: default
 ---
+<!-- Got this loop from the Pages Collection -->
+{% assign seo = site.pages | where:"permalink", page.url | first %}
 
 <div class="portfolio-page__container">
- <h2 class="page-title">{{ site.data.page-metas.portfolio_title }}</h2>
+ <h1 class="page-title">{{ seo.title }}</h1>
  <p class="hex-dark page-description pt-20">
-   {{ site.data.page-metas.portfolio_description }}
+   {{ seo.meta_description }}
  </p>
  
 
