@@ -9,6 +9,7 @@ category:
   - Programming
   - Design
   - Travel
+description: Why is playing guitar so much fun?
 blocks:
   - alignment: one column
     content:
