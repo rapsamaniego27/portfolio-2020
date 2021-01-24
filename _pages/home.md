@@ -5,5 +5,5 @@ meta_description: A Front End Web Developer and a certified UI/UX Designer in
   in this site.
 slug: home
 permalink: /
-meta_image: /images/rap-esteva-home.jpg
+meta_image: ""
 ---
