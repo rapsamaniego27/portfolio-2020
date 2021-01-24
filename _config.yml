@@ -29,6 +29,7 @@ url: "https://www.rapesteva.com" # the base hostname & protocol for your site, e
 twitter_username: jekyllrb
 github_username:  rapsamaniego27@gmail.com
 exclude: ["source", "node_modules", "mix-manifest.json", "package-lock.json", "package.json", "webpack.mix.js"]
+permalink: /chapter/:title
 
 # Build settings
 plugins:

@@ -1,10 +1,9 @@
 ---
 layout: default
-title: E-diary Me
-meta: E-diary Description
+title: E-diary
 ---
 <!-- Got this loop from the Pages Collection -->
-{% assign seo = site.pages | where:"permalink", page.url | first %}
+{% assign seo = site.pages | where:"permalink", "/e-diary/" | first %}
 
 <div class="diaries__container">
   <h1 class="page-title hex-tertiary">{{ seo.title }}</h1>

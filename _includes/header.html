@@ -5,6 +5,19 @@
   <!-- Got this loop from the Pages Collection -->
   {% assign seo = site.pages | where:"permalink", page.url | first %}
 
+
+  {% if seo.title %}
+    {% assign meta_title = seo.title %}
+  {% else %}
+    {% assign meta_title = page.title %}
+  {% endif %}
+
+  {% if seo.meta_description %}
+     {% assign meta_description = seo.meta_description %}
+  {% else %}
+     {% assign meta_description = page.description %}
+  {% endif %}
+
   <!-- Make a condition if there is an existing meta image or else use a default one -->
   {% if seo.meta_image%}
     {% assign meta_image = site.url | append: seo.meta_image %}
@@ -13,13 +26,13 @@
   {% endif %}
 
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="og:title" property="og:title" content="{{ site.title }} | {{ seo.title }} ">
- <meta name="description" content="{{ seo.meta_description }}">
+ <meta name="og:title" property="og:title" content="{{ site.title }} - {{ meta_title }}">
+ <meta name="description" content="{{ meta_description }}">
  <meta property="og:image" content="{{ meta_image }}">
  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
 
 
- <title>{{ site.title }} - {{ seo.title }} | {{ seo.meta_description }}</title>
+ <title>{{ site.title }} - {{ meta_title }} | {{ meta_description | strip_html }}</title>
 
  <!-- Row Styles -->
  <link rel="stylesheet" href="{{site.baseurl}}/dist/style.min.css">

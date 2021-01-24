@@ -174,7 +174,7 @@ collections:
         name: "category"
         widget: "list"
       - label: "Meta(Body)"
-        name: "body"
+        name: "description"
         widget: "text"
         pattern: ['^.{20,170}$', "Must be in between 20 - 170 characters"]
       - label: "Blocks"
