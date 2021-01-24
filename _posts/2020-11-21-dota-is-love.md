@@ -7,6 +7,7 @@ image: /images/dota.jpg
 banner: /images/dota.jpg
 category:
   - Sports
+description: Let it let it be speaking words of wisdom.
 blocks:
   - alignment: one column
     content:
