@@ -4,7 +4,7 @@ title: Playing Guitar
 author: Rap Esteva
 date: 2021-01-24T12:33:49.935Z
 image: /images/news.jpg
-banner: /images/banner.jpg
+banner: /images/sample-banner.jpg
 category:
   - Programming
   - Design
