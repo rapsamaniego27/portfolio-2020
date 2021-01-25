@@ -60,10 +60,10 @@ class Modal{
  //Bind Close modal
  bindCloseModal(){
   this.modalOverlay.addEventListener('click', (e)=> {
-   e.preventDefault();
-  
-   /* Close if clicked is an overlay or Close Button */
-   if (e.target == this.modalOverlay || e.target == this.modalClose){
+    
+    /* Close if clicked is an overlay or Close Button */
+    if (e.target == this.modalOverlay || e.target == this.modalClose){
+     e.preventDefault();
     this.modalOverlay.classList.add('modal--hide');
    }
   });
