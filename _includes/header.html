@@ -28,11 +28,14 @@
   {% endif %}
 
  <meta name="viewport" content="width=device-width, initial-scale=1">
- <meta name="og:title" property="og:title" content="{{ site.title }} - {{ meta_title }}">
- <meta name="description" property="og:description" content="{{ meta_description }}">
+ <meta name="title" content="{{ site.title }} - {{ meta_title }}">
+ <meta name="description" content="{{ meta_description }}">
 
  <meta property="og:type" content="website">
  <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+ <meta property="og:title" content="{{ site.title }} - {{ meta_title }}">
+ <meta property="og:description" content="{{ meta_description }}">
+
  <meta property="og:image" content="{{ meta_image }}" />
  <meta property="og:image:secure_url" content="{{ meta_image }}" />
  <meta property="og:image:type" content="image/jpeg" />
