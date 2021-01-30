@@ -1,5 +1,9 @@
 ---
 layout: diary
+slug: all
+pagination: 
+  enabled: true
+  collection: posts
 ---
    
   <div class="diary-results__container">
@@ -7,10 +11,12 @@ layout: diary
 
    <div class="diary-results mt-30 mb-30">
 
-    {% for chapter in site.posts %}
+    {% for chapter in paginator.posts %}
       {% include diary-card.html %}
     {% endfor %}
 
-   </div>
+    
+  </div>
+  {% include snippets/pager.html %}
   </div>
   

@@ -5566,6 +5566,39 @@ h3 {
   cursor: pointer;
 }
 
+.pager {
+  display: -webkit-box;
+  display: flex;
+  justify-content: space-around;
+  -webkit-box-align: center;
+          align-items: center;
+  width: 400px;
+  max-width: 100%;
+  margin: 40px auto;
+}
+.pager li:hover {
+  color: var(--tertiary) !important;
+}
+.pager li a {
+  color: var(--dark) !important;
+  font-weight: bold;
+}
+.pager .pager--selected {
+  border-radius: 50%;
+  width: 34px;
+  height: 30px;
+  background: var(--tertiary);
+  display: -webkit-box;
+  display: flex;
+  -webkit-box-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+.pager .pager--selected a {
+  color: #fff !important;
+}
+
 @media only screen and (max-width: 1366px) {
   /* Insert code Desktop size here */
 }

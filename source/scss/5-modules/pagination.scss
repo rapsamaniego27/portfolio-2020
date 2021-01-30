@@ -1,0 +1,33 @@
+.pager{
+ display:flex;
+ justify-content:space-around;
+ align-items: center;
+ width:400px;
+ max-width:100%;
+ margin:40px auto;
+
+ li{
+  &:hover{
+   color:var(--tertiary) !important;
+  }
+  a{
+   color:var(--dark) !important;
+   font-weight: bold;
+  }
+ }
+
+ .pager--selected{
+  border-radius: 50%;
+  width:34px;
+  height:30px;
+  background: var(--tertiary);
+  display:flex;
+  justify-content:center;
+  align-items: center;
+
+  a{
+   color:#fff !important;
+  }
+ }
+}
+
