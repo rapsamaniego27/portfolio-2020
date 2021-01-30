@@ -503,7 +503,7 @@ p {
   padding: 0.375rem 1rem;
   font-size: 1rem;
   line-height: 1.5;
-  border-radius: 0.375rem;
+  border-radius: 0.5rem;
 }
 
 .col-xl12, .col-xl11, .col-xl10, .col-xl9, .col-xl8, .col-xl7, .col-xl6, .col-xl5, .col-xl4, .col-xl3, .col-xl2, .col-xl1, .col-lg12, .col-lg11, .col-lg10, .col-lg9, .col-lg8, .col-lg7, .col-lg6, .col-lg5, .col-lg4, .col-lg3, .col-lg2, .col-lg1, .col-md12, .col-md11, .col-md10, .col-md9, .col-md8, .col-md7, .col-md6, .col-md5, .col-md4, .col-md3, .col-md2, .col-md1, .col-sm12, .col-sm11, .col-sm10, .col-sm9, .col-sm8, .col-sm7, .col-sm6, .col-sm5, .col-sm4, .col-sm3, .col-sm2, .col-sm1, .col-12, .col-11, .col-10, .col-9, .col-8, .col-7, .col-6, .col-5, .col-4, .col-3, .col-2, .col-1 {
