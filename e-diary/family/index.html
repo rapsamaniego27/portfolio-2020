@@ -1,7 +1,13 @@
 ---
 layout: diary
-title: "E-Diary"
-description: "Family"
+title: E-diary | Family
+slug: cat-family
+permalink: /
+pagination: 
+  category: Family
+  enabled: true
+  collection: posts
+  indexpage: e-diary/family/index
 ---
 
 
@@ -10,7 +16,7 @@ description: "Family"
 
  <div class="diary-results mt-30 mb-30">
 
-  {% for chapter in site.categories.Family %}
+  {% for chapter in paginator.posts %}
     {% include diary-card.html %}
   {% endfor %}
 

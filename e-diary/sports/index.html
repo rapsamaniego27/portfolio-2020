@@ -1,7 +1,13 @@
 ---
 layout: diary
-title: "E-Diary"
-description: "Sports"
+title: E-diary | Sports
+slug: cat-sports
+permalink: /
+pagination: 
+  category: Sports
+  enabled: true
+  collection: posts
+  indexpage: e-diary/sports/index
 ---
 
 
@@ -10,9 +16,11 @@ description: "Sports"
 
  <div class="diary-results mt-30 mb-30">
 
-  {% for chapter in site.categories.Sports %}
+  {% for chapter in paginator.posts %}
     {% include diary-card.html %}
   {% endfor %}
 
  </div>
+
+{% include snippets/pager.html %}
 </div>

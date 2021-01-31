@@ -1,7 +1,13 @@
 ---
 layout: diary
-title: "E-Diary"
-description: Travel 
+title: E-diary | Travel
+slug: cat-travel
+permalink: /
+pagination: 
+  category: Travel
+  enabled: true
+  collection: posts
+  indexpage: e-diary/travel/index
 ---
 
 
@@ -10,9 +16,11 @@ description: Travel
 
  <div class="diary-results mt-30 mb-30">
 
-  {% for chapter in site.categories.Travel %}
+  {% for chapter in paginator.posts %}
     {% include diary-card.html %}
   {% endfor %}
 
  </div>
+
+{% include snippets/pager.html %}
 </div>

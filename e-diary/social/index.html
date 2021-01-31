@@ -1,7 +1,13 @@
 ---
 layout: diary
-title: "E-Diary"
-description: "Social"
+title: E-diary | Social
+slug: cat-social
+permalink: /
+pagination: 
+  category: Social
+  enabled: true
+  collection: posts
+  indexpage: e-diary/social/index
 ---
 
 
@@ -10,9 +16,11 @@ description: "Social"
 
  <div class="diary-results mt-30 mb-30">
 
-  {% for chapter in site.categories.Social %}
+  {% for chapter in paginator.posts %}
     {% include diary-card.html %}
   {% endfor %}
 
  </div>
+ 
+{% include snippets/pager.html %}
 </div>

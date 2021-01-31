@@ -1,7 +1,13 @@
 ---
 layout: diary
-title: "E-Diary"
-description: "Health and Wellness"
+title: E-diary | Health and Wellness
+slug: cat-health
+permalink: /
+pagination: 
+  category: Health
+  enabled: true
+  collection: posts
+  indexpage: e-diary/health/index
 ---
 
 
@@ -10,9 +16,11 @@ description: "Health and Wellness"
 
  <div class="diary-results mt-30 mb-30">
 
-  {% for chapter in site.categories.Health %}
+  {% for chapter in paginator.posts %}
     {% include diary-card.html %}
   {% endfor %}
 
  </div>
+
+{% include snippets/pager.html %}
 </div>

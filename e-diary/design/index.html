@@ -1,7 +1,13 @@
 ---
 layout: diary
-title: "E-Diary"
-description: "Design"
+title: E-diary | Design
+slug: cat-design
+permalink: /
+pagination: 
+  category: Design
+  enabled: true
+  collection: posts
+  indexpage: e-diary/design/index
 ---
 
 
@@ -10,9 +16,11 @@ description: "Design"
 
  <div class="diary-results mt-30 mb-30">
 
-  {% for chapter in site.categories.Design %}
+  {% for chapter in paginator.posts %}
    {% include diary-card.html %}
   {% endfor %}
 
  </div>
+
+ {% include snippets/pager.html %}
 </div>
