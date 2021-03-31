@@ -1,0 +1,19 @@
+.sidebar-tags__list{
+  margin:10px 20px;
+  display:flex;
+  justify-content:left;
+  align-items: center;
+  flex-wrap: wrap;
+
+  small{
+    background: var(--accent);
+    border-radius: 6px;
+    margin: 10px 4px;
+    padding:5px 8px;
+    a{
+      color:var(--dark);
+      font-weight: bold;
+      font-size:0.75rem
+    }
+  }
+}

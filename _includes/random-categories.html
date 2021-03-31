@@ -2,9 +2,9 @@
 
 <script type="text/javascript">
 
- var postsHREF = [{% for category in site.data.categories %}"{{site.baseurl}}{{category.link}}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+ var postsHREF = [{% for category in site.categories %}"{{site.baseurl}}{{category.url}}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
 
- var postsTitle = [{% for category in site.data.categories %}"{{ category.name }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+ var postsTitle = [{% for category in site.categories %}"{{ category.name }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
 
 </script>
 

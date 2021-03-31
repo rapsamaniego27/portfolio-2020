@@ -112,12 +112,18 @@
 
 .diary-filter__search{
   width:300px !important;
-  max-width:100%;
+
+  @media only screen and (max-width:768px){
+    width:90% !important;
+  }
 }
 .diary-results__filter{
   display:flex;
   justify-content:space-between;
   align-items: center;
+    @media only screen and (max-width:800px){
+      flex-direction: column;
+    }
 }
 
 .diary-filter__options{
@@ -125,6 +131,10 @@
   justify-content:space-between;
   align-items: center;
   padding:0 0 0 20px;
+
+  @media only screen and (max-width:800px){
+   margin-top:10px;
+  }
 
   .diary-filter__option-item{
     padding:0 0 0 20px;
@@ -140,4 +150,9 @@
       color: var(--accent);
     }
   }
+}
+
+.diary-filter__form{
+  display:flex;
+  width: 50%;
 }

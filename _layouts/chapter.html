@@ -8,7 +8,9 @@ layout: default
   <h1 class="chapter-heading hex-primary">{{page.title}}</h1>
   <p class="chapter-meta">Published on {{ page.date | date: "%-d %B %Y" }} <span class="hex-accent"><strong>{{ page.author }}</strong></span> </p>
   <img src="{{ page.banner }}" alt="{{ page.title }}" title="{{ page.title }}" class="mt-30 chapter-banner">
-  <small class="hex-dark">Photograpy by: {{page.photographer}}</small>
+  {% if page.photographer %}
+      <small class="hex-dark">Photography by: {{page.photographer}}</small>
+  {% endif %}
  </div>
 
  <div class="chapter-content__container container__flex mt-30 mb-50">
@@ -83,6 +85,12 @@ layout: default
     </ul>
    </div>
 
+  <div class="sidebar-tags__container mt-40">
+    <h5 class="sidebar-title hex-white">Tags:</h5>
+    <ul class="sidebar-tags__list">
+      {% include random-tags.html %}
+    </ul>
+  </div>
  
   </aside>
  </div>

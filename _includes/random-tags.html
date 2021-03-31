@@ -1,0 +1,52 @@
+<!-- Random posts looping -->
+
+<script type="text/javascript">
+
+  var postsHREF = [{% for tag in site.tags %}"{{site.baseurl}}{{tag.url}}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+  var postsTitle = [{% for tag in site.tags %}"{{ tag.name }}"{% unless forloop.last %}, {% endunless %} {% endfor %}];
+
+</script>
+
+<script type="text/javascript">
+
+  var randomIndexUsed = [];
+  var counter = 0;
+  var numberOfTags = 8;
+
+  while (counter < numberOfTags) {
+    var randomIndex;
+    var tagHREF;
+    var tagName;
+
+    randomIndex = Math.floor(Math.random() * postsHREF.length);
+
+    if (randomIndexUsed.indexOf(randomIndex) == "-1") {
+      tagHREF = postsHREF[randomIndex];
+      tagName = postsTitle[randomIndex];
+
+      if (counter == (numberOfTags - 1)) {
+        const ui = `
+          <small>
+            <a href="${tagHREF}" class="badge background-accent" title="${tagName}">${tagName}</a>
+          </small>
+        `;
+        document.write(`${ui}`);
+      }
+      else {
+        const ui = `
+         <small>
+            <a href="${tagHREF}" class="badge background-accent" title="${tagName}">${tagName}</a>
+          </small>
+       `;
+
+        document.write(`${ui}`);
+      }
+
+      randomIndexUsed.push(randomIndex);
+
+      counter++;
+    }
+  }
+
+</script>

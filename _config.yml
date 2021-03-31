@@ -55,12 +55,8 @@ collections:
         collection: posts
         permalink: /page:num/
     tags:
-      permalink: /tags/:name
+      permalink: /tags/:name/
       output: true
-      pagination:
-        enabled: true
-        collection: posts
-        permalink: /page:num/
 
 defaults:
   -

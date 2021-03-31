@@ -2,4 +2,22 @@
 layout: default
 ---
 
-<h1>Sidebar Categories</h1>
+<div class="grid-container">
+  <h4 class="ml-lg-30 hex-tertiary">Category: {{page.name}} </h4>
+
+  <a href="#" class="chapter-back hex-dark mt-30 mr-20 ml-lg-30" onclick="history.back()"><strong><i
+        class="fas fa-arrow-left"></i> Go Back </strong></a>
+</div>
+
+<div class="grid-container category-chapter__card-list">
+  {% for post in site.posts %}
+    {% if post.categories contains page.name %}
+      <div class="category-chapter__card">
+        <a href="{{ post.url }}" target="_blank" class="category-chapter__card-link" title="{{ post.title }}">
+        {{ post.title }}
+        </a>
+        <small class="category-chapter__card-date">{{ post.date | date: '%B %-d, %Y'}}</small>
+      </div>
+    {% endif %}
+  {% endfor %}
+</div>

@@ -13,28 +13,24 @@ title: E-diary
 
     {% include snippets/categories-list.html %}
 
-
     <div class="diary-results__container">
       <div class="diary-results__filter mt-20">
-        <form>
-          <div class="form-group">
-            <input type="text" id="keyword" name="keyword" required class="diary-filter__search"
-              placeholder="Search post ...">
-            <button type="submit" target="_blank" class="btn btn-warning"><i class="fas fa-search"></i></button>
-          </div>
-        </form>
+        <div class="form-group diary-filter__form">
+          <input type="text" id="keyword" name="keyword" required class="diary-filter__search" placeholder="Search post ...">
+          <button type="submit" target="_blank" class="btn btn-warning ml-10"><i class="fas fa-search"></i></button>
+        </div>
     
         <ul class="diary-filter__options">
           <li class="diary-filter__option-item">
-            <a href="#" target="_blank" class="diary-filter__option-link">
+            <a href="{{site.baseurl}}/e-diary/filter/oldest/" class="diary-filter__option-link">
               <i class="fas fa-sort-amount-down-alt"></i> Oldest</a>
           </li>
           <li class="diary-filter__option-item">
-            <a href="#" target="_blank" class="diary-filter__option-link">
+            <a href="{{site.baseurl}}/e-diary/filter/asc/" class="diary-filter__option-link">
               <i class="fas fa-sort-alpha-up-alt"></i> Ascending</a>
           </li>
           <li class="diary-filter__option-item">
-            <a href="#" target="_blank" class="diary-filter__option-link">
+            <a href="{{site.baseurl}}/e-diary/filter/desc/" class="diary-filter__option-link">
               <i class="fas fa-sort-alpha-down-alt"></i> Descending</a>
           </li>
         </ul>
@@ -43,7 +39,7 @@ title: E-diary
       <div class="diary-results mt-30 mb-30">
     
         {% for chapter in paginator.posts %}
-        {% include diary-card.html %}
+          {% include diary-card.html %}
         {% endfor %}
     
     
