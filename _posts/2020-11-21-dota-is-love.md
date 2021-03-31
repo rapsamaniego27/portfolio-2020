@@ -48,7 +48,7 @@ blocks:
         any hero, ghostly costumes for your heroes and your courier, an
         alternate in-game art style global item, chat wheel lines, sprays, MMR
         Double down tokens and more!
-      image: /images/cm.jpg
+      image: /images/dummy-add2.jpg
   - alignment: one column
     content:
       text: >-
