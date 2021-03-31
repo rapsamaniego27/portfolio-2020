@@ -168,12 +168,14 @@ collections:
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
-      - label: "Thumbnail(570 x 440)"
+      - label: "Thumbnail"
         name: "image"
         widget: "image"
-      - label: "Banner(1200 x 627)"
+        hint: Recommended size is 570 x 440
+      - label: "Banner"
         name: "banner"
         widget: "image"
+        hint: Recommended size is 1200 x 627
       - label: "Category"
         name: "category"
         widget: "list"
