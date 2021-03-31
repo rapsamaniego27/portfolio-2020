@@ -176,6 +176,10 @@ collections:
         name: "banner"
         widget: "image"
         hint: Recommended size is 1200 x 627
+      - label: Photographer
+        name: photographer
+        widget: string
+        required: false
       - label: "Category"
         name: "category"
         widget: "list"
@@ -217,6 +221,7 @@ collections:
             name: "content"
             widget: "object"
             required: false
+            hint: One Column Alignment will ignore the image and not include it
             fields: 
               - label: Text
                 name: text
@@ -228,6 +233,10 @@ collections:
                 widget: image
                 required: false
                 hint: 280 x 194 is the recommended dimension
+              - label: Photographer
+                name: photographer
+                widget: string
+                required: false
   - label: "Categories"           
     name: categories
     create: true
