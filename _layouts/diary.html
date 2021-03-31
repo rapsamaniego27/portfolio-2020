@@ -11,44 +11,46 @@ title: E-diary
   {{ seo.meta_description }}
   </p>
 
-     <!-- Row Diary Categories -->
-     <div class="diary-categories__container">
-      <div class="diary-categories__wrapper">
-       <h5 class="hex-white pt-20 pb-20 ml-xl-20">Categories: </h5>
-       <ul class="diary-categories pb-20">
-        <li class="diary-category__item">
-          <a href="{{site.baseurl}}/e-diary/" class="diary-category__link {% if page.slug == 'cat-all' %} diary-category--active {% endif %} ">All</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/programming/" class="diary-category__link {% if page.slug == 'cat-programming' %} diary-category--active {% endif %}">Programming</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/design/" class="diary-category__link {% if page.slug == 'cat-design' %} diary-category--active {% endif %}">Design</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/travel/" class="diary-category__link {% if page.slug == 'cat-travel' %} diary-category--active {% endif %}">Travel</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/family/" class="diary-category__link {% if page.slug == 'cat-family' %} diary-category--active {% endif %}">Family</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/health/" class="diary-category__link {% if page.slug == 'cat-health' %} diary-category--active {% endif %}">Health & Wellness</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/social/" class="diary-category__link {% if page.slug == 'cat-social' %} diary-category--active {% endif %}">Social</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/personal/" class="diary-category__link {% if page.slug == 'cat-personal' %} diary-category--active {% endif %}">Personal</a>
-        </li>
-        <li class="diary-category__item">
-         <a href="{{site.baseurl}}/e-diary/sports/" class="diary-category__link {% if page.slug == 'cat-sports' %} diary-category--active {% endif %}">Sports</a>
-        </li>
-       </ul>
-      </div>
-     </div>
-     <!-- End Diary Categories -->
+    {% include snippets/categories-list.html %}
 
- {{content}}
+
+    <div class="diary-results__container">
+      <div class="diary-results__filter mt-20">
+        <form>
+          <div class="form-group">
+            <input type="text" id="keyword" name="keyword" required class="diary-filter__search"
+              placeholder="Search post ...">
+            <button type="submit" target="_blank" class="btn btn-warning"><i class="fas fa-search"></i></button>
+          </div>
+        </form>
+    
+        <ul class="diary-filter__options">
+          <li class="diary-filter__option-item">
+            <a href="#" target="_blank" class="diary-filter__option-link">
+              <i class="fas fa-sort-amount-down-alt"></i> Oldest</a>
+          </li>
+          <li class="diary-filter__option-item">
+            <a href="#" target="_blank" class="diary-filter__option-link">
+              <i class="fas fa-sort-alpha-up-alt"></i> Ascending</a>
+          </li>
+          <li class="diary-filter__option-item">
+            <a href="#" target="_blank" class="diary-filter__option-link">
+              <i class="fas fa-sort-alpha-down-alt"></i> Descending</a>
+          </li>
+        </ul>
+      </div>
+      <p class="portfolio-results__label pl-xl-20">{{ site.posts | size }} results found.</p>
+      <div class="diary-results mt-30 mb-30">
+    
+        {% for chapter in paginator.posts %}
+        {% include diary-card.html %}
+        {% endfor %}
+    
+    
+      </div>
+      {% include snippets/pager.html %}
+    </div>
+
 </div>
 
 

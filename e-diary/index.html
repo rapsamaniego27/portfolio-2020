@@ -10,39 +10,5 @@ pagination:
   permalink: /page:num/
 ---
    
-  <div class="diary-results__container">
-   <div class="diary-results__filter mt-20">
-    <form>
-      <div class="form-group">
-        <input type="text" id="keyword" name="keyword"  required class="diary-filter__search" placeholder="Search post ...">
-        <button type="submit" target="_blank" class="btn btn-warning"><i class="fas fa-search"></i></button>
-      </div>
-    </form>
-
-    <ul class="diary-filter__options">
-      <li class="diary-filter__option-item">
-        <a href="#" target="_blank" class="diary-filter__option-link">
-          <i class="fas fa-sort-amount-down-alt"></i> Oldest</a>
-      </li>
-      <li class="diary-filter__option-item">
-        <a href="#" target="_blank" class="diary-filter__option-link">
-         <i class="fas fa-sort-alpha-up-alt"></i> Ascending</a>
-      </li>
-      <li class="diary-filter__option-item">
-        <a href="#" target="_blank" class="diary-filter__option-link">
-          <i class="fas fa-sort-alpha-down-alt"></i> Descending</a>
-      </li>
-    </ul>
-   </div>
-  <p class="portfolio-results__label pl-xl-20">{{ site.posts | size }} results found.</p>
-   <div class="diary-results mt-30 mb-30">
-
-    {% for chapter in paginator.posts %}
-      {% include diary-card.html %}
-    {% endfor %}
-
-    
-  </div>
-  {% include snippets/pager.html %}
-  </div>
+  
   
