@@ -1,15 +1,31 @@
 ---
 layout: chapter
 title: Playing Guitar
-author: Rap Esteva
 date: 2021-01-24T12:33:49.935Z
-image: /images/news.jpg
+image: /images/dummy-thumb1.jpg
 banner: /images/sample-banner.jpg
 category:
   - Programming
   - Design
   - Travel
-description: Why is playing guitar so much fun?
+categories:
+  - Personal
+  - Family
+  - Frontend
+  - Programming
+  - Health
+  - Sports
+tags:
+  - Illustrator
+  - HTML
+description: Safekeeping perhaps Dotard soldier it leading supplant dangerous.
+  One Ring to rule them all. Avail anytime juice passage unheard-of outscoring
+  Sauron's rowan. Snap boots sharpened refuge uprooted worn longer Beorn's steal
+  alliance achieve there's. Chokes mention name's fight unfriendly Hobbits. Sign
+  worries salted Shire's grab? Hewn Bucklebury mud rules remembered wore bleat
+  however claim human. Smeagol's earth attacked sunlight. Carcasses dwell
+  She-Elf sliced visit.
+excerpt: Safekeeping perhaps Dotard soldier it leading supplant dangerous.
 blocks:
   - alignment: one column
     content:
@@ -42,5 +58,6 @@ blocks:
         throw up because i ate plants but attack like a vicious monster. Am in
         trouble, roll over, too cute for human to get mad poop in litter box,
         scratch the walls sit and stare.
+author: Rap Esteva
 ---
 It is fun playing the guitar and I this is a test content.
