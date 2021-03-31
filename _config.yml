@@ -28,7 +28,7 @@ baseurl: ""
 url: "https://www.rapesteva.com" # the base hostname & protocol for your site, e.g. http://example.com
 twitter_username: jekyllrb
 github_username:  rapsamaniego27@gmail.com
-exclude: ["source", "node_modules", "mix-manifest.json", "package-lock.json", "package.json", "webpack.mix.js"]
+exclude: ["source", "node_modules", "mix-manifest.json", "package-lock.json", "package.json", "webpack.mix.js", "about-me"]
 
 # Default permalink for posts
 permalink: /chapter/:title
@@ -40,20 +40,35 @@ plugins:
 
 # Register the custom folder you made
 collections:
-  - samples
-  - cores
-  - jobs
-  - pages
-  - posts
+    samples:
+    cores:
+    jobs:
+    pages:
+    posts:
+    categories:
+      permalink: /categories/:name
+      output: true
+      pagination:
+        enabled: true
+        collection: posts
+        permalink: /page:num/
 
-strapi:  
+defaults:
+  -
+    scope:
+      path: ""      # empty string for all files
+      type: posts   # limit to posts
+    values:
+      is_post: true # automatically set is_post=true for all posts
+
+#strapi:  
     # Your API endpoint (optional, default to http://localhost:1337)
-    endpoint: https://strapi-rap.herokuapp.com
-    collections: 
-      certifications:
-        type: certifications
-      skill-types:
-        permalink: /skill-types/
+    #endpoint: https://strapi-rap.herokuapp.com
+    #collections: 
+      #certifications:
+        #type: certifications
+      #skill-types:
+        #permalink: /skill-types/
 
 
 ############################################################

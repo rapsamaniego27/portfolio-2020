@@ -199,5 +199,33 @@ collections:
                 name: image
                 widget: image
                 required: false
-              
-
+  - label: "Categories"           
+    name: categories
+    create: true
+    folder: "_categories"
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+        default: Chapter | 
+        hint: For SEO e.g. Chapter | Love
+      - label: Slug
+        name: slug
+        widget: string
+      - label: Permalink
+        name: permalink
+        widget: string
+        hint: Value should be /categories/:name of category/
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: sidebar-categories
+      - label: Description
+        name: description
+        widget: text
+        default: "Chapters in the [] category"
+        hint: e.g. Chapters in the Love category
+        required: false
