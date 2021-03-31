@@ -198,10 +198,13 @@ collections:
         display_fields: ["name"]
         multiple: true
         required: false
-      - label: "Meta Description"
+      - label: "Description"
         name: "description"
         widget: "text"
-        pattern: ['^.{20,170}$', "Must be in between 20 - 170 characters"]
+      - label: "Excerpt"
+        name: "excerpt"
+        widget: "text"
+        required: false
       - label: "Blocks"
         name: "blocks"
         widget: "list"
@@ -302,6 +305,27 @@ collections:
             name: tech
             widget: string
             required: false
+  - label: "Certificates"
+    name: certificates
+    create: true
+    folder: _certificates
+    fields: 
+      - label: Title
+        name: title
+        widget: string
+      - label: Organizer
+        name: organizer
+        widget: string
+      - label: Date
+        name: date
+        widget: date
+        format: 'MMM YYYY'
+      - label: Image
+        name: image
+        widget: image
+        required: false
+
+
 
 
 
