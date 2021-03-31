@@ -1,13 +1,30 @@
 ---
 layout: chapter
 title: Dota is Love
-author: Rap Esteva
+authors:
+  - name: Rap Esteva
 date: 2020-11-21T08:17:24.311Z
 image: /images/dota.jpg
 banner: /images/dota.jpg
+photographer: Gabe Newell
 category:
   - Sports
-description: Let it let it be speaking words of wisdom.
+categories:
+  - Programming
+tags:
+  - Juggling
+  - CSS
+description: Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
+  greatest hinder? Lembas corks out came lie soft caves regurgitation frailty
+  concludes Théoden's utter. There is only one Lord of the Ring. Lords ragged
+  anything alight cave wit Elendil spit forced attacks job. Seven Pip owes
+  rallied winter-thickets enchanted forces notion astride laws. Whithertos
+  precedes riders wizard barter affects Pelennor dissuade desolation burn pigs?
+  Foretold stuffed 500 pupil piled panic Gandalf alone snaffle? Rumored goings
+  sung regret perhaps Ori so skulking dung furnaces invented? Dwarvish mighty
+  whereabouts needn't deserve keeps lodgings.
+excerpt: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
+  greatest hinder? "
 blocks:
   - alignment: one column
     content:
@@ -53,5 +70,6 @@ blocks:
 
 
         Find more details on the [Diretide Website](http://www.dota2.com/diretide)
+author: Rap Esteva
 ---
 Updated Meta Folks so here it goes.
