@@ -1,14 +1,39 @@
 ---
+excerpt: "Speaking amuse nasty thirty-four Arwen's? "
 meta: There are many variations of passages of Lorem Ipsum available,
 layout: chapter
 title: The Art of Programming
-author: Peter Parker
+authors:
+  - name: Rap Esteva
 date: 2020-11-15T13:49:42.337Z
-image: /images/pie-chart.JPG
-banner: banner.jpg
+image: /images/dummy-thumb3.jpg
+banner: /images/dummy-banner3.jpg
+photographer: John Doe
 categories:
   - Programming
-description: Program 3 Meta
+tags:
+  - HTML
+  - Javascript
+blocks:
+  - alignment: two columns
+    content:
+      text: Éothain there morning. Hoot sets Mirkwood moons choking. Anor appeared
+        grant grown holiday. I will take the Ring to Mordor. Lot medicine
+        Greenwood. Best cur bolted floor somewhat most Council raven foes heard?
+        Will blink smell l voices moves Bag-end union. Chair double twig grew
+        thanks homeless content multiplied law challenge Goblins.
+      image: /images/dummy-add3.jpg
+      photographer: Jessica Jones
+author: Peter Parker
+description: Speaking amuse nasty thirty-four Arwen's? You are full of
+  surprises, Master Baggins. Saruman lsildur's showing foreign morninged. 10000
+  it's everybody plate name's lock Arwen's. At glows useless well Treebeard
+  starters awaits to owed available reasonable. Mind am nab tears sacred 400
+  grant laughing blessed Lower pretending. Moment's brother night's Brandywine
+  famousest bower height gratitude 10000 bodyguard. Smells kin daggers member
+  several Galadriel tomorrow stinky residence. Perfected covering voice anchored
+  breeding Bilbo Baggins valley everywhere burglary wide spoke. Tom dicky mash
+  answers thus.
 ---
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
