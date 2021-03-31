@@ -170,9 +170,26 @@ collections:
       - label: "Banner(1200 x 627)"
         name: "banner"
         widget: "image"
-      - label: "Categories"
+      - label: "Category"
         name: "category"
         widget: "list"
+      - label: "Categories"
+        name: categories
+        widget: relation
+        collection: categories
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        multiple: true
+      - label: "Tags"
+        name: tags
+        widget: relation
+        collection: tags
+        search_fields: ["name"]
+        value_field: "name"
+        display_fields: ["name"]
+        multiple: true
+        required: false
       - label: "Meta Description"
         name: "description"
         widget: "text"
@@ -218,6 +235,7 @@ collections:
       - label: Permalink
         name: permalink
         widget: string
+        default: /categories/:name of category/
         hint: Value should be /categories/:name of category/
       - label: Layout
         name: layout
@@ -229,3 +247,36 @@ collections:
         default: "Chapters in the [] category"
         hint: e.g. Chapters in the Love category
         required: false
+  - label: "Tags"           
+    name: tags
+    create: true
+    folder: "_tags"
+    fields:
+      - label: Name
+        name: name
+        widget: string
+      - label: Title
+        name: title
+        widget: string
+        default: E-diary | Tag | 
+        hint: For SEO e.g. E-diary | Tag | Photoshop
+      - label: Slug
+        name: slug
+        widget: string
+      - label: Permalink
+        name: permalink
+        widget: string
+        default: /tags/name/
+        hint: Value should be /tags/:name of tag/
+      - label: Layout
+        name: layout
+        widget: hidden
+        default: sidebar-tags
+      - label: Description
+        name: description
+        widget: text
+        default: "Chapters tagged as "
+        hint: e.g. Chapters tagged as Photoshop
+        required: false
+
+
