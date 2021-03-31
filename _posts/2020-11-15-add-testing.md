@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Wanda Vision has 9 episodes
+title: Wanda Vision Has 9 Episodes
 authors:
   - name: Rap Esteva
 date: 2020-11-15T13:51:54.145Z
