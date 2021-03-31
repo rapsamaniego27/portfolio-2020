@@ -49,6 +49,8 @@ blocks:
         alternate in-game art style global item, chat wheel lines, sprays, MMR
         Double down tokens and more!
       image: /images/dummy-add2.jpg
+      alt: Crystal Maiden with a wand
+      photographer: Kunkka
   - alignment: one column
     content:
       text: >-
