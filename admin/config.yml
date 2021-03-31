@@ -157,10 +157,6 @@ collections:
       - label: "Title"
         name: "title"
         widget: "string"
-      - label: "Author"
-        name: "author"
-        default: "Rap Esteva"
-        widget: "string"
       - label: "Authors"
         name: authors
         widget: list
@@ -220,13 +216,16 @@ collections:
             widget: "object"
             required: false
             fields: 
-              - label: Text (300 - 420 for 2 columns)
+              - label: Text
                 name: text
                 widget: markdown
-              - label: Image(280 x 194)
+                required: false
+                hint: 300 - 420 characters for 2 columns
+              - label: Image
                 name: image
                 widget: image
                 required: false
+                hint: 280 x 194 is the recommended dimension
   - label: "Categories"           
     name: categories
     create: true
