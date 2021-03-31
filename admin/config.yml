@@ -286,5 +286,23 @@ collections:
         default: "Chapters tagged as "
         hint: e.g. Chapters tagged as Photoshop
         required: false
+  - label: "Skillsets"
+    name: skillsets
+    create: true
+    folder: _skillsets
+    fields: 
+      - label: Title
+        name: title
+        widget: string
+      - label: Group
+        name: group
+        widget: list
+        fields: 
+          - label: tech
+            name: tech
+            widget: string
+            required: false
+
+
 
 
