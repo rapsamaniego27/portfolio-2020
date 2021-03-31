@@ -161,6 +161,14 @@ collections:
         name: "author"
         default: "Rap Esteva"
         widget: "string"
+      - label: "Authors"
+        name: authors
+        widget: list
+        fields:
+          - label: Name
+            name: name
+            default: "Rap Esteva"
+            widget: string
       - label: "Publish Date"
         name: "date"
         widget: "datetime"
