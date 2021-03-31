@@ -4848,7 +4848,11 @@ h3 {
 }
 
 .chapter-category-meta {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
+}
+
+.chapter-back {
+  display: block;
 }
 
 .chapter-category {
