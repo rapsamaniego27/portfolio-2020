@@ -107,3 +107,37 @@
     margin-bottom:15px;
   }
 }
+
+/* Filter */
+
+.diary-filter__search{
+  width:300px !important;
+  max-width:100%;
+}
+.diary-results__filter{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.diary-filter__options{
+  display:flex;
+  justify-content:space-between;
+  align-items: center;
+  padding:0 0 0 20px;
+
+  .diary-filter__option-item{
+    padding:0 0 0 20px;
+  }
+
+  .diary-filter__option-link{
+    color:var(--dark);
+    &:hover{
+      color:var(--accent);
+    }
+
+    i{
+      color: var(--accent);
+    }
+  }
+}
