@@ -19,12 +19,6 @@ tags:
   - Illustrator
   - HTML
 description: Safekeeping perhaps Dotard soldier it leading supplant dangerous.
-  One Ring to rule them all. Avail anytime juice passage unheard-of outscoring
-  Sauron's rowan. Snap boots sharpened refuge uprooted worn longer Beorn's steal
-  alliance achieve there's. Chokes mention name's fight unfriendly Hobbits. Sign
-  worries salted Shire's grab? Hewn Bucklebury mud rules remembered wore bleat
-  however claim human. Smeagol's earth attacked sunlight. Carcasses dwell
-  She-Elf sliced visit.
 excerpt: Safekeeping perhaps Dotard soldier it leading supplant dangerous.
 blocks:
   - alignment: one column
