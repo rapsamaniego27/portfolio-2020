@@ -25,15 +25,7 @@ blocks:
       image: /images/dummy-add3.jpg
       photographer: Jessica Jones
 author: Peter Parker
-description: Speaking amuse nasty thirty-four Arwen's? You are full of
-  surprises, Master Baggins. Saruman lsildur's showing foreign morninged. 10000
-  it's everybody plate name's lock Arwen's. At glows useless well Treebeard
-  starters awaits to owed available reasonable. Mind am nab tears sacred 400
-  grant laughing blessed Lower pretending. Moment's brother night's Brandywine
-  famousest bower height gratitude 10000 bodyguard. Smells kin daggers member
-  several Galadriel tomorrow stinky residence. Perfected covering voice anchored
-  breeding Bilbo Baggins valley everywhere burglary wide spoke. Tom dicky mash
-  answers thus.
+description: Speaking amuse nasty thirty-four Arwen's? You are full of surprises./
 ---
 
 There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable. If you are going to use a passage of Lorem Ipsum, you need to be sure there isn't anything embarrassing hidden in the middle of text. All the Lorem Ipsum generators on the Internet tend to repeat predefined chunks as necessary, making this the first true generator on the Internet. It uses a dictionary of over 200 Latin words, combined with a handful of model sentence structures, to generate Lorem Ipsum which looks reasonable. The generated Lorem Ipsum is therefore always free from repetition, injected humour, or non-characteristic words etc.
