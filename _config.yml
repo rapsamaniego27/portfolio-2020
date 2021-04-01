@@ -134,7 +134,7 @@ pagination:
   # Without file extension
   #indexpage: '/index'
 
-  paginate_path: "/:num"  
+  paginate_path: "/page:num/"  
 ############################################################
 
 # Exclude from processing.

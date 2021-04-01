@@ -914,7 +914,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
   }
 
   if (isInPage(pageAboutMe)) {
-    /* Skills and Certifications*/
+      /* Skills and Certifications*/
 
     /* const skills = new Skills(); */
     const certification = new Certification(); 
