@@ -13,12 +13,8 @@ categories:
   - Travel
 tags:
   - CSS
-description: A wizard is never late, Frodo Baggins. Nor is he early. He arrives
-  precisely when he means to. Gracious withered wiser trees 3000 Hobbits image
-  markings darling? Hook mindless thing snap grew Faramir order scattered.
-  Succumb Ent gives. Dance sprinters easy deadliest step Treebeard's western
-  bait anything. Themselves taken Westfarthing. Through more indeed root arms
-  Arkenstone. Torment creature didn't Gibbets?
+description: "A wizard is never late, Frodo Baggins. Nor is he early. He arrives
+  precisely when he means to. "
 excerpt: A wizard is never late, Frodo Baggins.
 blocks:
   - alignment: two columns reverse
