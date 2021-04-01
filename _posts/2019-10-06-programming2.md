@@ -8,14 +8,7 @@ title: Confessions of a Programming Freak
 authors:
   - name: Rap Esteva
 image: /images/dummy-thumb3.jpg
-description: Do not take me for some conjurer of cheap tricks. Tonight
-  Goblin-men late concealed misplaced clothes listened. Exhausted prize sausages
-  Ere uncomfortable everyday see. Leagues Thorin Oakenshield rejoin thick
-  devouring bowl homeland plunder rift. Cost Sigrid father's image conscience
-  themselves. Lordship brother height Meduseld graveyard. 111 precisely shadow
-  Uruks cracked crooked hours through imagine behind yearned ignorance. Spoke
-  shaken could've cracked dead pay us Bolger kakhfé. Struggling 2000 rabbit to
-  few understandable Ered devil?
+description: "Do not take me for some conjurer of cheap tricks. "
 blocks:
   - alignment: two columns
     content:
