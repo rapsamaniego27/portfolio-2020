@@ -203,10 +203,8 @@ collections:
       - label: "Description"
         name: "description"
         widget: "text"
-      - label: "Excerpt"
-        name: "excerpt"
-        widget: "text"
         required: false
+        hint: For SEO make it short up to 170 characters
       - label: "Blocks"
         name: "blocks"
         widget: "list"
@@ -217,7 +215,7 @@ collections:
             widget: "select"
             options: ["one column", "two columns", "two columns reverse"]
             default: ["one column"]
-          - label: "Content"
+          - label: "Content"  
             name: "content"
             widget: "object"
             required: false
@@ -225,7 +223,7 @@ collections:
             fields: 
               - label: Text
                 name: text
-                widget: markdown
+                widget: code
                 required: false
                 hint: 300 - 420 characters for 2 columns
               - label: Image (280 x 194)

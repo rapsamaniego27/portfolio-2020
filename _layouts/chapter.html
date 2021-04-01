@@ -6,7 +6,15 @@ layout: default
 <div class="chapter__container mt-30">
  <div class="chapter-heading__container">
   <h1 class="chapter-heading hex-primary">{{page.title}}</h1>
-  <p class="chapter-meta">Published on {{ page.date | date: "%-d %B %Y" }} <span class="hex-accent"><strong>{{ page.author }}</strong></span> </p>
+  <div class="chapter-meta">
+    <p>
+      Published on {{ page.date | date: "%-d %B %Y" }} by
+    </p>
+    {% for author in page.authors %}
+     <span class="chapter-author hex-accent">{{ author.name }}</span>
+    {% endfor %}
+  </div>
+  
   <img src="{{ page.banner }}" alt="{{ page.title }}" title="{{ page.title }}" class="mt-30 chapter-banner">
   {% if page.photographer %}
       <small class="hex-dark">Photography by: {{page.photographer}}</small>

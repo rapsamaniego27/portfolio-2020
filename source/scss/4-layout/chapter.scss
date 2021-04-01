@@ -21,7 +21,13 @@
 }
 
 .chapter-meta{
- text-align: center;
+ text-align: center; 
+ width:100%;
+margin:0 auto;
+ p{
+   display:inline;
+ }
+
 }
 
 .chapter-sidebar{
@@ -62,6 +68,9 @@
   left:4px;
  }
 
+ 
+
+
  .sidebar-category__link{
   color:var(--white);
 
@@ -101,6 +110,16 @@
 .chapter-category-meta{
   margin-bottom:10px;
 }
+
+.chapter-author:not(:last-of-type){
+    &:after{
+      content:',';
+    }
+  }
+
+  .chapter-author{
+    font-weight:var(--weight-bold) !important;
+  }
 
 .chapter-back{
   display:inline-block;
