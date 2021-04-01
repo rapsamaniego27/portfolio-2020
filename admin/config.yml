@@ -180,9 +180,6 @@ collections:
         name: photographer
         widget: string
         required: false
-      - label: "Category"
-        name: "category"
-        widget: "list"
       - label: "Categories"
         name: categories
         widget: relation

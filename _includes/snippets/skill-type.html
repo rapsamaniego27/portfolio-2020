@@ -1,9 +1,9 @@
 <div class="other-tech__category">
- <h4 class="hex-dark">{{ tech.title }}</h4>
+ <h4 class="hex-dark">{{ skillset.title }}</h4>
  <ul class="other-tech__list mt-20">
 
-  {% for skill in tech.skills %}
-   <li class="other-tech__item">{{ skill.technology }}</li>
+  {% for skill in skillset.group %}
+   <li class="other-tech__item">{{ skill.tech }}</li>
   {% endfor %}
  </ul>
 </div>
