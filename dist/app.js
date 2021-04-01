@@ -935,10 +935,10 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
   }
 
-  const data = new Data();
+/*   const data = new Data();
   data.fetchProjects('Javascript')
     .then(data => {})
-    .catch(err => console.log(err));
+    .catch(err => console.log(err)); */
 });
 const navOpen = document.querySelector('#menuOpen');
 const navOverlay = document.querySelector('#menuOverlay');

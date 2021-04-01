@@ -21,3 +21,7 @@ mix.combine([
     'source/js/misc/*',
     'source/js/vendors/*'
 ], 'dist/app.js');
+
+mix.combine([
+    'source/js/search/*'
+], 'dist/search.js');

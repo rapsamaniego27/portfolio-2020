@@ -1,0 +1,59 @@
+<script>
+  searchBtn.addEventListener('click', (e) => {
+      e.preventDefault();
+      window.location.href = `/search-post?val=${searchInput.value}`
+    });
+
+
+    window.addEventListener('DOMContentLoaded', () => {
+      const queryString = window.location.search;
+      const urlParams = new URLSearchParams(queryString);
+      const value = urlParams.get('val');
+      const resultsContainer = document.getElementById('resultsContainer');
+      const searchInput = document.getElementById('searchInput');
+      const searchCount = document.querySelector('#searchCount');
+
+      searchInput.value = value;
+
+      fetch('{{site.baseurl}}/posts.json')
+        .then(response => response.json())
+        .then(json => {
+          let results = ``;
+          let count = 0;
+          json.forEach(post => {
+            /* Define variable and make it lower case */
+            const title = post.title.toLowerCase();
+
+            /* Checks if the param value is included in the title */
+            if (title.includes(value)) {
+              count++;
+              const template = `
+              <div class="diary-result">
+                <div class="diary-result__img-container">
+                  <img src="${post.image}" alt="Rap Esteva | ${post.title}" title="Rap Esteva | ${post.title}" class="diary-result__img">
+                </div>
+                <div class="diary-result__content">
+                  <div class="diary-result__content-wrapper">
+                  <h5 class="hex-dark diary-result__heading">${post.title}</h5>
+                  <p class="diary-result__date hex-dark">${post.date}</p>
+                  <p class="diary-result__paragraph">
+                    ${post.excerpt}
+                  </p>
+                  </div>
+                  <a href="${post.url}" class="btn btn-tertiary">Read Chapter</a>
+                </div>
+              </div>
+            `;
+
+              results += template;
+            }
+
+
+          });
+
+          resultsContainer.innerHTML = results;
+          searchCount.innerHTML = `${count} results found.`;
+        })
+        .catch(err => console.log(err));
+    });
+</script>

@@ -15,10 +15,10 @@ title: E-diary
 
     <div class="diary-results__container">
       <div class="diary-results__filter mt-20">
-        <div class="form-group diary-filter__form">
-          <input type="text" id="keyword" name="keyword" required class="diary-filter__search" placeholder="Search post ...">
-          <button type="submit" target="_blank" class="btn btn-warning ml-10"><i class="fas fa-search"></i></button>
-        </div>
+        <form class="form-group diary-filter__form">
+          <input type="text" id="searchInput" name="keyword" required class="diary-filter__search" placeholder="Search post ...">
+          <button type="submit" target="_blank" class="btn btn-warning ml-10" id="searchBtn"><i class="fas fa-search"></i></button>
+        </form>
     
         <ul class="diary-filter__options">
           <li class="diary-filter__option-item">
@@ -35,7 +35,7 @@ title: E-diary
           </li>
         </ul>
       </div>
-      <p class="portfolio-results__label pl-xl-20">{{ site.posts | size }} results found.</p>
+      <p class="portfolio-results__label pl-xl-20">{{ paginator.total_posts }} results found.</p>
       <div class="diary-results mt-30 mb-30">
     
         {% for chapter in paginator.posts %}
@@ -50,3 +50,6 @@ title: E-diary
 </div>
 
 
+<script src="{{site.baseurl}}/dist/search.js"></script>
+
+{% include snippets/search-results.html %} 

@@ -1,0 +1,51 @@
+---
+layout: default
+title: E-diary
+---
+<!-- Got this loop from the Pages Collection -->
+{% assign seo = site.pages | where:"permalink", "/e-diary/" | first %}
+
+<div class="diaries__container">
+  <h1 class="page-title hex-tertiary">{{ seo.title }}</h1>
+  <p class="hex-dark page-description pt-20 pb-20">
+    {{ seo.meta_description }}
+  </p>
+
+  {% include snippets/categories-list.html %}
+
+  <div class="diary-results__container">
+    <div class="diary-results__filter mt-20">
+      <form class="form-group diary-filter__form">
+        <input type="text" id="searchInput" name="keyword" required class="diary-filter__search"
+          placeholder="Search post ...">
+        <button type="submit" target="_blank" class="btn btn-warning ml-10" id="searchBtn"><i class="fas fa-search"></i></button>
+      </form>
+
+      <ul class="diary-filter__options">
+        <li class="diary-filter__option-item">
+          <a href="{{site.baseurl}}/e-diary/filter/oldest/" class="diary-filter__option-link">
+            <i class="fas fa-sort-amount-down-alt"></i> Oldest</a>
+        </li>
+        <li class="diary-filter__option-item">
+          <a href="{{site.baseurl}}/e-diary/filter/asc/" class="diary-filter__option-link">
+            <i class="fas fa-sort-alpha-up-alt"></i> Ascending</a>
+        </li>
+        <li class="diary-filter__option-item">
+          <a href="{{site.baseurl}}/e-diary/filter/desc/" class="diary-filter__option-link">
+            <i class="fas fa-sort-alpha-down-alt"></i> Descending</a>
+        </li>
+      </ul>
+    </div>
+    <p class="portfolio-results__label pl-xl-20" id="searchCount"></p>
+    <div class="diary-results mt-30 mb-30" id="resultsContainer">
+
+      
+
+
+    </div>
+    {% include snippets/pager.html %}
+  </div>
+
+</div>
+<script src="{{site.baseurl}}/dist/search.js"></script>
+{% include snippets/search-results.html %}
