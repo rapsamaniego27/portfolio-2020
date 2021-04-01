@@ -14,15 +14,8 @@ categories:
 tags:
   - Juggling
   - CSS
-description: Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
-  greatest hinder? Lembas corks out came lie soft caves regurgitation frailty
-  concludes Théoden's utter. There is only one Lord of the Ring. Lords ragged
-  anything alight cave wit Elendil spit forced attacks job. Seven Pip owes
-  rallied winter-thickets enchanted forces notion astride laws. Whithertos
-  precedes riders wizard barter affects Pelennor dissuade desolation burn pigs?
-  Foretold stuffed 500 pupil piled panic Gandalf alone snaffle? Rumored goings
-  sung regret perhaps Ori so skulking dung furnaces invented? Dwarvish mighty
-  whereabouts needn't deserve keeps lodgings.
+description: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
+  greatest hinder? "
 excerpt: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
   greatest hinder? "
 blocks:
