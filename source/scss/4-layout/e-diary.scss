@@ -46,6 +46,12 @@
 
 }
 
+.category-item{
+  &:hover{
+    color:var(--accent);
+  }
+}
+
 /* Category Result Item */
 
 .diary-results{

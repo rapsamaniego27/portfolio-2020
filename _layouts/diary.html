@@ -10,7 +10,6 @@ title: E-diary
   <p class="hex-dark page-description pt-20 pb-20">
   {{ seo.meta_description }}
   </p>
-
     {% include snippets/categories-list.html %}
 
     <div class="diary-results__container">
@@ -22,15 +21,15 @@ title: E-diary
     
         <ul class="diary-filter__options">
           <li class="diary-filter__option-item">
-            <a href="{{site.baseurl}}/e-diary/filter/oldest/" class="diary-filter__option-link">
+            <a href="{{site.baseurl}}/e-diary/filter/oldest/" class="diary-filter__option-link {% if page.slug == 'oldest' %} hex-accent {% endif %} ">
               <i class="fas fa-sort-amount-down-alt"></i> Oldest</a>
           </li>
           <li class="diary-filter__option-item">
-            <a href="{{site.baseurl}}/e-diary/filter/asc/" class="diary-filter__option-link">
+            <a href="{{site.baseurl}}/e-diary/filter/asc/  " class="diary-filter__option-link {% if page.slug == 'asc' %} hex-accent {% endif %}">
               <i class="fas fa-sort-alpha-up-alt"></i> Ascending</a>
           </li>
           <li class="diary-filter__option-item">
-            <a href="{{site.baseurl}}/e-diary/filter/desc/" class="diary-filter__option-link">
+            <a href="{{site.baseurl}}/e-diary/filter/desc/ " class="diary-filter__option-link  {% if page.slug == 'desc' %} hex-accent {% endif %}">
               <i class="fas fa-sort-alpha-down-alt"></i> Descending</a>
           </li>
         </ul>

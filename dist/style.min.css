@@ -4686,6 +4686,10 @@ h3 {
   flex-wrap: wrap;
 }
 
+.category-item:hover {
+  color: var(--accent);
+}
+
 /* Category Result Item */
 .diary-results {
   display: grid;
