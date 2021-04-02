@@ -4412,10 +4412,23 @@ h3 {
 .other-tech__container {
   max-width: 1200px;
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-  justify-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   margin: 0 auto;
   position: relative;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+@media only screen and (max-width: 1024px) {
+  .other-tech__container {
+    grid-template-columns: 1fr 1fr;
+    max-width: 70%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .other-tech__container {
+    grid-template-columns: 1fr;
+    max-width: 300px;
+  }
 }
 
 .other-tech__list .other-tech__item {
