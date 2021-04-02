@@ -11,7 +11,7 @@ layout: default
       Published on {{ page.date | date: "%-d %B %Y" }} by
     </p>
     {% for author in page.authors %}
-     <span class="chapter-author hex-accent">{{ author.name }}</span>
+     <span class="chapter-author hex-accent">{{author.name}}</span>
     {% endfor %}
   </div>
   
@@ -25,18 +25,22 @@ layout: default
   <div class="chapter-content col-lg9 col-md8 col-xs12">
    
    <div class="chapter-content__meta pl-20 pr-20 mb-20">
-    <h5 class="chapter-category-meta hex-dark">
+    <h6 class="chapter-category-meta hex-dark">
       Categories: 
       {% for category in page.categories %}
-        <span class="chapter-category">{{ category }}</span>
+        <span class="chapter-category">
+          <a href="{{site.baseurl}}/categories/{{category}}/" target="_blank" title="{{category}}" class="hex-tertiary">{{ category }}</a>
+        </span>
       {% endfor %}
-    </h5>
-    <h5 class="chapter-category-meta hex-dark mb-20">
+    </h6>
+    <h6 class="chapter-category-meta hex-dark mb-20">
       Tags:
       {% for tag in page.tags %}
-      <span class="chapter-category">{{ tag }}</span>
+      <span class="chapter-category">
+        <a href="{{site.baseurl}}/tags/{{tag}}/" target="_blank" title="{{tag}}" class="hex-tertiary">{{tag}}</a>
+      </span>
       {% endfor %}
-    </h5>
+    </h6>
     <a href="{{site.baseurl}}/e-diary/" class="chapter-back mt-20 hex-tertiary"><strong><i class="fas fa-arrow-left"></i> Back to E-diary</strong></a>
    </div>
 
@@ -86,7 +90,7 @@ layout: default
      {% assign sorted = site.posts | sort: 'date' | reverse %} 
      {% for chapter in sorted limit:4 %}
 
-       <li class="sidebar-category__item"><a href="{{site.baseurl}}{{chapter.url}}" class="sidebar-category__link">{{ chapter.title }}</a></li>
+       <li class="sidebar-category__item"><a href="{{site.baseurl}}{{chapter.url}}" class="sidebar-category__link" title="{{chapter.title}}">{{ chapter.title }}</a></li>
 
      {% endfor %}
      
