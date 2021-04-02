@@ -56,8 +56,4 @@ window.addEventListener('DOMContentLoaded', ()=> {
 
   }
 
-/*   const data = new Data();
-  data.fetchProjects('Javascript')
-    .then(data => {})
-    .catch(err => console.log(err)); */
 });
