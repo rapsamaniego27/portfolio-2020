@@ -26,6 +26,8 @@ class Menuet {
   this.wrapper = document.querySelector('#wrapper');
   this.main = document.querySelector('#main');
 
+  this.links = document.querySelectorAll('.menu-link');
+
   this.gsapTimeline = gsap.timeline({ defaults: { duration: 1, ease: Back.easeOut.config(2) } });
 
   this.gsapTimeline.paused(true);
@@ -61,6 +63,12 @@ class Menuet {
    document.querySelector('body').classList.add('menu--hide');
    this.closeTrigger.classList.remove('menu--disable');
 
+   /* Remove disable class of each links */
+   this.links.forEach(link => { 
+     link.classList.remove('disable');
+   });
+
+
   }, false);
  }
 
@@ -71,6 +79,11 @@ class Menuet {
    this.gsapTimeline.reverse(.5);
    document.querySelector('body').classList.remove('menu--hide');
    this.closeTrigger.classList.add('menu--disable');
+
+    /* Remove disable class of each links */
+    this.links.forEach(link => {
+      link.classList.add('disable');
+    });
 
   });
  }

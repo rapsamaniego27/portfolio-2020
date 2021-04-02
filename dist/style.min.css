@@ -3877,6 +3877,10 @@ footer {
   margin: 0 auto;
 }
 
+.disable {
+  pointer-events: none;
+}
+
 header {
   background: var(--white);
   position: -webkit-sticky;
