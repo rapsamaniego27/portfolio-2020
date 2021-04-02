@@ -140,10 +140,23 @@
 
   @media only screen and (max-width:800px){
    margin-top:10px;
+   padding: 0 0 0 0;
+   align-self: flex-start;
+
+   
   }
+  
 
   .diary-filter__option-item{
-    padding:0 0 0 20px;
+
+    &:not(:first-of-type){
+        padding:0 0 0 10px;
+    }
+
+    @media only screen and (max-width:800px){
+     font-size:0.875rem;
+    
+    }
   }
 
   .diary-filter__option-link{
@@ -161,4 +174,8 @@
 .diary-filter__form{
   display:flex;
   width: 50%;
+
+  @media only screen and (max-width:800px){
+   width: 100%;
+  }
 }
