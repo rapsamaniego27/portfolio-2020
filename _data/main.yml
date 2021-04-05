@@ -25,6 +25,7 @@ technologies:
   - Webpack
   - Sass
   - API
+  - MongoDB
 collaborators:
   - content:
       name: Moses Lucas
