@@ -55,11 +55,12 @@
   <meta property="og:image:height" content="{{meta_image_height}}" />
   <meta property="og:image:alt" content="{{ meta_description | strip_html}}" />
     
+  
   <meta property="twitter:image" content="{{ meta_image }}">
 {% endif %}
 
 <!-- Twitter -->
-<meta property="twitter:card" content="{{ meta_description | strip_html}}">
+<meta property="twitter:card" content="summary">
 <meta property="twitter:url" content="{{ site.url }}{{ page.url | remove: 'index.html'}}">
 <meta property="twitter:title" content="{{ site.title }} - {{ meta_title }}">
 <meta property="twitter:description" content="{{ meta_description | strip_html}}">
