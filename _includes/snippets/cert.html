@@ -2,7 +2,7 @@
  <div class="award-content">
   <h4 class="hex-primary award-title">{{ cert.title }}</h4>
   <h6 class="hex-dark award-organizer mt-10">{{ cert.organizer }}</h6>
-  <h6 class="hex-dark award-date">{{ cert.date | date: "%B %d, %Y" }}</h6>
+  <h6 class="hex-dark award-date">{{ cert.date | date: "%B %Y" }}</h6>
  </div>
 
  <a href="{{site.baseurl}}{{ cert.image }}" class="btn btn-primary pr-lg20 btnCert">View Certificate</a>

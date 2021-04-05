@@ -4889,6 +4889,11 @@ h3 {
 .chapter-content__thumbnail-reverse {
   padding: 10px 30px 10px 20px;
 }
+.chapter-content__normal p,
+.chapter-content__thumbnail p,
+.chapter-content__thumbnail-reverse p {
+  line-height: 1.675rem;
+}
 
 .sidebar-title {
   color: var(--white);
