@@ -10,7 +10,7 @@ class Data{
     this.api = `${this.api}?type=${type}`;
     let response = await fetch(this.api);
     let data = await response.json();
- 
+
     return data;
   }
 

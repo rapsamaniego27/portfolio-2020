@@ -18,13 +18,14 @@ class Portfolio{
   const data = new Data();
   const portfolioResultsContainer = document.querySelector('#portfolioResultsContainer');
 
+  
   data.fetchProjects(type)
    .then(data => {
     let html = ``;
     
-
+    /* Loops then prepends newly fetched projects so that new projects stays in the top */
     data.forEach(project => {
-     html += this.UI.makeProjectCards(project);
+      html = `${this.UI.makeProjectCards(project)} ${html}`;
     });
 
     portfolioResultsContainer.innerHTML = html;
