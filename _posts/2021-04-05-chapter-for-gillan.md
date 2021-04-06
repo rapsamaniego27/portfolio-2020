@@ -1,6 +1,6 @@
 ---
 layout: chapter
-title: Chapter for Gillan
+title: Girl Drinking Coffee
 authors:
   - name: "Gillan "
 date: 2021-04-05T08:46:20.694Z
@@ -13,7 +13,8 @@ tags:
   - Illustrator
   - Javascript
   - HTML
-description: Test description
+description: Test description is another another non sense description to
+  describe this non sense article.
 blocks:
   - alignment: one column
     content:
