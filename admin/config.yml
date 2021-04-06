@@ -214,13 +214,13 @@ collections:
             default: ["one column"]
           - label: "Content"  
             name: "content"
-            widget: "text"
+            widget: "object"
             required: false
             hint: One Column Alignment will ignore the image and not include it
             fields: 
               - label: Text
                 name: text
-                widget: code
+                widget: text
                 required: false
                 hint: 300 - 420 characters for 2 columns
               - label: Image (280 x 194)
