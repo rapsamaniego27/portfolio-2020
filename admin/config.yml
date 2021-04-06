@@ -214,7 +214,7 @@ collections:
             default: ["one column"]
           - label: "Content"  
             name: "content"
-            widget: "code"
+            widget: "text"
             required: false
             hint: One Column Alignment will ignore the image and not include it
             fields: 
