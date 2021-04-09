@@ -4,7 +4,7 @@
 <head>
 
 {% include snippets/seo.html %}
-{% include favicos.html.html %}
+{% include favicos.html %}
 
 
  <title>{{ site.title }} - {{ meta_title }}</title>
@@ -20,8 +20,10 @@
   <header class="header">
    <div class="header__wrapper">
     <div class="header-logo__section">
-      <img src="{{site.baseurl}}/images/logo.svg" alt="{{site.title}} Logo" title="{{site.title}} Logo" class="header-logo">
-     <a href="/" class="header-logo__link">
+      <a href="{{site.baseurl}}/">
+        <img src="{{site.baseurl}}/images/logo.svg" alt="{{site.title}} Logo" title="{{site.title}} Logo" class="header-logo">
+      </a>
+     <a href="{{site.baseurl}}/" class="header-logo__link">
       <h3>
         &nbsp;<span>Rap</span> <span>Esteva</span>
       </h3>

@@ -3909,6 +3909,9 @@ header {
 .header-logo__link span:nth-of-type(2) {
   color: var(--accent);
 }
+.header-logo__link h3 {
+  margin-left: 4px;
+}
 
 .header-logo__section {
   display: -webkit-box;
@@ -3916,7 +3919,12 @@ header {
 }
 
 .header-logo {
-  width: 30px;
+  width: 34px;
+}
+@media only screen and (max-width: 480px) {
+  .header-logo {
+    width: 30px;
+  }
 }
 
 @media only screen and (max-width: 1024px) {
