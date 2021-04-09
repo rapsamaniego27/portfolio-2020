@@ -3900,11 +3900,23 @@ header {
           align-items: center;
 }
 
+.header-logo__link {
+  margin-top: 2px;
+}
 .header-logo__link span:nth-of-type(1) {
   color: var(--primary);
 }
 .header-logo__link span:nth-of-type(2) {
   color: var(--accent);
+}
+
+.header-logo__section {
+  display: -webkit-box;
+  display: flex;
+}
+
+.header-logo {
+  width: 30px;
 }
 
 @media only screen and (max-width: 1024px) {

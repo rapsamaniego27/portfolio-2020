@@ -4,6 +4,7 @@
 <head>
 
 {% include snippets/seo.html %}
+{% include favicos.html.html %}
 
 
  <title>{{ site.title }} - {{ meta_title }}</title>
@@ -19,8 +20,11 @@
   <header class="header">
    <div class="header__wrapper">
     <div class="header-logo__section">
+      <img src="{{site.baseurl}}/images/logo.svg" alt="{{site.title}} Logo" title="{{site.title}} Logo" class="header-logo">
      <a href="/" class="header-logo__link">
-      <h3><i class="fas fa-code hex-primary"></i>&nbsp;<span>Rap</span> <span>Esteva</span></h3>
+      <h3>
+        &nbsp;<span>Rap</span> <span>Esteva</span>
+      </h3>
      </a>
     </div>
     <a href="#" target="_blank" class="menu-bars" id="menuOpen">

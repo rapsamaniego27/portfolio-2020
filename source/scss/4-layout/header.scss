@@ -19,6 +19,8 @@ header{
 
 .header-logo__link{
 
+  margin-top: 2px;
+
   span:nth-of-type(1){
     color:var(--primary);
   }
@@ -27,4 +29,10 @@ header{
   }
 }
 
+.header-logo__section{
+  display:flex;
+}
 
+.header-logo{
+  width:30px;
+}

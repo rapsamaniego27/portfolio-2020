@@ -3,12 +3,12 @@
  "short_name": "",
  "icons": [
   {
-   "src": "/assets/images/folkridge-favico-192x192.png",
+   "src": "/assets/images/logo-favico-192x192.png",
    "sizes": "192x192",
    "type": "image/png"
   },
   {
-   "src": "/assets/images/folkridge-favico-512x512.png",
+   "src": "/assets/images/logo-favico-512x512.png",
    "sizes": "512x512",
    "type": "image/png"
   }
