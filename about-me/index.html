@@ -80,7 +80,7 @@ layout: default
 
   <div class="works mt-40 pl-40 pr-40 pr-lg-30 pl-lg-30 pb-60">
     
-    {% assign jobs = site.jobs | sort: 'end_date'  %}
+    {% assign jobs = site.jobs | sort: 'order' | reverse %}
     {% for job in jobs %}
       {% include snippet-job.html %}
     {% endfor %}

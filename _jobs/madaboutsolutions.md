@@ -1,4 +1,5 @@
 ---
+order: 3
 company: Mad About Solutions
 position: Web Development Assoc
 description: Handled WordPress based websites, managing them through FTP

@@ -1,4 +1,5 @@
 ---
+order: 2
 company: Straightarrow Corp
 position: Web Development Specialist I
 description: Responsible for developing HTML email templates and landing pages

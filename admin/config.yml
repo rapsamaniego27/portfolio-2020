@@ -117,6 +117,9 @@ collections:
     create: true
     folder: "_jobs"
     fields:
+      - label: "Order"
+        name: "order"
+        widget: "number"
       - label: "Company"
         name: "company"
         widget: "string"
