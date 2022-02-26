@@ -6,6 +6,6 @@ description: Handled WordPress based websites, managing them through FTP
   Responsible also for providing User Manuals for usage of the clients' site.
 status: true
 start_date: Aug 2019
-end_date: ""
+end_date: Feb 2022
 logo: /images/madaboutsolutions-logo.png
 ---
