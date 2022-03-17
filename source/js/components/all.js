@@ -31,7 +31,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
     const portfolio = new Portfolio();
 
     /* Auto display projects */
-    portfolio.displayResults('Javascript');
+    portfolio.displayResults('Web');
   }
 
   if (isInPage(pageAboutMe)) {
