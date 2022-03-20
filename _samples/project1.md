@@ -1,5 +1,5 @@
 ---
-title: Note Along
-link: https://note-along.netlify.app/
-thumbnail: /images/project-card1.jpg
+title: Weblife Direct Sales
+link: https://weblife.com.ph/
+thumbnail: /images/weblife-sample.jpg
 ---
