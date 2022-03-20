@@ -60,7 +60,7 @@ layout: default
     </div>
 
     <div class="sample-project__subtitle">
-      <h5 class="hex-white ">Here are a sample of my Web and Design Projects</h5>
+      <h5 class="hex-white ">Here are samples of my Web & Design Projects</h5>
     </div>
 
 
@@ -69,7 +69,8 @@ layout: default
    <div class="sample-projects mt-40">
 
     <!-- Loop for Sample Projects -->
-    {% for sample in site.samples %}
+    {% assign samples = site.samples | sort: 'type' | reverse  %}
+    {% for sample in samples %}
      {% include sample-projects.html %}
     {% endfor %}
 

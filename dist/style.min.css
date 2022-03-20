@@ -4219,7 +4219,7 @@ footer p {
 }
 
 .sample {
-  max-width: 400px;
+  max-width: 390px;
   height: 300px;
   border-radius: 1rem;
   cursor: pointer;
@@ -4305,8 +4305,8 @@ h3 {
   position: absolute;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
-  -webkit-filter: brightness(90%);
-          filter: brightness(90%);
+  -webkit-filter: brightness(85%);
+          filter: brightness(85%);
 }
 
 .view-more__container {
@@ -4665,6 +4665,8 @@ h3 {
   display: inline-block;
   width: 285px;
   max-width: 100%;
+  -webkit-filter: drop-shadow(0 0 3px #333);
+          filter: drop-shadow(0 0 3px #333);
 }
 .portfolio-result .portfolio-result__title-wrapper {
   border-top-right-radius: 12px;
