@@ -95,6 +95,10 @@ collections:
       - label: "Thumbnail"
         name: "thumbnail"
         widget: "image"
+      - label: "Type"
+        name: "type"
+        widget: "select"
+        options: ["Website", "Design", "App"]
 
   - label: "Core Technologies"
     name: "core-technologies"

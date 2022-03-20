@@ -4190,15 +4190,32 @@ footer p {
 .sample-projects {
   display: grid;
   gap: 1rem;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
   -webkit-box-align: center;
           align-items: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+}
+@media only screen and (max-width: 576px) {
+  .sample-projects {
+    grid-template-columns: 1fr 1fr;
+  }
 }
 
 .sample-projects__title {
   display: block;
-  max-width: 350px;
+  width: -webkit-max-content;
+  width: -moz-max-content;
+  width: max-content;
   margin: 0 auto;
+}
+
+.sample-project__subtitle {
+  width: 100%;
+  margin: 30px auto;
+}
+.sample-project__subtitle h5 {
+  text-align: center;
 }
 
 .sample {
@@ -4212,6 +4229,16 @@ footer p {
   -webkit-transform: scale(0);
           transform: scale(0);
 }
+@media only screen and (max-width: 1366px) {
+  .sample {
+    max-width: 100%;
+  }
+}
+@media only screen and (max-width: 576px) {
+  .sample {
+    height: 250px;
+  }
+}
 .sample:hover > .sample-overlay {
   background: var(--warning);
   opacity: 1;
@@ -4219,6 +4246,18 @@ footer p {
 
 h3 {
   display: block;
+  text-align: center;
+  padding-bottom: 10px;
+}
+@media only screen and (max-width: 1366px) {
+  h3 {
+    font-size: 1.375rem;
+  }
+}
+@media only screen and (max-width: 576) {
+  h3 {
+    font-size: 1.25rem;
+  }
 }
 
 .sample-overlay__info {
@@ -4237,6 +4276,11 @@ h3 {
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
           flex-direction: column;
+}
+@media only screen and (max-width: 576px) {
+  .sample-overlay__info span {
+    display: none;
+  }
 }
 
 .sample-overlay {
@@ -4261,6 +4305,8 @@ h3 {
   position: absolute;
   -webkit-transform: scale(1.1);
           transform: scale(1.1);
+  -webkit-filter: brightness(90%);
+          filter: brightness(90%);
 }
 
 .view-more__container {
