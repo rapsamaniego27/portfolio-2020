@@ -4617,6 +4617,10 @@ h3 {
   display: none;
 }
 
+.work-position {
+  text-align: left !important;
+}
+
 .portfolio-page__container {
   max-width: 1000px;
   margin: 0 auto;
