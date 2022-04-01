@@ -30,16 +30,24 @@ blocks:
       photographer: ""
   - alignment: two columns
     content:
-      text: >-
+      text: >+
         Once I got back. I went online dating again and found this beautiful
         woman on OKC. We didn't match unfortunately but I managed to reach out
         to her because her instagram account was in her biography. 
 
         I viewed her like any other girl on dating apps just seeking for that Knight in Shining Armor until I found out she's really strong and was even more like a Knight than I am. But I never gave up and tried my luck to ask her out and wanted to show her how much of a Warrior I am.
 
-        <br><br>
-
-        She was really sweet, she isn't just sweet sweet! It was like Candy Sweet. She was also kind, caring and strong. She also tells you a lot of good stories. She loves travelling and coffee very much. She even earns double or probably triple the salary I was earnin and she lives alone. Which really made me anxious. 
+      image: /images/girlfriend-thumb2-040122.png
+      photographer: Raquel Caneo
+      alt: Ralph and Raquel
+  - alignment: one column
+    content:
+      text: >-
+        She was really sweet, she isn't just sweet sweet! It was like Candy
+        Sweet. She was also kind, caring and strong. She also tells you a lot of
+        good stories. She loves travelling and coffee very much. She even earns
+        double or probably triple the salary I was earnin and she lives alone.
+        Which really made me anxious. 
 
         <br><br>
 
@@ -52,16 +60,8 @@ blocks:
         <br><br>
 
         So yeah, as much as it hurts to get ghosted from the start of the date, it's easier to move on that way. 
-      image: /images/girlfriend-thumb2-040122.png
-      photographer: Raquel Caneo
-      alt: Ralph and Raquel
-  - alignment: one column
-    content:
-      text: >-
-        Everything was too good to be true because no girl likes a guy like me
-        but my talent. And I don't like being appreciated for just my talent,
-        and all of deserve to be appreciated also for our life stories and
-        struggles.
+
+        Everything was too good to be true because no girl likes a guy like me but my talent. And I don't like being appreciated for just my talent, and all of deserve to be appreciated also for our life stories and struggles.
 
         <br><br>
 
