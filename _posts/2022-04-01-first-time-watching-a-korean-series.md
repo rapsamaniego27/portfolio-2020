@@ -28,7 +28,7 @@ blocks:
 
         <br><br>
 
-        The characters are driven by a situation they don't want to be in. Sometimes they tend to get vengeful, upset, quiet or even angry but after all theyre all human beings right? But I like how they are so straightforward that they want to solve something on how real humans are supposed to do.
+        The characters are driven by a situation they don't want to be in. Sometimes they tend to get vengeful, upset, quiet or even angry but after all theyre all human beings right? But I like how they are so straightforward that they want to solve something on how real humans are supposed to do. They really value communication.
 
         <br><br>
 
