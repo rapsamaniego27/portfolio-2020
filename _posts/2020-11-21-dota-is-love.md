@@ -2,7 +2,7 @@
 excerpt: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
   greatest hinder? "
 layout: chapter
-title: Dota is Love
+title: Comeback to Dota Playing
 authors:
   - name: Rap Esteva
 date: 2021-02-28T08:17:24.311Z
@@ -55,7 +55,7 @@ blocks:
 
         I had a heart to heart talk with my bestfriend Darwin and told him I don't want to play anymore, and I still need to continue to re-establish myself as its not over. I love the game but I may need to let go for awhile.
 author: Rap Esteva
-description: I got back to playing DOTA with my best friends.
+description: I got back to playing DOTA with my best friends only to quit it again.
 category:
   - Sports
 ---
