@@ -53,6 +53,8 @@ blocks:
 
         So yeah, as much as it hurts to get ghosted from the start of the date, it's easier to move on that way. 
       image: /images/girlfriend-thumb2-040122.png
+      photographer: Raquel Caneo
+      alt: Ralph and Raquel
   - alignment: one column
     content:
       text: >-
