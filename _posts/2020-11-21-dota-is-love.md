@@ -1,70 +1,62 @@
 ---
+excerpt: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
+  greatest hinder? "
 layout: chapter
 title: Dota is Love
 authors:
   - name: Rap Esteva
-date: 2020-11-21T08:17:24.311Z
+date: 2021-02-28T08:17:24.311Z
 image: /images/dota.jpg
 banner: /images/dota.jpg
 photographer: Gabe Newell
-category:
-  - Sports
 categories:
-  - Programming
-tags:
-  - Juggling
-  - CSS
-description: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
-  greatest hinder? "
-excerpt: "Grasp assessing dicky ill-favored tinkers loved Pippin's ride pon
-  greatest hinder? "
+  - Social
+  - Sports
+tags: []
 blocks:
   - alignment: one column
     content:
-      text: "*Slivers of the Mad Moon cast their waning light across the land. A
-        dormant beast stirs in his cave, a powerful hunger overcoming the arcane
-        tendrils that bind him in his hibernation. We once celebrated his taste
-        for sweets and the blood spilled in his honor by both Radiant and Dire.
-        But that was quite long ago. Yet he stirs. Could it be? Yes! Now comes
-        the season of Roshan! And with him comes an all-new Halloween game mode,
-        rewards upon rewards, gobs of candy to steal and a heaping new treasure
-        for one and all. Lo, it’s Diretide.*"
+      text: >-
+        I went through some existential crisis. Just as I decided to fix my
+        career and be someone I wanted to be, I knew I had to sacrifice my
+        favorite game. I actually got to let go of DOTA and I didn't play for
+        almost 2 years. 
+
+        <br><br>
+
+        But then my bestfriend Darwin invited me for a game after 2 years of not playing with them, since I was almost finished with my personal projects for my next career I played and I was even more addictive than ever. I even subscribed for a GamerzClass for a few months just to adjust to the meta.
   - alignment: two columns
     content:
-      text: Featuring a new version of the Diretide game mode, collect and steal candy
-        from your enemies, while keeping Roshan at bay. The best-of-5 fast-paced
-        brawl will be available for everyone to play until December 22nd. For
-        the duration of the event, Diretide and Dota games you play will reward
-        you with Diretide Points. Every 100 Diretide Points collected, you’ll
-        receive one of over 75 unique rewards including exclusive sets,
-        couriers, wards, a Chest of the Diretide, a Pumpkin Head equippable by
-        any hero, ghostly costumes for your heroes and your courier, an
-        alternate in-game art style global item, chat wheel lines, sprays, MMR
-        Double down tokens and more!
+      text: >-
+        As I was playing, I realized that the game of DOTA has gone more
+        complexed than the last time I played it. Every matches I played there's
+        always a role to be assigned to be players and dedicated my life to the
+        offlane role. 
+
+        <br><br>
+
+        The Offlaner is usually the one setting up fights, tanking for the team, looking for the good entry and protecting the Carry. But I think it's also the least played if Im not mistaken so learned the role.
       image: /images/dummy-add2.jpg
       alt: Crystal Maiden with a wand
-      photographer: Kunkka
+      photographer: ""
   - alignment: one column
     content:
       text: >-
-        Diretide is not the only thing that is back from the past this year: The
-        Hallowed Chest of the Diretide, with more than 60 items among 5 tiers,
-        including Immortals and Emblems, reintroduces the Chest and Key system.
-        Similar to Dota chests from 2013 and CSGO, the Chest of the Diretide
-        drops as a reward for playing and is opened with a key purchasable on
-        the store. Both the Chest and its contents are immediately marketable
-        and can be purchased and sold on the Marketplace directly from inside
-        the client. Additionally, we are introducing a Trade Up system that
-        allows you to turn 10 items of a tier into a random item of a tier
-        higher. Don’t have 10 items of the same tier? We will help you
-        automatically fill the empty slots with the cheapest items from the
-        marketplace so you can find the best bargains and turn them into more
-        valuable items. Like CSGO crates as well, the odds of tier 1 to tier 4
-        are 1:5 compared to the tier immediately below. The odds for the
-        cosmically rare emblems are 1:100000, like previous emblems.
+        I enjoyed playing the game until the last week of February of 2022 where
+        I realized that I might have been playing too much and not paying
+        attention to my Relationship, Career and Music. So I decided to stop for
+        the better. 
 
+        <br><br>
 
-        Find more details on the [Diretide Website](http://www.dota2.com/diretide)
+        But the time I have stopped playing, it was too late for me to fix things that have been affected and there are things I couldn't get back anymore. I don't treat the game as a curse but sometimes too much of something is bad even for games. 
+
+        <br><br>
+
+        I had a heart to heart talk with my bestfriend Darwin and told him I don't want to play anymore, and I still need to continue to re-establish myself as its not over. I love the game but I may need to let go for awhile.
 author: Rap Esteva
+description: I got back to playing DOTA with my best friends.
+category:
+  - Sports
 ---
 Updated Meta Folks so here it goes.
