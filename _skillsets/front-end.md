@@ -2,6 +2,7 @@
 title: Front End
 group:
   - tech: Jekyll
+  - tech: React
   - tech: Bootstrap
   - tech: SASS
   - tech: Material Design
