@@ -1,12 +1,12 @@
 ---
 title: Front End
 group:
-  - tech: Jekyll
+  - tech: Next.js
   - tech: React
-  - tech: Bootstrap
+  - tech: Jekyll
   - tech: SASS
-  - tech: Material Design
+  - tech: Bootstrap
+  - tech: Webpack
   - tech: GSAP
   - tech: Javascript API
-  - tech: Webpack
 ---
