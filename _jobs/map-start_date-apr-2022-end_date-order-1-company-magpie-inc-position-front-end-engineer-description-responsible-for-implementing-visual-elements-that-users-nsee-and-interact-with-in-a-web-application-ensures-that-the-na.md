@@ -1,5 +1,5 @@
 ---
-order: 1
+order: 4
 company: Magpie Inc
 position: Front End Engineer
 description: |-
