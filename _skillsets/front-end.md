@@ -7,6 +7,5 @@ group:
   - tech: Jekyll
   - tech: SASS
   - tech: Webpack
-  - tech: GSAP
   - tech: Javascript API
 ---
