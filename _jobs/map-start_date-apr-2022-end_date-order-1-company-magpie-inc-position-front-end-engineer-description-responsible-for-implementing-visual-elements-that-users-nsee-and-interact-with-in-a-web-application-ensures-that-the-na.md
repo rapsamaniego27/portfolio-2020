@@ -1,6 +1,6 @@
 ---
 order: 4
-company: Magpie Inc
+company: Zip Technologies
 position: Front End Engineer
 description: |-
   Responsible for implementing visual elements that users
@@ -8,5 +8,5 @@ description: |-
   application is optimized both in technology and aesthetics.
 start_date: Apr 2022
 end_date: ""
-logo: /images/magpie-1000px-1-.png
+logo: /images/zip_financial_technologies_inc_logo.jpg
 ---
