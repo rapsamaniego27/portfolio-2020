@@ -36,6 +36,33 @@ Run commands from this folder. On nvm-windows, use `nvm install 24.22.2` followe
 by `nvm use 24.22.2`. Select Ruby 3.4.12 separately with your Ruby installation.
 Use a second terminal for `npm run watch` while Jekyll serves the site.
 
+### Preview the portfolio with local Strapi 5
+
+Start `yarn dev:neon` in `D:\dev-stuff\projects\_STRAPI\strapi-rap-v5`.
+In this Jekyll project, run `npm run dev` (or `npm run watch` while editing),
+then `bundle exec jekyll serve`. Open `http://127.0.0.1:4000/portfolio/`
+or `http://localhost:4000/portfolio/`.
+
+Only loopback previews use `http://127.0.0.1:1342/api/projects`. A small local
+adapter supplies v5 filters, populated images/relations, pagination and
+document IDs, then returns the shape expected by the existing cards and modals.
+All six category buttons and project details use this local API. It does not
+fall back to Heroku when the local API fails; it shows a local connection error.
+The localhost switch also works with the production asset build.
+
+On deployed hostnames, the original Heroku endpoints and v3 request/response
+behavior are retained. Existing skills/certification requests are unchanged;
+those optional API-driven sections are not active in the current page scripts.
+There are no API tokens or admin credentials in the browser bundle.
+
+Strapi v5 must allow Public read access for `project.find`, `project.findOne`,
+`technology.find`, and `collaborator.find`. These are the only permissions
+needed for this portfolio preview. No create/update/delete/upload permissions
+are added. The original Heroku v3 application is unaffected.
+
+Run `npm run test:local-api` to check local requests, v5 pagination and modal
+data, failure handling, and the unchanged production v3 request behavior.
+
 | Command | Purpose |
 | --- | --- |
 | `npm run dev` | Compile development assets once. |
@@ -101,8 +128,8 @@ legacy Sass imports, global built-ins, color functions, and slash division.
 Theme, font, breakpoint, grid, and spacing defaults are configurable with
 `!default`; their existing names and default values are retained. `fontWeight()`
 now reads the correct font-weight group and argument.
-`jekyll-strapi` 0.1.3 is still its latest published release. Its existing browser
-API endpoint and the separate Strapi application have not been migrated here.
+`jekyll-strapi` 0.1.3 remains pinned. Production browser calls retain the original
+v3 endpoint; local portfolio previews use the v5 adapter described above.
 
 ### Extending the Sass boilerplate
 

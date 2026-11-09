@@ -14,7 +14,8 @@
         "hot": "npm run watch",
         "prod": "npm run production",
         "production": "webpack --config webpack.mix.js --mode production",
-        "check": "npm run prod && npm audit"
+        "check": "npm run prod && npm audit",
+        "test:local-api": "node --test source/tests/local-strapi.test.cjs"
     },
     "browserslist": [
         "defaults"

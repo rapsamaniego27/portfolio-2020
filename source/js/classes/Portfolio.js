@@ -61,7 +61,13 @@ class Portfolio{
     });
 
    })
-   .catch(err => console.log(err));
+   .catch(err => {
+    if (data.localApi) {
+     portfolioResultsContainer.textContent = 'Could not load the local portfolio. Check that Strapi is running at http://127.0.0.1:1342 and portfolio read access is enabled.';
+     this.portfolioCount.textContent = 'Local portfolio unavailable.';
+    }
+    console.log(err);
+   });
 
  }
 
