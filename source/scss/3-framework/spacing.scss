@@ -1,19 +1,21 @@
-$spaceamounts: (0.5, 1, 1.5, 2, 3); // Adjust this to include the pixel amounts you need.
-$sides: (top, bottom, left, right); // Leave this variable alone
+@use "sass:list";
+@use "sass:string";
+$spaceamounts: (0.5, 1, 1.5, 2, 3) !default; // Adjust this to include the pixel amounts you need.
+$sides: (top, bottom, left, right) !default; // Leave this variable alone
 
 
 @each $side in $sides{
 
   // Margins
   @each $space in $spaceamounts {
-    .m#{str-slice($side, 0, 1)}-#{index($spaceamounts, $space)} {
+    .m#{string.slice($side, 0, 1)}-#{list.index($spaceamounts, $space)} {
       margin-#{$side}: #{$space}rem !important; 
     }
   }
 
   // Paddings
   @each $space in $spaceamounts {
-    .p#{str-slice($side, 0, 1)}-#{index($spaceamounts, $space)} {
+    .p#{string.slice($side, 0, 1)}-#{list.index($spaceamounts, $space)} {
       padding-#{$side}: #{$space}rem !important; 
     }
   }
@@ -23,10 +25,10 @@ $sides: (top, bottom, left, right); // Leave this variable alone
 
 // Spacing Autos
 @each $side in $sides{
-  .m#{str-slice($side, 0, 1)}-auto {
+  .m#{string.slice($side, 0, 1)}-auto {
     margin-#{$side}:auto !important; 
   }
-  .p#{str-slice($side, 0, 1)}-auto {
+  .p#{string.slice($side, 0, 1)}-auto {
     padding-#{$side}:auto !important; 
   }
 }

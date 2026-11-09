@@ -1,3 +1,6 @@
+@use "sass:map";
+@use "../1-vendor/variables" as *;
+
 /* Gets the color from the theme defaults */
 /* Passes in the color thens searches for the Group name called colors
    then map-get the color
@@ -5,7 +8,7 @@
 @function color($color){
   @each $group-name, $group in $theme-defaults{
      @if($group-name =='Colors'){
-       @return map-get($group, $color);
+       @return map.get($group, $color);
      }
   }
 }
@@ -13,8 +16,8 @@
 /* Calls the font weight */
 @function fontWeight($font-weight){
   @each $group-name, $group in $theme-defaults{
-     @if($group-name =='Font Weights'){
-       @return map-get($group, $color);
+     @if($group-name =='Font weights'){
+       @return map.get($group, $font-weight);
      }
   }
 }

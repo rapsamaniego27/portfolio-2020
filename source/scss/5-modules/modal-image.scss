@@ -1,3 +1,5 @@
+@use "../1-vendor/variables" as *;
+
 .modal-image{
   background:var(--white);
   position: fixed;

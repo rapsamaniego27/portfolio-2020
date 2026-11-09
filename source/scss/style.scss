@@ -1,63 +1,63 @@
 
-@import '1-vendor/themename';
-@import '1-vendor/variables';
+@use '1-vendor/themename' as *;
+@use '1-vendor/variables' as *;
 /* @import '1-vendor/bootstrap'; */
 
-@import '1-vendor/reset';
+@use '1-vendor/reset' as *;
 
-@import '2-base/functions';
-@import '2-base/mixins';
-@import '2-base/typography';
-@import '2-base/colors';
-@import '2-base/placeholders';
-@import '2-base/functions';
-@import '2-base/animations';
+@use '2-base/functions' as *;
+@use '2-base/mixins' as *;
+@use '2-base/typography' as *;
+@use '2-base/colors' as *;
+@use '2-base/placeholders' as *;
 
-@import '3-framework/breakpoint.scss';
-@import '3-framework/grid.scss';
-@import '3-framework/spacing.scss';
-@import '3-framework/spacing-10s.scss';
-@import '3-framework/wrappers.scss';
+@use '2-base/animations' as *;
 
-@import '4-layout/default-structure';
-@import '4-layout/header';
-@import '4-layout/custom';
-@import '4-layout/nav';
-@import '4-layout/content';
-@import '4-layout/footer';
-@import '4-layout/intro';
-@import '4-layout/summary';
-@import '4-layout/contact-form';
-@import '4-layout/core-tech';
-@import '4-layout/other-tech';
-@import '4-layout/awards';
-@import '4-layout/work-experience';
-@import '4-layout/portfolio';
-@import '4-layout/e-diary';
-@import '4-layout/chapter';
-@import '4-layout/modal-img';
-@import '4-layout/contact';
-@import '4-layout/site-info';
+@use '3-framework/breakpoint.scss' as *;
+@use '3-framework/grid.scss' as *;
+@use '3-framework/spacing.scss' as *;
+@use '3-framework/spacing-10s.scss' as *;
+@use '3-framework/wrappers.scss' as *;
 
-@import '5-modules/buttons.scss';
-@import '5-modules/avatar.scss';
-@import '5-modules/modal.scss';
-@import '5-modules/tag.scss';
-@import '5-modules/spinner.scss';
-@import '5-modules/modal-image.scss';
-@import '5-modules/pagination.scss';
-@import '5-modules/category-card';
-@import '5-modules/sidebar-tags';
+@use '4-layout/default-structure' as *;
+@use '4-layout/header' as *;
+@use '4-layout/custom' as *;
+@use '4-layout/nav' as *;
+@use '4-layout/content' as *;
+@use '4-layout/footer' as *;
+@use '4-layout/intro' as *;
+@use '4-layout/summary' as *;
+@use '4-layout/contact-form' as *;
+@use '4-layout/core-tech' as *;
+@use '4-layout/other-tech' as *;
+@use '4-layout/awards' as *;
+@use '4-layout/work-experience' as *;
+@use '4-layout/portfolio' as *;
+@use '4-layout/e-diary' as *;
+@use '4-layout/chapter' as *;
+@use '4-layout/modal-img' as *;
+@use '4-layout/contact' as *;
+@use '4-layout/site-info' as *;
 
-@import '6-responsive/header.scss';
-@import '6-responsive/intro';
-@import '6-responsive/contact-form';
-@import '6-responsive/summary';
-@import '6-responsive/core-tech';
-@import '6-responsive/other-tech';
-@import '6-responsive/awards';
-@import '6-responsive/work-experience';
-@import '6-responsive/portfolio';
-@import '6-responsive/e-diary';
-@import '6-responsive/chapter';
+@use '5-modules/buttons.scss' as *;
+@use '5-modules/avatar.scss' as *;
+@use '5-modules/modal.scss' as *;
+@use '5-modules/tag.scss' as *;
+@use '5-modules/spinner.scss' as *;
+@use '5-modules/modal-image.scss' as *;
+@use '5-modules/pagination.scss' as *;
+@use '5-modules/category-card' as *;
+@use '5-modules/sidebar-tags' as *;
+
+@use '6-responsive/header.scss' as *;
+@use '6-responsive/intro' as *;
+@use '6-responsive/contact-form' as *;
+@use '6-responsive/summary' as *;
+@use '6-responsive/core-tech' as *;
+@use '6-responsive/other-tech' as *;
+@use '6-responsive/awards' as *;
+@use '6-responsive/work-experience' as *;
+@use '6-responsive/portfolio' as *;
+@use '6-responsive/e-diary' as *;
+@use '6-responsive/chapter' as *;
 

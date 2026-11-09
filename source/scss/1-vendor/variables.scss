@@ -1,3 +1,4 @@
+@use "sass:color";
 $theme-defaults: (
   /* Colors */
   'Colors' : (
@@ -31,28 +32,28 @@ $theme-defaults: (
     'weight-black': 900
   ),
 
-);
+) !default;
 
 
 //Font Families
 /* Import */
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;1,400;1,600&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
 
-$alt-serif: "Open Sans",Helvetica, Verdana, sans-serif;
-$sans-serif: "Ubuntu",Helvetica, Verdana, sans-serif;
-$serif: 'Lora', Georgia, "Times New Roman", serif;
-$mono: "Source Code Pro", Courier, mono;
+$alt-serif: "Open Sans",Helvetica, Verdana, sans-serif !default;
+$sans-serif: "Ubuntu",Helvetica, Verdana, sans-serif !default;
+$serif: 'Lora', Georgia, "Times New Roman", serif !default;
+$mono: "Source Code Pro", Courier, mono !default;
 
 //Media queries
 // Note: 
 // Max <   Min >
 
 // $device-lg: "only screen and (min-width: 1366px)";
-$device-lg: "only screen and (max-width: 1366px)";
-$device-md-between: "(min-width: 768px) and (max-width: 979px)";
-$device-md: "only screen and (max-width: 1024px)";
-$device-sm: "only screen and (max-width: 800px)";
-$device-xs: "only screen and (max-width: 480px)";
+$device-lg: "only screen and (max-width: 1366px)" !default;
+$device-md-between: "(min-width: 768px) and (max-width: 979px)" !default;
+$device-md: "only screen and (max-width: 1024px)" !default;
+$device-sm: "only screen and (max-width: 800px)" !default;
+$device-xs: "only screen and (max-width: 480px)" !default;
 
 
 $breakpoints: (default:0,
@@ -60,7 +61,7 @@ $breakpoints: (default:0,
   sm:576px,
   md:767px,
   lg:979px,
-  xl:1200px);
+  xl:1200px) !default;
 
 
 .pink {
@@ -69,9 +70,9 @@ $breakpoints: (default:0,
 
 
 @function hexToRGB($hex) {
-  @return red($hex),
-  green($hex),
-  blue($hex);
+  @return color.channel($hex, 'red', $space: rgb),
+  color.channel($hex, 'green', $space: rgb),
+  color.channel($hex, 'blue', $space: rgb);
 }
 
 /* Looping for CSS Custom properties */
@@ -86,7 +87,7 @@ $breakpoints: (default:0,
       /*#{$group-name} */
       @each $name,
       $value in $group {
-        --#{$name}: #{$value}
+        --#{$name}: #{$value};
       }
 
       @if($group-name=='Colors') {

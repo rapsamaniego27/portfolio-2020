@@ -1,11 +1,14 @@
-$columns: 12;
+@use "sass:math";
+@use "../2-base/placeholders" as *;
+
+$columns: 12 !default;
 $grid-breakpoints: (
   default:0,
   sm:576px,
   md:800px,
   lg:979px,  
   xl:1200px
-);
+) !default;
 
 
 // =====================================================//
@@ -21,8 +24,8 @@ $grid-breakpoints: (
         @for $i from 1 through $columns{
   
           .col-#{$name}#{$i}{
-            flex: 0 0 100% /  $columns * $i;    
-            max-width: (100 / $columns * $i) * 1%;
+            flex: 0 0 math.div(100%, $columns) * $i;
+            max-width: (math.div(100, $columns) * $i) * 1%;
             // padding:15px 0;
 
           }
@@ -66,8 +69,8 @@ $column-list: null;
 @for $i from 1 through $columns{
 
   .col-#{$i}{
-    flex: 0 0 100% /  $columns * $i;    
-    max-width: (100 / $columns * $i) * 1%;
+    flex: 0 0 math.div(100%, $columns) * $i;
+    max-width: (math.div(100, $columns) * $i) * 1%;
     width: 100%;
   }
 }
@@ -76,14 +79,14 @@ $column-list: null;
 /* Loop for Offsets */
 @for $i from 1 through $columns{
   .col-offset-#{$i}{
-    margin-left:100% / $columns * $i;
+    margin-left:math.div(100%, $columns) * $i;
   }
 }
 
 
 
 
-$gutters: (5, 10, 15, 20);
+$gutters: (5, 10, 15, 20) !default;
 
 @mixin createGutters($gutters){
   @each $gutter in $gutters {

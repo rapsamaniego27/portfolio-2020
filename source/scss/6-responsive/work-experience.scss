@@ -1,3 +1,5 @@
+@use "../1-vendor/variables" as *;
+
 @media #{$device-sm}{
   .work-extras{
     display:none;

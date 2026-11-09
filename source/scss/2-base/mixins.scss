@@ -1,3 +1,6 @@
+@use "sass:color";
+@use "sass:map";
+@use "placeholders" as *;
 
 /* Adding a background for the buttons */
 @mixin btn-background($background){
@@ -6,14 +9,14 @@
   color:#fff;
   
   &:hover{
-    background:darken($background, 8%);
+    background:color.adjust($background, $lightness: -8%);
     transition: all 0.3s ease;
-    color:darken(#fff, 1%);
+    color:color.adjust(#fff, $lightness: -1%);
   }
   &:active{
-    background:darken($background, 14%);
+    background:color.adjust($background, $lightness: -14%);
     transition: all 0.3s ease;
-    color:darken(#fff, 5%);
+    color:color.adjust(#fff, $lightness: -5%);
   }
 
   &:focus{
@@ -40,12 +43,12 @@
   /* The element */
   #{$element}{
     
-    font-size:map-get($properties, size);
-    font-weight:map-get($properties, weight);
+    font-size:map.get($properties, size);
+    font-weight:map.get($properties, weight);
 
     /* Checks if it has mobile size property */
-    @if map-has-key($properties, mobile-size){
-      $mobile-size:map-get($properties, mobile-size);
+    @if map.has-key($properties, mobile-size){
+      $mobile-size:map.get($properties, mobile-size);
 
       @media only screen and (max-width:840px){
         font-size: $mobile-size;

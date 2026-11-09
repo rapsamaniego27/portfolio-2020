@@ -1,3 +1,5 @@
+@use "../1-vendor/variables" as *;
+
 .modal__overlay{
  background:rgba(var(--black-rgb), 0.8);
  z-index: 5000;

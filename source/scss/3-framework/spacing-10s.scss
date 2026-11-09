@@ -1,3 +1,7 @@
+@use "sass:string";
+@use "../1-vendor/variables" as *;
+@use "spacing" as *;
+
 
 
 @mixin createLargeSpacings(){
@@ -10,14 +14,14 @@
 
      // Margins
      @for $i from 1 through 12 {
-      .m#{str-slice($side, 0, 1)}-#{$name}-#{$i+'0'} {
+      .m#{string.slice($side, 0, 1)}-#{$name}-#{$i+'0'} {
        margin-#{$side}: #{$i + '0'}px !important;
       }
      }
 
      // Paddings
      @for $i from 1 through 12 {
-      .p#{str-slice($side, 0, 1)}-#{$name}-#{$i+'0'} {
+      .p#{string.slice($side, 0, 1)}-#{$name}-#{$i+'0'} {
        padding-#{$side}: #{$i + '0'}px !important;
       }
      }
@@ -34,14 +38,14 @@
  @each $side in $sides{
        // Margins
     @for $i from 1 through 12 {
-      .m#{str-slice($side, 0, 1)}-#{$i+'0'} {
+      .m#{string.slice($side, 0, 1)}-#{$i+'0'} {
         margin-#{$side}: #{$i + '0'}px;
       }
     }
 
     // Paddings
     @for $i from 1 through 12 {
-      .p#{str-slice($side, 0, 1)}-#{$i+'0'} {
+      .p#{string.slice($side, 0, 1)}-#{$i+'0'} {
         padding-#{$side}: #{$i + '0'}px;
       }
     }

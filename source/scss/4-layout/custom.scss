@@ -1,3 +1,11 @@
+@use "../1-vendor/variables" as *;
+@use "../2-base/mixins" as *;
+
+// Preserve the natural icon widths used before Font Awesome 7.
+.fa, .fas, .far, .fab {
+  --fa-width: auto;
+}
+
 //Default Grid Container
 .grid-container{
   // max-width:60rem;

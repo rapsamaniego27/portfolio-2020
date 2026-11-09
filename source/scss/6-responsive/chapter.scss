@@ -1,3 +1,5 @@
+@use "../1-vendor/variables" as *;
+
 @media #{$device-md}{
  .chapter-content__thumbnail{
    flex-direction: column;

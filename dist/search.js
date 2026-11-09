@@ -1,3 +1,1 @@
-const searchBtn = document.getElementById('searchBtn');
-const searchInput = document.getElementById('searchInput');
-
+const searchBtn=document.getElementById("searchBtn"),searchInput=document.getElementById("searchInput");

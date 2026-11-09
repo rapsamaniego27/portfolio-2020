@@ -1,3 +1,5 @@
+@use "../1-vendor/variables" as *;
+
 @media #{$device-md}{
  .portfolio-results__inner{
    grid-template-columns: repeat(2, 1fr);
