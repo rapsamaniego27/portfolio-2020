@@ -69,9 +69,12 @@ layout: default
    <div class="sample-projects mt-40">
 
     <!-- Loop for Sample Projects -->
-    {% assign samples = site.samples | sort: 'type' | reverse  %}
-    {% for sample in samples %}
-     {% include sample-projects.html %}
+    {% assign ordered_samples = site.samples | sort: 'relative_path' | reverse %}
+    {% assign sample_groups = ordered_samples | group_by: 'type' | sort: 'name' | reverse %}
+    {% for group in sample_groups %}
+      {% for sample in group.items %}
+        {% include sample-projects.html %}
+      {% endfor %}
     {% endfor %}
 
 
