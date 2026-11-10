@@ -3,6 +3,9 @@
   publish = "_site"
 
 [build.environment]
+  # Builds use the committed _data/strapi_projects.json, even with Heroku off.
+  # Refresh it locally with Strapi running and bundle exec jekyll serve, then push.
+  # Netlify does not need STRAPI_API_URL or access to the CMS.
   NODE_VERSION = "24.22.2"
   RUBY_VERSION = "3.4.12"
   NPM_FLAGS = "--include=dev"

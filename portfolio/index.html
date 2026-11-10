@@ -12,26 +12,13 @@ layout: default
  
 
  <div class="portfolio-container mt-30">
-  <!-- Row Options -->
+  <!-- Filters use the same saved categories and order as projects.json. -->
   <ul class="portfolio-options">
+   {% for category in strapi.collections.categories %}
    <li class="portfolio-item">
-    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option portfolio-link--active" data-project-type="Web">Web</a>
+    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option{% if forloop.first %} portfolio-link--active{% endif %}" data-project-type="{{ category.key | escape }}">{{ category.name | escape }}</a>
    </li>
-   <li class="portfolio-item">
-    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option" data-project-type="Javascript">Javascript</a>
-   </li>
-   <li class="portfolio-item">
-    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option" data-project-type="Banner">Banners</a>
-   </li>
-   <li class="portfolio-item">
-    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option" data-project-type="Edm">EDMs</a>
-   </li>
-   <li class="portfolio-item">
-    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option" data-project-type="Php">PHP</a>
-   </li>
-   <li class="portfolio-item">
-    <a href="#" target="_blank" class="btn btn-ghost-accent portfolio-link portfolio-option" data-project-type="Logo">Logos</a>
-   </li>
+   {% endfor %}
   </ul>
   <!-- End Options -->
 
@@ -39,7 +26,7 @@ layout: default
   <div class="portfolio-results__container">
    <p class="portfolio-results__label pl-xl-20" id="portfolioCount">0 results found</p>
 
-   <div class="portfolio-results__inner mt-40 mb-60 ml-xl-20 mr-xl-20" id="portfolioResultsContainer">
+   <div class="portfolio-results__inner mt-40 mb-60 ml-xl-20 mr-xl-20" id="portfolioResultsContainer" data-projects-url="{{ '/projects.json' | relative_url }}">
 
     <!-- Resulta -->
 

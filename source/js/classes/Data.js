@@ -1,40 +1,24 @@
 class Data{
  constructor(){
-   this.api = 'https://strapi-rap.herokuapp.com/projects';
+   // Jekyll supplies the JSON path, including a baseurl when one is configured.
+   this.api = document.querySelector('#portfolioResultsContainer')?.dataset.projectsUrl || '/projects.json';
+   // Legacy methods below remain separate from the static portfolio data.
    this.skillsApi = 'https://strapi-rap.herokuapp.com/skill-types';
    this.certsApi = 'https://strapi-rap.herokuapp.com/certifications';
-   if (LocalStrapi.isLocalPreview()) {
-    this.localApi = new LocalStrapi();
-    this.api = `${this.localApi.source}/api/projects`;
-   }
+   this.projects = new StaticProjects(this.api);
  }
 
  //Methods
  async fetchProjects(type){
-    if (this.localApi) return this.localApi.fetchProjects(type);
-    this.api = `${this.api}?type=${type}`;
-    let response = await fetch(this.api);
-    let data = await response.json();
-
-    return data;
+    return this.projects.fetchProjects(type);
   }
 
  async fetchSingleProject(id){
-   if (this.localApi) return this.localApi.fetchSingleProject(id);
-   this.singleProjectApi = `${this.api}/${id}`;
-   let response = await fetch(this.singleProjectApi);
-   let data = await response.json();
-
-   return data;
+   return this.projects.fetchSingleProject(id);
  }
 
  async getProjectsCount(){
-   if (this.localApi) return this.localApi.getProjectsCount();
-   this.countApi = `${this.api}/count`;
-   let response = await fetch(this.countApi);
-   let data = await response.json();
-
-   return data;
+   return this.projects.getProjectsCount();
  }
 
  async getSkills() {

@@ -1,0 +1,55 @@
+---
+# Liquid generates the browser JSON from the saved Strapi export.
+# Refresh data through local Jekyll startup; keep this file as the template.
+layout: null
+permalink: /projects.json
+---
+{
+  "version": 2,
+  "categories": [
+    {% for category in strapi.collections.categories %}
+    {
+      "id": {{ category.id | jsonify }},
+      "key": {{ category.key | jsonify }},
+      "name": {{ category.name | jsonify }},
+      "slug": {{ category.slug | jsonify }},
+      "display_order": {{ category.display_order | jsonify }}
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ],
+  "projects": [
+    {% for project in strapi.collections.projects %}
+    {
+      "id": {{ project.id | jsonify }},
+      "name": {{ project.name | jsonify }},
+      "description": {{ project.description | jsonify }},
+      "create_date": {{ project.create_date | jsonify }},
+      "type": {{ project.type | jsonify }},
+      "url": {{ project.url | jsonify }},
+      "visibility": {{ project.visibility | jsonify }},
+      "modal_type": {{ project.modal_type | jsonify }},
+      "main_image": { "url": {{ project.main_image.url | jsonify }} },
+      "gallery": [
+        {% for image in project.gallery %}
+        { "url": {{ image.url | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "technologies": [
+        {% for technology in project.technologies %}
+        { "name": {{ technology.name | jsonify }}, "color": {{ technology.color | jsonify }} }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ],
+      "collaborators": [
+        {% for collaborator in project.collaborators %}
+        {
+          "name": {{ collaborator.name | jsonify }},
+          "position": {{ collaborator.position | jsonify }},
+          "website": {{ collaborator.website | jsonify }},
+          "to_show": {{ collaborator.to_show | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+        {% endfor %}
+      ]
+    }{% unless forloop.last %},{% endunless %}
+    {% endfor %}
+  ]
+}

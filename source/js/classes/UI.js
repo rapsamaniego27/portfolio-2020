@@ -1,5 +1,6 @@
 class UI{
  constructor(){
+  // Legacy URL retained; project cards and modals receive saved JSON data.
   this.source = 'https://strapi-rap.herokuapp.com';
  }
 
@@ -83,11 +84,25 @@ class UI{
  makeGallery(imageUrl, name){
   let layout = '';
   
+  // The button's data attribute lets Modal open the matching full-size image.
   layout = `
-   <img src="${imageUrl}" alt="Rap Esteva | Projects | ${name}" title="Rap Esteva | Projects | ${name}" class="modal__gallery-image">
+   <button type="button" class="modal__gallery-button" data-modal-image="${this.escapeAttribute(imageUrl)}" aria-label="Enlarge gallery image">
+    <img src="${this.escapeAttribute(imageUrl)}" alt="Rap Esteva | Projects | ${this.escapeAttribute(name)}" title="Rap Esteva | Projects | ${this.escapeAttribute(name)}" class="modal__gallery-image" loading="lazy">
+   </button>
   `;
 
   return layout;
+ }
+
+ escapeAttribute(value){
+  // Keep project names and image URLs safe inside quoted HTML attributes.
+  return String(value).replace(/[&<>"']/g, character => ({
+   '&': '&amp;',
+   '<': '&lt;',
+   '>': '&gt;',
+   '"': '&quot;',
+   "'": '&#39;'
+  }[character]));
  }
 
  makeBtnVisit(url){

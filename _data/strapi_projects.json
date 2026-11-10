@@ -1,0 +1,1456 @@
+{
+  "version": 2,
+  "categories": [
+    {
+      "id": "33dadd21e0ddb34ca1d295ea",
+      "key": "Web",
+      "name": "Web",
+      "slug": "web",
+      "display_order": 0
+    },
+    {
+      "id": "428714b10d294e1a4cef4281",
+      "key": "Javascript",
+      "name": "Javascript",
+      "slug": "javascript",
+      "display_order": 1
+    },
+    {
+      "id": "50dec9b8352107e630be0a0f",
+      "key": "Banner",
+      "name": "Banners",
+      "slug": "banners",
+      "display_order": 2
+    },
+    {
+      "id": "762931137772dffe96bd79e2",
+      "key": "Edm",
+      "name": "EDMs",
+      "slug": "edms",
+      "display_order": 3
+    },
+    {
+      "id": "26011e8dcdf8a559accd6e54",
+      "key": "Php",
+      "name": "PHP",
+      "slug": "php",
+      "display_order": 4
+    },
+    {
+      "id": "c7f67772d8b34b1479375522",
+      "key": "Logo",
+      "name": "Logos",
+      "slug": "logos",
+      "display_order": 5
+    }
+  ],
+  "projects": [
+    {
+      "id": "zzwbvimyey0r490yvwxzw0mo",
+      "name": "Christmas Countdown Timer",
+      "description": "A Christmas Countdown Timer that dynamically makes days before christmas in the current year.",
+      "create_date": "2020-09-27",
+      "type": "Javascript",
+      "url": "https://christmas-countdown27.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003182/thumb_christmas_countdown_jpg_4ae1f860f4.png"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Github",
+          "color": "#8FFDC3"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "c8aulyzf9udjjugqeqaboahx",
+      "name": "Github Finder",
+      "description": "A searching module I made from Vanilla Javascript to search for a Github User on Github.\nInspired by one of Brad Traversy's tutorial projects. I used Bootstrap for Front-End. ",
+      "create_date": "2020-09-26",
+      "type": "Javascript",
+      "url": "https://github-finder27.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003180/thumb_github_finder_0118b80cbe.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Bootstrap",
+          "color": "#E0DFF7"
+        },
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "r3bomx92ikudtgq8hbirux4a",
+      "name": "Dota Hero Slider",
+      "description": "Here is a Slider inspired from my favorite game I used to play DOTA. It's definitely made by heart with Vanilla Javascript. I made it from my own Light Slider template called dulas.js.",
+      "create_date": "2020-09-21",
+      "type": "Javascript",
+      "url": "https://hero-slider27.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003181/thumb_hero_slider_4e93628785.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Github",
+          "color": "#8FFDC3"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "n7sdmb047v71lbk23seu5b51",
+      "name": "Honda K N B",
+      "description": "A team game I created from my past employer for a Bi-monthly huddle in 2018.\n\nThis is inspired from a Filipino game show called Game K N B, using Cars to advance in Race Track when the team gets the answer right.\n\n",
+      "create_date": "2018-08-01",
+      "type": "Javascript",
+      "url": "https://honda-ka-na-ba.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003180/thumb_honda_k_n_b_18b9a5c32b.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Jquery",
+          "color": "#AEFFA7"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Huey Tsai",
+          "position": "Quality Assurance",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "f7bjwoo93tw1ihmzv92881vx",
+      "name": "Name That Movie",
+      "description": "My first game, created for our company huddle by naming the movie by it's soundtrack. Up to 3 groups or players with a point system already in store.\n\nAdded Howler.js to handle sound effects.",
+      "create_date": "2018-02-02",
+      "type": "Javascript",
+      "url": "https://name-that-movie.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003181/thumb_name_that_movie_e1556a0c38.png"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Jquery",
+          "color": "#AEFFA7"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Huey Tsai",
+          "position": "Quality Assurance",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "l68ecw9boy25zkzvitp7m6dv",
+      "name": "Note Along",
+      "description": "A web application to play along to the notes as you play your instrument.\nYou can choose from any of the Note Sets to choose the group of notes you want your app to display, set up the Interval, for notes to change depending on how many seconds, and an option to add sounds. Its a combination of the Adapter and Module Design Pattern.",
+      "create_date": "2020-09-26",
+      "type": "Javascript",
+      "url": "https://note-along.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003184/thumb_note_along_1bf4144828.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "SASS",
+          "color": "#F7959D"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "g7vea3katv0i33wxucyecbe0",
+      "name": "Profile Scroller",
+      "description": "A basic app I made inspired from the Tinder App. It uses the Iterator to scan through the JSON data. I used Bootstrap for Front End.\n\nAlso inspired from one of Brad Traversy's Javascript training in Udemy.",
+      "create_date": "2020-09-26",
+      "type": "Javascript",
+      "url": "https://profile-scroller27.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003184/thumb_profile_scroller_3df8807b8a.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "ihdr89urknw09fq0zktc89nu",
+      "name": "Profile Slider",
+      "description": "Here is a Slider with sample profiles of random humans. It's definitely made by heart with Vanilla Javascript. I made it from my own Light Slider template called east.js.",
+      "create_date": "2020-09-21",
+      "type": "Javascript",
+      "url": "https://profile-slider27.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003186/thumb_profile_slider_efda179357.png"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Netlify",
+          "color": "#BCCEA3"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "wqdmo9kbgjihz0c98qysqxqp",
+      "name": "Tracalorie Tracker",
+      "description": "It stores and sums up all the food calories you input, using Google Chrome's Local Storage to store data. This is a follow along project from Brad Traversy's Javascript Training on Udemy, using the Module Design Pattern. I used Material Design for the Front End.",
+      "create_date": "2020-09-26",
+      "type": "Javascript",
+      "url": "https://tracalorie-tracker.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003185/thumb_tracalorie_tracker_3b15491259.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Bootstrap",
+          "color": "#E0DFF7"
+        },
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "csst9jso5rwyl96i0xr52ekd",
+      "name": "EDM 1",
+      "description": "An EDM for Automation Email",
+      "create_date": "2018-07-02",
+      "type": "Edm",
+      "url": "https://rapsamaniego27.github.io/edms/edm1.html",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003047/edm1_d54ab94337.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "HTML Email",
+          "color": "#B4F7C3"
+        },
+        {
+          "name": "Marketing Cloud",
+          "color": "#C8DDE8"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "fqq4mhd9sab3vs5cfs6v9ox0",
+      "name": "EDM 2",
+      "description": "An sample HTML Email Newsletter which is sent weekly. \nOther information is blocked off for Confidentiality",
+      "create_date": "2018-10-05",
+      "type": "Edm",
+      "url": "https://rapsamaniego27.github.io/edms/edm2.html",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003051/edm2_86d5a46763.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "HTML Email",
+          "color": "#B4F7C3"
+        },
+        {
+          "name": "Marketing Cloud",
+          "color": "#C8DDE8"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "jd0smmbhdgf6s0htvgzna1om",
+      "name": "EDM 3",
+      "description": "An sample HTML Email Newsletter which is sent occasionally. \nOther information is blocked off for Confidentiality",
+      "create_date": "2018-10-05",
+      "type": "Edm",
+      "url": "https://rapsamaniego27.github.io/edms/edm3.html",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003047/edm3_e5d67c2c97.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Marketing Cloud",
+          "color": "#C8DDE8"
+        },
+        {
+          "name": "Litmus",
+          "color": "#F7F6BF"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "fv4qlhv3rj3whvz6jz8sm43g",
+      "name": "Unbeatable Hotel Deals",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003049/1_4_Unbeatable_Hotel_Deals_7ae934c8e1.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "ugnhc8zycjdi0h66otmcpa77",
+      "name": "Season's Greetings 2016",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003049/1_2_Season_s_Greetings_4da7ebf898.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "c9daxiyt5idbasb9iwxo82kk",
+      "name": "Superb Winter Deals 2016",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003049/1_1_Superb_Winter_Deals_ff499e53dd.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "h8jvbrrm8cjebbgvh1wmvw1l",
+      "name": "Experience the Real Deal",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003048/1_3_Experience_the_Real_Deal_538e9048e9.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "xd2uk8txufrlg3jqbi0baafm",
+      "name": "Best Western Premier Hotel",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003010/1_2_Best_Western_Hotel_Dubai_03c08f1872.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "j5ti9531m7zuvz2tnlaj2so6",
+      "name": "Rove Around Dubai",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003019/1_6_Rove_Around_Dubai_01d301989e.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "txth3ouoq7nsc0m7ucxmayyi",
+      "name": "IMG World of Adventure",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003014/1_9_Worlds_Largest_Indoor_Theme_Park_19adb63c31.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "gs8hf8aawi1teqz8xt46gs0l",
+      "name": "Ski Dubai EDM",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002944/1_1_Ski_Dubai_488583073e.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "n2gecawf8p57y4v3a1c7efmq",
+      "name": "Relax in Rak",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003012/1_1_Relax_in_Rak_f56b6feb53.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "jo1zxx8ayb1heex00b5em1bt",
+      "name": "Rotana All The Way",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003018/1_5_Rotana_All_the_Way_093f570bd6.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "bdy59jt3pphtu04lqwr1fbsw",
+      "name": "Experience Dubai",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003011/1_3_Best_Western_and_Cassells_Al_Barsha_da1237e14c.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "y8y9ngot1u6qrw25vf9ulk1d",
+      "name": "Ajman Palace",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003010/1_0_Ajman_Palace_8be3c89bf0.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "kgiqv6yxj0g80gj9arbqdcyl",
+      "name": "Raintree Hotels",
+      "description": null,
+      "create_date": null,
+      "type": "Edm",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003012/1_7_Raintree_Hotels_90493e94d9.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "g3tiuc8rkjt2awso3nuucnc0",
+      "name": "Development Academy of the Phils.",
+      "description": "A Management Information system composed of 3 Subsystems. \nAn Employee Management, a Performance Evaluation and \na Property Management System. The system was developed to improve the internal process within the company.\n\n\n\n\n\n",
+      "create_date": "2016-02-01",
+      "type": "Php",
+      "url": null,
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/admin_panel_7c6ff91a6e.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/search_property_8fb47e9a24.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/pie_chart_a85e250f83.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/line_chart_b77eb242e0.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "color": "#FFEBC5"
+        },
+        {
+          "name": "Laravel",
+          "color": "#FFCBD7"
+        },
+        {
+          "name": "Apache",
+          "color": "#D5FBD6"
+        },
+        {
+          "name": "Bootstrap",
+          "color": "#E0DFF7"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Jquery",
+          "color": "#AEFFA7"
+        },
+        {
+          "name": "Sublime",
+          "color": "#F6CE82"
+        },
+        {
+          "name": "GoDaddy",
+          "color": "#FF9EAB"
+        },
+        {
+          "name": "Github",
+          "color": "#8FFDC3"
+        },
+        {
+          "name": "XAMPP",
+          "color": "#F7F7B4"
+        },
+        {
+          "name": "Lavacharts",
+          "color": "#DDDDDD"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Ryan Santos",
+          "position": "Web Developer",
+          "website": "https://www.facebook.com/RifR17",
+          "to_show": true
+        },
+        {
+          "name": "Rannie Santos",
+          "position": "Web Consultant",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Michael Vicedo",
+          "position": "Data Provider",
+          "website": "https://www.facebook.com/LeahciM.odeciV",
+          "to_show": true
+        },
+        {
+          "name": "Alaine Quinto",
+          "position": "Designer / Organizer",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Lea Andaya",
+          "position": "Document Organizer",
+          "website": "https://www.facebook.com/lea.andaya.9",
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "fvsyf0hs4h2jz0lxfy0s0hqj",
+      "name": "Privato Hotel",
+      "description": "A Management Information System composed of 3 Subsystems. \nAn Employee Management, a Performance Evaluation and \na Recruitment. The system was developed to improve the internal process within the company.\n\n\n",
+      "create_date": "2017-03-01",
+      "type": "Php",
+      "url": null,
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/dashboard_4d642feacf.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016217/evaluation_form_3327d47487.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016216/perf_reports_86717d488f.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/request_leave_b65141512e.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "color": "#FFEBC5"
+        },
+        {
+          "name": "Mysql",
+          "color": "#D1E7FE"
+        },
+        {
+          "name": "Laravel",
+          "color": "#FFCBD7"
+        },
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Jquery",
+          "color": "#AEFFA7"
+        },
+        {
+          "name": "Sublime",
+          "color": "#F6CE82"
+        },
+        {
+          "name": "Composer",
+          "color": "#A9A9AB"
+        },
+        {
+          "name": "XAMPP",
+          "color": "#F7F7B4"
+        },
+        {
+          "name": "Digital Ocean",
+          "color": "#5CDEE9"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Andrian Rada",
+          "position": "Web Developer",
+          "website": "https://www.facebook.com/RadaAndrian",
+          "to_show": true
+        },
+        {
+          "name": "Rannie Santos",
+          "position": "Web Consultant",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "htlcdivzmqkcmysqsgbbil6o",
+      "name": "H&G Banner",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002939/H_and_G_Banner_3af4e095b5.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "gcxjdzsu7vrf82z87w4aavtc",
+      "name": "JRU School 100 years",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002939/1_3_JRU_Banner_e955052038.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "h2aqma8io7dzb2iax8xqkyca",
+      "name": "Tydis Gaming",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002941/Tydis_Gaming_a602598530.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "j5ckmzikflf3n6ydckzqoe66",
+      "name": "Quick Weekend Get away to Georgia",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002940/1_7_Quick_Weekend_Getaway_Georgia_9a76ee9795.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "u29ezfpxzc6qgejentyjw230",
+      "name": "Ski Dubai Banner",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002944/1_1_Ski_Dubai_488583073e.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "c2z91qy4le0xckuwu4k3zu9r",
+      "name": "Special Fare to Amman",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002939/1_4_Special_Fare_to_Amman_b913752cdb.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "uyv88ysunzjcuxm1y430d35g",
+      "name": "Avani Banner",
+      "description": null,
+      "create_date": null,
+      "type": "Banner",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002940/1_5_Avani_fc037b135b.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "mlxhomg8l1bpmozf2vd22uup",
+      "name": "Folk Ridge Logo 2020",
+      "description": null,
+      "create_date": null,
+      "type": "Logo",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003130/Folk_Ridge_Logo_Official_2020_01_e0d9c096d4.png"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "t1akxw183qvm602vktcc4jbn",
+      "name": "Folk Ridge Old Logo",
+      "description": null,
+      "create_date": null,
+      "type": "Logo",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003122/Folk_Ridge_official_76803b3187.png"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "icqh50fnvyod143gcatg7s4p",
+      "name": "H&G Thrift Shop PH",
+      "description": null,
+      "create_date": null,
+      "type": "Logo",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003119/H_and_G_Thrift_Shop_5e520252f8.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": []
+    },
+    {
+      "id": "z5t0azff2r6hx3kq7otxxi18",
+      "name": "Rose Gil ",
+      "description": "A portfolio website I made for a dear friend of mine.",
+      "create_date": "2021-07-01",
+      "type": "Web",
+      "url": "https://rosegilmercado.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017208/rose_a385ebc892.jpg"
+      },
+      "gallery": [],
+      "technologies": [
+        {
+          "name": "Jekyll",
+          "color": "#F1FFB9"
+        },
+        {
+          "name": "SASS",
+          "color": "#F7959D"
+        },
+        {
+          "name": "Netlify",
+          "color": "#BCCEA3"
+        },
+        {
+          "name": "Heroku",
+          "color": "#C7AED4"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "v4fph75d1ir2sm7dtaqzbey4",
+      "name": "Folk Ridge Band",
+      "description": "A band website for my own band to showcase our skillset, to revive country and folk music and to easily reach out to audiences with the contact form.",
+      "create_date": "2020-12-01",
+      "type": "Web",
+      "url": "https://folkridge.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017202/folkridge_main_8fb0279cd2.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017197/folkridge_gal1_8a2639c499.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017197/folkridge_gal2_3a90b959f6.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017201/folkridge_gal3_098962cbe9.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Bootstrap",
+          "color": "#E0DFF7"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Jekyll",
+          "color": "#F1FFB9"
+        },
+        {
+          "name": "SASS",
+          "color": "#F7959D"
+        },
+        {
+          "name": "GSAP",
+          "color": "#D0E5D2"
+        },
+        {
+          "name": "Webpack",
+          "color": "#D0E7EE"
+        },
+        {
+          "name": "Netlify",
+          "color": "#BCCEA3"
+        },
+        {
+          "name": "NPM",
+          "color": "#E56C82"
+        },
+        {
+          "name": "Strapi",
+          "color": "#9474FB"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "aoinxy5m38wltr9a7nyzv065",
+      "name": "Music Profile",
+      "description": "My dedicated musician profile to tell my story how I started in my musical journey, to offer inspiration and basic music lessons, as well as a blog page to share my personal insights to fellow audiences.",
+      "create_date": "2021-03-26",
+      "type": "Web",
+      "url": "https://rapmusikero.com/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017208/rapmusikero_main_107f254c6a.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017206/rapmusikero_gal1_ae222ae0c6.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017206/rapmusikero_gal2_b15c79a4ff.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017207/rapmusikero_gal3_dcb93a5ae9.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Jekyll",
+          "color": "#F1FFB9"
+        },
+        {
+          "name": "SASS",
+          "color": "#F7959D"
+        },
+        {
+          "name": "Webpack",
+          "color": "#D0E7EE"
+        },
+        {
+          "name": "Netlify",
+          "color": "#BCCEA3"
+        },
+        {
+          "name": "Netlify CMS",
+          "color": "#C4FB5A"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "qlugfv4dq2x3gp1dy3bttd5p",
+      "name": "Weblife",
+      "description": "The website is mainly used for registering Dealers nationwide, to buy products and more.",
+      "create_date": "2021-01-04",
+      "type": "Web",
+      "url": "https://weblife.com.ph/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017819/weblife_main_f674b35d41.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017819/weblife_gal3_6ff6687c7a.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017819/weblife_gal2_6313de62c1.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017819/weblife_gal1_c9bcb34112.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "color": "#FFEBC5"
+        },
+        {
+          "name": "Bootstrap",
+          "color": "#E0DFF7"
+        },
+        {
+          "name": "Wordpress",
+          "color": "#B4DAF7"
+        },
+        {
+          "name": "Woocommerce",
+          "color": "#7E4FAB"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Soleil Olandez",
+          "position": "Project Manager",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Fritz Roca",
+          "position": "Web Developer",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "e4mglxhaibadgr0x4xkw13f0",
+      "name": "Akostika Band",
+      "description": "A band website for my Uncle in Hongkong",
+      "create_date": "2021-09-01",
+      "type": "Web",
+      "url": "https://akostika.netlify.app/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017198/akostika_main_77682529d7.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017201/Gallery_Gigs_Single_9a45cb7093.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017199/Gallery_Photos_e2a7a731c4.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017199/Gallery_Gigs_833bcefc36.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Jekyll",
+          "color": "#F1FFB9"
+        },
+        {
+          "name": "Webpack",
+          "color": "#D0E7EE"
+        },
+        {
+          "name": "Heroku",
+          "color": "#C7AED4"
+        },
+        {
+          "name": "Strapi",
+          "color": "#9474FB"
+        }
+      ],
+      "collaborators": []
+    },
+    {
+      "id": "yvadqcyzqi40euqd0stip9dq",
+      "name": "Popcorn Store PH",
+      "description": "A clothing and apparel store made from Shopify with the use of an existing theme.",
+      "create_date": "2020-06-01",
+      "type": "Web",
+      "url": "https://www.popcornstore.com.ph/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017205/popcorn_main_75d87b6e24.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017205/popcorn_gal3_3cc81c4de8.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017204/popcorn_gal2_cf710de24b.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017202/popcorn_gal1_4ec5f2f967.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Javascript",
+          "color": "#DDDDDD"
+        },
+        {
+          "name": "HTML",
+          "color": "#C5F1FF"
+        },
+        {
+          "name": "CSS",
+          "color": "#DDC0FF"
+        },
+        {
+          "name": "Shopify",
+          "color": "#91C050"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Soleil Olandez",
+          "position": "Project Manager",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Rose Gil Mercado",
+          "position": "Graphic Designer",
+          "website": "https://rosegilmercado.netlify.app/",
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "r3wwllro1bfca2txd26wl9l3",
+      "name": "BPI trade",
+      "description": "BPI Trade is the online stock trading platform of BPI Securities. You can buy and sell shares of publicly listed companies in the PSE via this online portal.",
+      "create_date": "2024-01-01",
+      "type": "Javascript",
+      "url": "https://new.bpitrade.com/",
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718708331/bpitrade1_010cae640f.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718708349/bpitrade2_d32ef20c0c.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718708349/bpitrade4_aed5ab2de7.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718708350/bpitrade3_00a3ce51da.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "PHP",
+          "color": "#FFEBC5"
+        },
+        {
+          "name": "Wordpress",
+          "color": "#B4DAF7"
+        },
+        {
+          "name": "AWS",
+          "color": "#FF9900"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#38BDF8"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Nino Galpo",
+          "position": "Project Manager",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Mark Joseph Ronquillo",
+          "position": "Dev Ops",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "mdwwzfn0h71df67nm7bfqp40",
+      "name": "BPI Agency Banking",
+      "description": "Mobile Web App to easily setup agency banking account,",
+      "create_date": "2024-05-01",
+      "type": "Php",
+      "url": null,
+      "visibility": true,
+      "modal_type": "info",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718709774/dao1_08d7b9dde2.jpg"
+      },
+      "gallery": [
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718709788/dao3_bbce141fbb.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718709788/dao2_eb7192a0a5.jpg"
+        },
+        {
+          "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718709789/dao4_64b958bd90.jpg"
+        }
+      ],
+      "technologies": [
+        {
+          "name": "Laravel",
+          "color": "#FFCBD7"
+        },
+        {
+          "name": "Tailwind",
+          "color": "#38BDF8"
+        }
+      ],
+      "collaborators": [
+        {
+          "name": "Jasmin Musanip",
+          "position": "Quality Assurance",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Mar Lozano",
+          "position": "Backend Developer",
+          "website": null,
+          "to_show": true
+        },
+        {
+          "name": "Sherry San Pedro",
+          "position": "Proje",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    },
+    {
+      "id": "by1tcfdnsuco8cbg9s0ebhvw",
+      "name": "Weddings Gig",
+      "description": "asdfasdfasdf",
+      "create_date": null,
+      "type": "Logo",
+      "url": null,
+      "visibility": true,
+      "modal_type": "image",
+      "main_image": {
+        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1794289704/886811888_1088752287519580_2324846551610630055_n_55f577d096.jpg"
+      },
+      "gallery": [],
+      "technologies": [],
+      "collaborators": [
+        {
+          "name": "Soleil Olandez",
+          "position": "Project Manager",
+          "website": null,
+          "to_show": true
+        }
+      ]
+    }
+  ]
+}

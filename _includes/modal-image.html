@@ -1,15 +1,25 @@
-<div class="modal__overlay modal--hide" id="modalImgOverlay">
+<div class="modal__overlay modal--hide" id="modalImgOverlay" aria-hidden="true">
 
- <div class="modal__secondary">
-   <a href="#" target="_blank" class="modal-close__secondary" id="modalCloseSecondary">
-    <i class="fas fa-times closeSecondaryIcon"></i>
-   </a>
+ <div class="modal__secondary" role="dialog" aria-modal="true" aria-label="Project image viewer" aria-describedby="modalImageHelp" tabindex="-1">
+   <button type="button" class="modal-close__secondary" id="modalCloseSecondary" aria-label="Close image viewer">
+    <i class="fas fa-times closeSecondaryIcon" aria-hidden="true"></i>
+   </button>
+  <!-- 100% means Fit; zoom enlarges the image inside the scrollable viewport. -->
+  <div class="modal__image-controls" role="group" aria-label="Image zoom controls">
+   <button type="button" id="modalZoomOut" aria-label="Zoom out" disabled><i class="fas fa-minus" aria-hidden="true"></i></button>
+   <span id="modalZoomLevel" aria-live="polite">100%</span>
+   <button type="button" id="modalZoomIn" aria-label="Zoom in" disabled><i class="fas fa-plus" aria-hidden="true"></i></button>
+   <button type="button" id="modalZoomReset" aria-label="Fit image to viewer" disabled>Fit</button>
+  </div>
+  <p class="modal__image-help" id="modalImageHelp">Click to zoom. Scroll or swipe to pan.</p>
+  <span class="modal__image-status" id="modalImageStatus" role="status"></span>
   <div class="modal__guts">
   
-   <!-- Row Content -->
-   <div class="modal__type-img__container">
-    <img src="" alt="Image" title="Image" class="modal__type-img">
-    
+   <!-- The canvas expands when zoomed; its container provides scrolling/panning. -->
+   <div class="modal__type-img__container" tabindex="0" role="region" aria-label="Image viewport">
+    <div class="modal__image-canvas">
+     <img src="" alt="Image" title="Image" class="modal__type-img" draggable="false" role="button" tabindex="0" aria-label="Zoom image in">
+    </div>
    </div>
    <!-- End Content -->
 

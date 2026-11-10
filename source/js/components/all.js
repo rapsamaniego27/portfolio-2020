@@ -31,7 +31,8 @@ window.addEventListener('DOMContentLoaded', ()=> {
     const portfolio = new Portfolio();
 
     /* Auto display projects */
-    portfolio.displayResults('Web');
+    const projectType = portfolio.options[0]?.dataset.projectType;
+    if (projectType) portfolio.displayResults(projectType);
   }
 
   if (isInPage(pageAboutMe)) {

@@ -15,7 +15,9 @@
         "prod": "npm run production",
         "production": "webpack --config webpack.mix.js --mode production",
         "check": "npm run prod && npm audit",
-        "test:local-api": "node --test source/tests/local-strapi.test.cjs"
+        "test:projects": "node --test source/tests/static-projects.test.cjs",
+        "test:jekyll": "bundle exec ruby source/tests/jekyll-projects.test.rb",
+        "test:local-api": "npm run test:projects"
     },
     "browserslist": [
         "defaults"

@@ -5,7 +5,8 @@ class Portfolio{
   this.UI = new UI();
   this.modal = new Modal();
   this.data = new Data();
-  /* Autoplay */
+  this.animate = new Animate();
+  // Bind page controls once; each rendered card gets its own detail button below.
   this.bindClick();
   this.modal.bindCloseModal();
   this.modal.bindCloseModalImage();
@@ -13,67 +14,60 @@ class Portfolio{
 
  //Methods
 
- /* Displays the result to the Front End */
+ // Render one category for both the initial page load and category clicks.
  displayResults(type){
+  // Ignore older responses if the visitor switches categories quickly.
+  const request = this.resultsRequest = (this.resultsRequest || 0) + 1;
   const data = new Data();
   const portfolioResultsContainer = document.querySelector('#portfolioResultsContainer');
 
   
-  data.fetchProjects(type)
+  return data.fetchProjects(type)
    .then(data => {
+    if (request !== this.resultsRequest) return;
     let html = ``;
     
-    /* Loops then prepends newly fetched projects so that new projects stays in the top */
+    // Prepend each saved project to keep the newest projects at the top.
     data.forEach(project => {
       html = `${this.UI.makeProjectCards(project)} ${html}`;
     });
 
     portfolioResultsContainer.innerHTML = html;
     this.portfolioCount.innerHTML = `${data.length} results found.`;
+    // Replacing the cards allows the entrance animation to replay for each filter.
+    this.animate.portfolio(portfolioResultsContainer.querySelectorAll('.portfolio-result'));
 
-    /* Bind a click to each info buttons */
+    // Bind the eye buttons after inserting the new cards.
     const infoButtons = document.querySelectorAll('.btn-open-modal');
 
-    /* Loops over info buttons */
     infoButtons.forEach(button => {
      button.addEventListener('click', (e)=> {
-       e.preventDefault();
-       const projectId = e.target.id;
-       
-      /* Fetches one project only */
+      e.preventDefault();
+      const projectId = e.currentTarget.id;
+
+      // Look up the details in the shared JSON already used for the cards.
       this.data.fetchSingleProject(projectId)
-      .then((singleProject) => {
-       
-       /* Checks if Modal type is info */
-       if (singleProject.modal_type == 'info'){
+       .then((singleProject) => {
+        if (singleProject.modal_type == 'info'){
          this.modal.openModalInfo(singleProject);
-       }
+        }
 
-      /* Checks if Modal type is image */
-       if (singleProject.modal_type == 'image') {
-        this.modal.openModalImage(singleProject);
-       }
-       
-      }).catch(err => console.log(err));
-
-      
+        if (singleProject.modal_type == 'image') {
+         this.modal.openModalImage(singleProject);
+        }
+       }).catch(err => console.log(err));
      });
     });
 
    })
    .catch(err => {
-    if (data.localApi) {
-     portfolioResultsContainer.textContent = 'Could not load the local portfolio. Check that Strapi is running at http://127.0.0.1:1342 and portfolio read access is enabled.';
-     this.portfolioCount.textContent = 'Local portfolio unavailable.';
-    }
+    if (request !== this.resultsRequest) return;
+    portfolioResultsContainer.textContent = 'Could not load the portfolio. Please select a category to try again.';
+    this.portfolioCount.textContent = 'Portfolio unavailable.';
     console.log(err);
    });
 
  }
-
-
-
-
  /* Binds click events to Filter options */
  bindClick(){
   this.options.forEach(option => {
@@ -88,7 +82,7 @@ class Portfolio{
      }
 
      /* Then adds it to the current selected option */
-     e.target.classList.add('portfolio-link--active');
+     e.currentTarget.classList.add('portfolio-link--active');
 
      /* Adds a spinner before displaying actual results */
      portfolioResultsContainer.innerHTML = `<span class="spinner"></span>`;

@@ -1,9 +1,9 @@
-<div class="modal__overlay modal--hide" id="modalOverlay">
+<div class="modal__overlay modal--hide" id="modalOverlay" aria-hidden="true">
   
- <div class="modal">
-  <a href="#" target="_blank" class="modal-close" id="modalClose">
-   <i class="fas fa-times modalCloseIcon"></i>
-  </a>
+ <div class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" tabindex="-1">
+  <button type="button" class="modal-close" id="modalClose" aria-label="Close project details">
+   <i class="fas fa-times modalCloseIcon" aria-hidden="true"></i>
+  </button>
   <div class="modal__guts">
    <div class="modal__heading pt-30">
     <h3 class="hex-primary modal__title" id="modalTitle">Management Information System
@@ -13,7 +13,11 @@
 
    <!-- Row Content -->
    <div class="modal__content mt-30 mb-30 ml-30 mr-30">
-    <img src="/images/ralph.png" alt="Rap Esteva" title="Rap Esteva" class="modal__img" id="modalMainImage">
+    <!-- Open the image viewer while keeping these project details underneath. -->
+    <button type="button" class="modal__image-button" id="modalMainImageButton" aria-label="Enlarge project image">
+     <img src="/images/ralph.png" alt="Rap Esteva" title="Rap Esteva" class="modal__img" id="modalMainImage">
+     <span class="modal__image-hint"><i class="fas fa-magnifying-glass-plus" aria-hidden="true"></i> View larger</span>
+    </button>
     <div class="modal__info pl-30 pr-30 pl-md-10 pr-md-10 pt-xl-20">
      <h4 class="hex-dark">Description</h4>
      <p class="modal__desc pt-10 blurb2" id="modalDesc">This system is composed of 3 Subsystems.
