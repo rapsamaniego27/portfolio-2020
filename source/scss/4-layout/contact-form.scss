@@ -78,3 +78,72 @@
  width:180px;
 }
 
+//Local preview notice, using the portfolio's existing colors and buttons.
+.contact-notice{
+ box-sizing:border-box;
+ position:fixed;
+ inset:0;
+ margin:auto;
+ width:calc(100% - 32px);
+ max-width:440px;
+ max-height:calc(100% - 32px);
+ padding:0;
+ border:0;
+ border-radius:8px;
+ background:var(--white);
+ color:var(--dark);
+ box-shadow:0 8px 32px rgba(var(--black-rgb), 0.3);
+ overflow:auto;
+
+ &::backdrop{
+  background:rgba(var(--black-rgb), 0.72);
+ }
+
+ .contact-notice__heading{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:16px;
+  padding:18px 20px;
+  background:var(--primary);
+  border-bottom:3px solid var(--accent);
+
+  h3{
+   color:var(--white);
+   font-size:1.375rem;
+   line-height:1.3;
+  }
+ }
+
+ .contact-notice__close{
+  flex-shrink:0;
+  width:36px;
+  height:36px;
+  border:0;
+  background:transparent;
+  color:var(--white);
+  font-size:28px;
+  line-height:1;
+  cursor:pointer;
+ }
+
+ .contact-notice__body{
+  padding:22px 24px 24px;
+
+  p{
+   margin-bottom:20px;
+   line-height:1.6;
+  }
+ }
+
+ .contact-notice__actions{
+  display:flex;
+  justify-content:flex-end;
+ }
+
+ button:focus-visible{
+  outline:3px solid var(--accent);
+  outline-offset:3px;
+ }
+}
+

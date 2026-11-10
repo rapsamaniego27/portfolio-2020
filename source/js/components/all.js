@@ -5,6 +5,7 @@ window.addEventListener('DOMContentLoaded', ()=> {
  const pageAboutMe = document.querySelector('#pageAboutMe');
  const pageHome = document.querySelector('#pageHome');
  const btnDownloadCV = document.querySelector('.btnDownload');
+ const contactForm = document.querySelector('.contact-form__inner');
 
 
   if (isInPage(btnSeeProjects)){
@@ -17,6 +18,11 @@ window.addEventListener('DOMContentLoaded', ()=> {
      
     });
 
+  }
+
+  //Contact handles local preview notices; Netlify receives production submissions.
+  if(isInPage(contactForm)){
+    const contact = new Contact();
   }
 
   /* Home */

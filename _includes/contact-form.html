@@ -4,7 +4,16 @@
   <!-- Row 1 -->
   <div class="contact-form col-lg6 col-xs12">
   
-   <form action="POST" data-netlify="true" class="contact-form__inner">
+   <!-- Keep the live Netlify form identity; no action uses its default success page. -->
+   <form
+     name="form 1"
+     method="POST"
+     accept-charset="UTF-8"
+     data-netlify="true"
+     data-netlify-recaptcha="true"
+     class="contact-form__inner"
+   >
+    <input type="hidden" name="form-name" value="form 1">
      {% if site.data.main.note != '' %}
      <div class="help-warning hex-tertiary mb-20">
        <strong>Note: </strong> 
@@ -13,12 +22,12 @@
      {% endif %}
     <div class="form-group">
      <label for="name">Name: </label>
-     <input type="text" id="name" name="name" class="mt-10" required>
+     <input type="text" id="name" name="name" class="mt-10" autocomplete="name" required>
     </div>
 
     <div class="form-group mt-20">
      <label for="email">Email: </label>
-     <input type="text" id="email" name="email" class="mt-10" required>
+     <input type="email" id="email" name="email" class="mt-10" autocomplete="email" required>
     </div>
 
     <div class="form-group mt-20 mb-20">
@@ -26,11 +35,12 @@
      <textarea name="message" id="message" cols="30" rows="10" class="mt-10" required></textarea>
     </div>
 
+    <!-- Netlify inserts and verifies the CAPTCHA on the deployed site. -->
     <div class="field">
      <div data-netlify-recaptcha="true"></div>
     </div>
 
-    <button type="submit" target="_blank" class="btn btn-warning mt-10">Send Message</button>
+    <button type="submit" class="btn btn-warning mt-10">Send Message</button>
    </form>
   </div>
 
@@ -61,3 +71,22 @@
  </div>
 </section>
 <!-- End Contact Form -->
+
+<!-- Local previews cannot receive Netlify submissions; Contact.js opens this notice. -->
+<dialog
+  id="contactLocalNotice"
+  class="contact-notice"
+  aria-labelledby="contactNoticeTitle"
+  aria-describedby="contactNoticeMessage"
+>
+ <div class="contact-notice__heading">
+  <h3 id="contactNoticeTitle">Message not sent</h3>
+  <button type="button" class="contact-notice__close" data-contact-notice-close aria-label="Close message">&times;</button>
+ </div>
+ <div class="contact-notice__body">
+  <p id="contactNoticeMessage">No message was sent. This is a local preview; please use the live website to send your message.</p>
+  <div class="contact-notice__actions">
+   <button type="button" class="btn btn-warning" data-contact-notice-close autofocus>OK</button>
+  </div>
+ </div>
+</dialog>
