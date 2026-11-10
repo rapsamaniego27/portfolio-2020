@@ -1324,7 +1324,7 @@
       "name": "BPI trade",
       "description": "BPI Trade is the online stock trading platform of BPI Securities. You can buy and sell shares of publicly listed companies in the PSE via this online portal.",
       "create_date": "2024-01-01",
-      "type": "Web",
+      "type": "Php",
       "url": "https://new.bpitrade.com/",
       "visibility": true,
       "modal_type": "info",
