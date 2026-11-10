@@ -66,18 +66,20 @@ are retained.
 | Content | Edit with |
 | --- | --- |
 | Pages, diary posts, resume, skills, and other configured files | Decap CMS at `/admin/`, or the corresponding repository files |
-| Portfolio projects, categories, technologies, collaborators, and image references | Strapi v5, followed by a local export and GitHub push |
+| Portfolio projects, categories, technologies, collaborators, and image references | Strapi v5; the production webhook refreshes and saves the public JSON automatically once configured |
 
-For project updates:
+For local project updates:
 
 1. Start your local Strapi v5 manually, or enable the hosted v5 CMS.
 2. Save your changes, then start/restart `bundle exec jekyll serve`.
 3. Confirm startup reports `Saved ... projects to _data/strapi_projects.json`.
 4. Review and commit that updated file, then push to GitHub.
 
-Normal builds use the committed export and never fetch Strapi. A Netlify build
-hook by itself does **not** import new CMS edits. See the
-[content and CMS guide](docs/CONTENT.md) for the complete workflow.
+For hosted updates, save in Strapi and let its configured Netlify webhook run.
+The hook build refreshes the JSON and saves it to GitHub before publishing.
+Normal Git/Decap builds keep using the committed export with no Strapi request.
+See the [one-time token/webhook settings](docs/CONTENT.md#automatic-project-refresh).
+Pull automated GitHub commits before starting later local work.
 
 ## Production build and checks
 
@@ -87,10 +89,11 @@ bundle exec jekyll build
 npm run test:projects
 npm run test:contact
 npm run test:jekyll
+npm run test:project-sync
 ```
 
 Jekyll writes the website into `_site`. Netlify uses
-`npm run prod && bundle exec jekyll build` and publishes `_site`.
+the hook-aware build command in `netlify.toml` and publishes `_site`.
 
 The contact form uses Netlify Forms and the existing `form 1` identity.
 On localhost, valid submissions show **Message not sent** instead of sending.

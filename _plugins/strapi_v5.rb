@@ -2,7 +2,7 @@
 
 # Data flow: Strapi -> _data/strapi_projects.json -> Liquid -> /projects.json.
 # Local jekyll serve refreshes the export; normal builds read it offline.
-# Commit the export to publish updates. A Netlify hook alone does not refresh it.
+# Netlify's hook-build script saves fresh exports to GitHub before rendering.
 require "jekyll-strapi"
 require "json"
 require "uri"

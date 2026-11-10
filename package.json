@@ -18,6 +18,7 @@
         "test:projects": "node --test source/tests/static-projects.test.cjs",
         "test:contact": "node --test source/tests/contact-form.test.cjs",
         "test:jekyll": "bundle exec ruby source/tests/jekyll-projects.test.rb",
+        "test:project-sync": "bundle exec ruby source/tests/netlify-projects.test.rb",
         "test:local-api": "npm run test:projects"
     },
     "browserslist": [

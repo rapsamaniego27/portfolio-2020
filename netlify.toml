@@ -1,11 +1,11 @@
 [build]
-  command = "npm run prod && bundle exec jekyll build"
+  command = "bundle exec ruby source/scripts/netlify-projects.rb && npm run prod && bundle exec jekyll build"
   publish = "_site"
 
 [build.environment]
-  # Builds use the committed _data/strapi_projects.json, even with Heroku off.
-  # Refresh it locally with Strapi running and bundle exec jekyll serve, then push.
-  # Netlify does not need STRAPI_API_URL or access to the CMS.
+  # Hook builds refresh and save projects to GitHub before Jekyll renders them.
+  # Normal Git/Decap builds keep using the committed export with Strapi offline.
+  STRAPI_API_URL = "https://strapi-rap-v5.onrender.com/api"
   NODE_VERSION = "24.22.2"
   RUBY_VERSION = "3.4.12"
   NPM_FLAGS = "--include=dev"

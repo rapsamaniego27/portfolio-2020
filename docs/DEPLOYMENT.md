@@ -11,16 +11,17 @@ connected branch triggers Netlify's normal build/deploy workflow.
 
 | Setting | Value |
 | --- | --- |
-| Build command | `npm run prod && bundle exec jekyll build` |
+| Build command | `bundle exec ruby source/scripts/netlify-projects.rb && npm run prod && bundle exec jekyll build` |
 | Publish directory | `_site` |
 | Node | `24.22.2` |
 | Ruby | `3.4.12` |
 | npm install flags | `--include=dev` |
 | Jekyll environment | `production` |
 
-Commit `_data/strapi_projects.json` before deployment. Netlify reads that export,
-so it does not need Strapi online, `STRAPI_API_URL`, a previous deployment, or an
-ignored cache. Hosting v5 on Heroku first is optional for this saved-data workflow.
+Normal Git/Decap builds read committed `_data/strapi_projects.json` without contacting
+Strapi. Production build-hook requests refresh the export from the hosted v5 API,
+save it to GitHub, and then run the same offline Jekyll build. See
+[automatic project refresh](CONTENT.md#automatic-project-refresh).
 
 Source/test folders, dependencies, caches, and documentation are excluded from
 the Jekyll output. No CMS credentials belong in the repository or public JSON.
@@ -45,8 +46,9 @@ change. Keep `_site`, `node_modules`, `.cache`, credentials, database dumps, and
 private migration exports out of Git.
 
 Push to the connected GitHub branch, then inspect Netlify's deployment result.
-The normal build makes no CMS requests, so an unavailable Heroku app should not
-block it. If a saved export is missing/invalid, the build stops with instructions
+The normal Git/Decap build makes no CMS requests, so an unavailable CMS does not
+block it. A hook refresh fails clearly if the CMS or GitHub persistence is
+unavailable; the currently published website stays in place. If a saved export is missing/invalid, the build stops with instructions
 to restore or refresh it rather than publishing an empty portfolio.
 
 ## Verify the deployed website
@@ -97,8 +99,8 @@ would affect its portfolio.
 
 After verification, the new website and ordinary Netlify rebuilds can continue
 while Strapi is disabled. To update projects later, enable hosted v5 or use local
-v5, refresh/commit its export, and deploy. A Netlify hook alone does not refresh
-that export; see the [content guide](CONTENT.md).
+v5 and refresh/commit its export, or let the configured hosted Strapi webhook
+refresh and commit it automatically; see the [content guide](CONTENT.md).
 
 Stopping one app and cancelling a shared Heroku plan are different actions.
 Check other apps before cancelling an account-wide Eco subscription. Keep Neon,
