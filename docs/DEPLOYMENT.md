@@ -2,6 +2,9 @@
 
 [Back to the README](../README.md)
 
+For provider changes, database incidents, credential replacement or rebuilding
+this setup, read [Migration and recovery](MIGRATION-RECOVERY.md) first.
+
 ## Netlify configuration
 
 The existing site deploys the GitHub repository's `master` branch. A push to that

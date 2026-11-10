@@ -102,6 +102,7 @@ receipt and notification delivery.
 
 ## Guides
 
+- [Migration and recovery](docs/MIGRATION-RECOVERY.md): Codex handoff, required settings, host/database/media moves, backups, token rotation, and end-to-end verification.
 - [Development](docs/DEVELOPMENT.md): installation, commands, Webpack/Sass, tests, and troubleshooting.
 - [Content and CMS](docs/CONTENT.md): Decap, project exports, categories, offline builds, and webhook limitations.
 - [Deployment](docs/DEPLOYMENT.md): Netlify setup, release checks, contact forms, rollback, and stopping Heroku.
