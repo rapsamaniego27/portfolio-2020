@@ -5,6 +5,7 @@ group:
   - tech: React
   - tech: Tailwind
   - tech: Jekyll
+  - tech: Github CMS
   - tech: SASS
   - tech: Webpack
   - tech: Javascript API
