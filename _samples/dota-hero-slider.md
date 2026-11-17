@@ -1,6 +1,6 @@
 ---
-title: Agency Banking
-link: https://maybpidito.com/
-thumbnail: /images/agency-banking.png
+title: BPI Trade
+link: https://new.bpitrade.com/
+thumbnail: /images/bpitrade.png
 type: App
 ---
