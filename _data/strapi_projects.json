@@ -53,6 +53,7 @@
       "type": "Javascript",
       "url": "https://christmas-countdown27.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003182/thumb_christmas_countdown_jpg_4ae1f860f4.png"
@@ -86,6 +87,7 @@
       "type": "Javascript",
       "url": "https://github-finder27.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003180/thumb_github_finder_0118b80cbe.jpg"
@@ -119,6 +121,7 @@
       "type": "Javascript",
       "url": "https://hero-slider27.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003181/thumb_hero_slider_4e93628785.jpg"
@@ -152,6 +155,7 @@
       "type": "Javascript",
       "url": "https://honda-ka-na-ba.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003180/thumb_honda_k_n_b_18b9a5c32b.jpg"
@@ -192,6 +196,7 @@
       "type": "Javascript",
       "url": "https://name-that-movie.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003181/thumb_name_that_movie_e1556a0c38.png"
@@ -232,6 +237,7 @@
       "type": "Javascript",
       "url": "https://note-along.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003184/thumb_note_along_1bf4144828.jpg"
@@ -265,6 +271,7 @@
       "type": "Javascript",
       "url": "https://profile-scroller27.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003184/thumb_profile_scroller_3df8807b8a.jpg"
@@ -294,6 +301,7 @@
       "type": "Javascript",
       "url": "https://profile-slider27.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003186/thumb_profile_slider_efda179357.png"
@@ -327,6 +335,7 @@
       "type": "Javascript",
       "url": "https://tracalorie-tracker.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003185/thumb_tracalorie_tracker_3b15491259.jpg"
@@ -360,6 +369,7 @@
       "type": "Edm",
       "url": "https://rapsamaniego27.github.io/edms/edm1.html",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003047/edm1_d54ab94337.jpg"
@@ -393,6 +403,7 @@
       "type": "Edm",
       "url": "https://rapsamaniego27.github.io/edms/edm2.html",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003051/edm2_86d5a46763.jpg"
@@ -426,6 +437,7 @@
       "type": "Edm",
       "url": "https://rapsamaniego27.github.io/edms/edm3.html",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003047/edm3_e5d67c2c97.jpg"
@@ -459,6 +471,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003049/1_4_Unbeatable_Hotel_Deals_7ae934c8e1.jpg"
@@ -475,6 +488,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003049/1_2_Season_s_Greetings_4da7ebf898.jpg"
@@ -491,6 +505,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003049/1_1_Superb_Winter_Deals_ff499e53dd.jpg"
@@ -507,6 +522,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003048/1_3_Experience_the_Real_Deal_538e9048e9.jpg"
@@ -523,6 +539,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003010/1_2_Best_Western_Hotel_Dubai_03c08f1872.jpg"
@@ -539,6 +556,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003019/1_6_Rove_Around_Dubai_01d301989e.jpg"
@@ -555,6 +573,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003014/1_9_Worlds_Largest_Indoor_Theme_Park_19adb63c31.jpg"
@@ -571,6 +590,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002944/1_1_Ski_Dubai_488583073e.jpg"
@@ -587,6 +607,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003012/1_1_Relax_in_Rak_f56b6feb53.jpg"
@@ -603,6 +624,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003018/1_5_Rotana_All_the_Way_093f570bd6.jpg"
@@ -619,6 +641,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003011/1_3_Best_Western_and_Cassells_Al_Barsha_da1237e14c.jpg"
@@ -635,6 +658,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003010/1_0_Ajman_Palace_8be3c89bf0.jpg"
@@ -651,6 +675,7 @@
       "type": "Edm",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003012/1_7_Raintree_Hotels_90493e94d9.jpg"
@@ -667,6 +692,7 @@
       "type": "Php",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/admin_panel_7c6ff91a6e.jpg"
@@ -773,6 +799,7 @@
       "type": "Php",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678016214/dashboard_4d642feacf.jpg"
@@ -857,6 +884,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002939/H_and_G_Banner_3af4e095b5.jpg"
@@ -873,6 +901,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002939/1_3_JRU_Banner_e955052038.jpg"
@@ -889,6 +918,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002941/Tydis_Gaming_a602598530.jpg"
@@ -905,6 +935,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002940/1_7_Quick_Weekend_Getaway_Georgia_9a76ee9795.jpg"
@@ -921,6 +952,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002944/1_1_Ski_Dubai_488583073e.jpg"
@@ -937,6 +969,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002939/1_4_Special_Fare_to_Amman_b913752cdb.jpg"
@@ -953,6 +986,7 @@
       "type": "Banner",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678002940/1_5_Avani_fc037b135b.jpg"
@@ -969,6 +1003,7 @@
       "type": "Logo",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003130/Folk_Ridge_Logo_Official_2020_01_e0d9c096d4.png"
@@ -985,6 +1020,7 @@
       "type": "Logo",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003122/Folk_Ridge_official_76803b3187.png"
@@ -1001,6 +1037,7 @@
       "type": "Logo",
       "url": null,
       "visibility": true,
+      "to_feature": false,
       "modal_type": "image",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678003119/H_and_G_Thrift_Shop_5e520252f8.jpg"
@@ -1017,6 +1054,7 @@
       "type": "Web",
       "url": "https://rosegilmercado.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017208/rose_a385ebc892.jpg"
@@ -1050,6 +1088,7 @@
       "type": "Web",
       "url": "https://folkridge.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017202/folkridge_main_8fb0279cd2.jpg"
@@ -1117,6 +1156,7 @@
       "type": "Web",
       "url": "https://rapmusikero.com/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017208/rapmusikero_main_107f254c6a.jpg"
@@ -1172,6 +1212,7 @@
       "type": "Web",
       "url": "https://weblife.com.ph/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017819/weblife_main_f674b35d41.jpg"
@@ -1228,6 +1269,7 @@
       "type": "Web",
       "url": "https://akostika.netlify.app/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017198/akostika_main_77682529d7.jpg"
@@ -1271,6 +1313,7 @@
       "type": "Web",
       "url": "https://www.popcornstore.com.ph/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1678017205/popcorn_main_75d87b6e24.jpg"
@@ -1327,6 +1370,7 @@
       "type": "Web",
       "url": "https://new.bpitrade.com/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718708331/bpitrade1_010cae640f.jpg"
@@ -1383,6 +1427,7 @@
       "type": "Php",
       "url": "https://maybpidito.com/",
       "visibility": true,
+      "to_feature": false,
       "modal_type": "info",
       "main_image": {
         "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1718709774/dao1_08d7b9dde2.jpg"
