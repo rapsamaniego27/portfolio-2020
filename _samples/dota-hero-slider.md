@@ -1,6 +1,6 @@
 ---
-title: Dota Hero Slider
-link: https://hero-slider27.netlify.app/
-thumbnail: /images/dota-sample2.jpg
+title: Agency Banking
+link: https://maybpidito.com/
+thumbnail: /images/agency-banking.png
 type: App
 ---
