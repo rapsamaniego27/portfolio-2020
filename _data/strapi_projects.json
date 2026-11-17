@@ -16,10 +16,10 @@
       "display_order": 1
     },
     {
-      "id": "50dec9b8352107e630be0a0f",
-      "key": "Banner",
-      "name": "Banners",
-      "slug": "banners",
+      "id": "26011e8dcdf8a559accd6e54",
+      "key": "Php",
+      "name": "PHP",
+      "slug": "php",
       "display_order": 2
     },
     {
@@ -30,10 +30,10 @@
       "display_order": 3
     },
     {
-      "id": "26011e8dcdf8a559accd6e54",
-      "key": "Php",
-      "name": "PHP",
-      "slug": "php",
+      "id": "50dec9b8352107e630be0a0f",
+      "key": "Banner",
+      "name": "Banners",
+      "slug": "banners",
       "display_order": 4
     },
     {
