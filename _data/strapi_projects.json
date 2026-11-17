@@ -1428,29 +1428,6 @@
           "to_show": true
         }
       ]
-    },
-    {
-      "id": "by1tcfdnsuco8cbg9s0ebhvw",
-      "name": "Weddings Gig",
-      "description": "asdfasdfasdf",
-      "create_date": null,
-      "type": "Logo",
-      "url": null,
-      "visibility": true,
-      "modal_type": "image",
-      "main_image": {
-        "url": "https://res.cloudinary.com/rapsamaniego27/image/upload/v1794289704/886811888_1088752287519580_2324846551610630055_n_55f577d096.jpg"
-      },
-      "gallery": [],
-      "technologies": [],
-      "collaborators": [
-        {
-          "name": "Soleil Olandez",
-          "position": "Project Manager",
-          "website": null,
-          "to_show": true
-        }
-      ]
     }
   ]
 }
