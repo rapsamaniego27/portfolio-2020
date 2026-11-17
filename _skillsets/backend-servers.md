@@ -6,7 +6,7 @@ group:
   - tech: Laravel
   - tech: Netlify
   - tech: Heroku
-  - tech: MySQL
-  - tech: Filezilla
-  - tech: Git
+  - tech: Vapor (deployments)
+  - tech: Render
+  - tech: Neon + Postgres
 ---
