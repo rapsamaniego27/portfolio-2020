@@ -121,3 +121,41 @@ test('version 2 snapshots filter new CMS categories through the existing type fi
  assert.equal((await new Data().fetchProjects('Web')).length, 0);
  assert.equal(await new Data().getProjectsCount(), 1);
 });
+
+test('featured cards lead each category while both groups retain their newest-first order', async () => {
+ const rows = [
+  { ...project(), id: 'old-normal', to_feature: false },
+  { ...project(), id: 'old-featured', to_feature: true },
+  { ...project(), id: 'legacy-normal' },
+  { ...project(), id: 'new-featured', to_feature: true },
+  { ...project(), id: 'string-normal', to_feature: 'true' },
+  { ...project(), id: 'new-normal', to_feature: null },
+  { ...project('Javascript'), id: 'js-normal' },
+  { ...project('Javascript'), id: 'js-featured', to_feature: true },
+ ];
+ const original = JSON.stringify(rows);
+ const { Portfolio, Data, nodes } = load(async () => response({ projects: rows }));
+ const portfolio = new Portfolio();
+ const displayed = () => [...nodes.get('#portfolioResultsContainer').innerHTML.matchAll(/data-project-id="([^"]+)"/g)].map(match => match[1]);
+ await portfolio.displayResults('Web');
+ assert.deepEqual(displayed(), ['new-featured', 'old-featured', 'new-normal', 'string-normal', 'legacy-normal', 'old-normal']);
+ assert.equal(nodes.get('#portfolioCount').innerHTML, '6 results found.');
+ await portfolio.displayResults('Javascript');
+ assert.deepEqual(displayed(), ['js-featured', 'js-normal']);
+ await portfolio.displayResults('Web');
+ assert.deepEqual(displayed(), ['new-featured', 'old-featured', 'new-normal', 'string-normal', 'legacy-normal', 'old-normal']);
+ assert.equal((await new Data().fetchSingleProject('old-featured')).to_feature, true);
+ assert.equal(JSON.stringify(rows), original, 'Rendering must not reorder the shared snapshot');
+});
+
+test('categories with no featured projects retain their existing newest-first display', async () => {
+ const rows = [
+  { ...project(), id: 'old' },
+  { ...project(), id: 'middle', to_feature: false },
+  { ...project(), id: 'new', to_feature: null },
+ ];
+ const { Portfolio, nodes } = load(async () => response(rows));
+ await new Portfolio().displayResults('Web');
+ const ids = [...nodes.get('#portfolioResultsContainer').innerHTML.matchAll(/data-project-id="([^"]+)"/g)].map(match => match[1]);
+ assert.deepEqual(ids, ['new', 'middle', 'old']);
+});

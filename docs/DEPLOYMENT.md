@@ -5,6 +5,18 @@
 For provider changes, database incidents, credential replacement or rebuilding
 this setup, read [Migration and recovery](MIGRATION-RECOVERY.md) first.
 
+## Featured projects
+
+Set a Project's `to_feature` boolean to true in Strapi to place it before regular
+projects in its portfolio category. Both groups keep the existing newest-first
+order. Featured projects fill the first available card positions and wrap onto
+more rows when needed for the screen width. The default is false.
+
+The existing project webhook refreshes the saved export after an edit, and Liquid
+includes `to_feature` in `/projects.json`. Older saved exports default to false
+and continue to build offline. Restart a local Jekyll serve session to refresh
+edits from the local CMS.
+
 ## Netlify configuration
 
 The existing site deploys the GitHub repository's `master` branch. A push to that

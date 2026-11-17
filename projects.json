@@ -27,6 +27,7 @@ permalink: /projects.json
       "type": {{ project.type | jsonify }},
       "url": {{ project.url | jsonify }},
       "visibility": {{ project.visibility | jsonify }},
+      "to_feature": {{ project.to_feature | default: false | jsonify }},
       "modal_type": {{ project.modal_type | jsonify }},
       "main_image": { "url": {{ project.main_image.url | jsonify }} },
       "gallery": [

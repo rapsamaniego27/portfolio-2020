@@ -171,6 +171,7 @@ module PortfolioV5
       "type" => selected["key"],
       "url" => record["url"],
       "visibility" => record["visibility"],
+      "to_feature" => record["to_feature"] == true,
       "modal_type" => record["modal_type"],
       "main_image" => image(record["main_image"]),
       "gallery" => record["gallery"].map { |entry| image(entry) },

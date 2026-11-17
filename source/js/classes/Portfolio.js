@@ -27,9 +27,11 @@ class Portfolio{
     if (request !== this.resultsRequest) return;
     let html = ``;
     
-    // Prepend each saved project to keep the newest projects at the top.
-    data.forEach(project => {
-      html = `${this.UI.makeProjectCards(project)} ${html}`;
+    // Feature selected projects first, preserving newest-first order in both groups.
+    const projects = data.slice().reverse();
+    projects.sort((first, second) => Number(second.to_feature === true) - Number(first.to_feature === true));
+    projects.forEach(project => {
+      html += this.UI.makeProjectCards(project);
     });
 
     portfolioResultsContainer.innerHTML = html;

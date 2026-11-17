@@ -78,6 +78,7 @@ def api_fixture
             "description" => "Quoted \"description\"\nBackslash \\ and café", "create_date" => "2024-01-01",
             "type" => "Web", "category" => { "documentId" => page == 1 ? "web-category" : "case-category" },
             "url" => "https://project.example.com/#{page}", "visibility" => true, "modal_type" => "info", "legacyId" => "PRIVATE-LEGACY",
+            "to_feature" => page == 1,
             "main_image" => { "url" => "https://example.com/main.png", "provider_metadata" => { "secret" => "PRIVATE-METADATA" } },
             "gallery" => page == 1 ? [{ "url" => "https://example.com/gallery.png" }] : [],
             "technologies" => [{ "name" => 'Ruby "JSON"', "color" => "#6750A4", "users" => ["PRIVATE-USER"] }],
@@ -126,6 +127,7 @@ api_fixture do |endpoint, state|
     assert(result["projects"].first["technologies"].first["color"] == "#6750A4", "Technology color was lost")
     assert(result["projects"].first["collaborators"].first["name"] == 'Jo "Designer"', "Collaborator fields were lost")
     assert(result["projects"].last["gallery"] == [] && result["projects"].last["collaborators"] == [], "Empty relations are not JSON arrays")
+    assert(result["projects"].map { |row| row["to_feature"] } == [true, false], "Featured booleans were lost between Strapi and public JSON")
     assert(!JSON.generate(result).include?("PRIVATE-"), "Private metadata was serialized")
     markup = File.read(File.join(directory, "_site/index.html"))
     assert(markup.include?("&quot;Work&quot; &amp; More") && markup.include?("Case Studies") && markup.include?("Empty"), "Category labels were not safely rendered from Strapi")
@@ -138,6 +140,20 @@ api_fixture do |endpoint, state|
     assert(JSON.parse(saved) == result, "The complete public export was not saved for GitHub")
     assert(!JSON.generate(JSON.parse(saved)).include?("PRIVATE-"), "Private API metadata entered the committed snapshot")
     checks += 1; puts "PASS: local serve saves the complete public export in the repository"
+
+    site_fixture(endpoint) do |legacy|
+      old_snapshot = JSON.parse(saved)
+      old_snapshot["projects"].each { |row| row.delete("to_feature") }
+      FileUtils.mkdir_p(File.join(legacy, "_data"))
+      old_contents = JSON.generate(old_snapshot)
+      File.write(File.join(legacy, SNAPSHOT_FILE), old_contents)
+      requests = state[:requests].size
+      stdout, stderr, status = build(legacy, :netlify => "true")
+      assert(status.success?, "Legacy snapshot failed: #{stdout}\n#{stderr}")
+      assert(output(legacy)["projects"].all? { |row| row["to_feature"] == false }, "Old snapshots must default to unfeatured")
+      assert(File.read(File.join(legacy, SNAPSHOT_FILE)) == old_contents && state[:requests].size == requests, "Legacy offline build changed saved data or contacted Strapi")
+      checks += 1; puts "PASS: old committed snapshots build offline with to_feature defaulting to false"
+    end
 
     # A production build must not probe or wake a CMS that is disabled for months.
     state[:status] = 403
